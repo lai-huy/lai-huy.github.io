@@ -1,0 +1,103 @@
+body {
+    background: #8EA4D2;
+    background-image: url("../../assets/images/RoboMastersSimulation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #313628;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    margin: 20px;
+    padding: 0;
+}
+
+div#flex_index {
+    display: flex;
+    flex-direction: column;
+
+    #about {
+        order: 1;
+        text-align: center;
+    }
+
+    #prog {
+        order: 2;
+        text-align: center;
+    }
+
+    #social {
+        order: 3;
+    }
+}
+
+h2.about {
+    text-align: center;
+    color: #25283D;
+    font-size: 38pt;
+}
+
+header.name {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48pt;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p.about {
+    background: #d4bebebf;
+    color: #ffffff;
+    font-size: 24pt;
+    text-align: center;
+    width: 45%;
+    overflow-wrap: break-word;
+    display: inline-block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p.links {
+    text-align: center;
+}
+
+p.prog_req {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 400px;
+    background-color: #a09abcbf;
+    display: inline-block;
+}
+
+span.about {
+    background: #a09abcbf;
+}
+
+span.name {
+    background: #800000bf;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48pt;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+svg.email {
+    height: 100px;
+    width: 100px;
+}
+
+svg.github {
+    height: 100px;
+    width: 100px;
+}
+
+svg.linkedin {
+    height: 100px;
+    width: 100px;
+}
+
+svg.phone {
+    height: 100px;
+    width: 100px;
+}
