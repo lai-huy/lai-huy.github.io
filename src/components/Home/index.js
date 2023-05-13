@@ -1,6 +1,7 @@
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Link} from 'react-router-dom';
 import "./home.scss";
 
 const Home = () => {
@@ -17,26 +18,6 @@ const Home = () => {
 				</p>
 			</div>
 
-			<div id="social">
-				<p className="links">
-					<a href="https://github.com/lai-huy" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faGithub} className="github" />
-					</a>
-
-					<a href="https://www.linkedin.com/in/huy-lai-93a2b4211/" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faLinkedin} className="linkedin" />
-					</a>
-
-					<a href="mailto:lai.huy.075@gmail.com" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faEnvelope} className="email" />
-					</a>
-
-					<a href="tel:5122107909" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faPhone} className="phone" />
-					</a>
-				</p>
-			</div>
-
 			<div id="prog">
 				<p className="prog_req">
 					Learn more about the BS in Computer Science <a
@@ -45,6 +26,26 @@ const Home = () => {
 						href="https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext">here</a>.<br />
 					Learn more about the Minor in Mathematics <a
 						href="https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext">here</a>.
+				</p>
+			</div>
+
+			<div id="social">
+				<p className="links">
+					<Link to="https://github.com/lai-huy" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon icon={faGithub} />
+					</Link>
+
+					<Link to="https://www.linkedin.com/in/huy-lai-93a2b4211/" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon icon={faLinkedin} />
+					</Link>
+
+					<Link to="mailto:lai.huy.075@gmail.com" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon icon={faEnvelope} />
+					</Link>
+
+					<Link to="tel:5122107909" target="_blank" rel="noreferrer">
+						<FontAwesomeIcon icon={faPhone} />
+					</Link>
 				</p>
 			</div>
 		</div>

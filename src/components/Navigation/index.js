@@ -1,8 +1,12 @@
 import "./navigation.scss";
-import {Link} from 'react-router-dom';
-
+import {NavLink} from 'react-router-dom';
+import {faHome, faSuitcase} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {useState} from 'react';
 
 const Navigation = () => {
+    const [showNav, setShowNav] = useState(false);
+
     return (<>
         <nav role="navigation">
             <div id="menuToggle">
@@ -13,18 +17,18 @@ const Navigation = () => {
                 <span></span>
 
                 <ul id="menu">
-                    <Link href="../../index.html">
-                        <li>Home</li>
-                    </Link>
-                    <a href="portfolio.html">
-                        <li>Technical Portfolio</li>
-                    </a>
-                    <a href="qualifications.html">
-                        <li>Qualifications</li>
-                    </a>
-                    <a href="service.html">
-                        <li>Service</li>
-                    </a>
+                    <li><NavLink activeclassname="active" className="home-link" to="/" onClick={() => setShowNav(false)}>
+                        <FontAwesomeIcon icon={faHome} />
+                    </NavLink></li>
+                    <li><NavLink activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
+                        <FontAwesomeIcon icon={faSuitcase} />
+                    </NavLink></li>
+                    <li><NavLink activeclassname="active" className="qualification-link" to="/qualifications" onClick={() => setShowNav(false)}>
+                        <FontAwesomeIcon icon={faSuitcase} />
+                    </NavLink></li>
+                    <li><NavLink activeclassname="active" className="service-link" to="/service" onClick={() => setShowNav(false)}>
+                        <FontAwesomeIcon icon={faSuitcase} />
+                    </NavLink></li>
                 </ul>
             </div>
         </nav>

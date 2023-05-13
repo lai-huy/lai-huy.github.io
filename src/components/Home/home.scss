@@ -1,3 +1,21 @@
+a {
+    &:active {
+        color: #DDFFF7;
+    }
+
+    &:link {
+        color: #251351;
+    }
+
+    &:hover {
+        color: #086788;
+    }
+
+    &:visited {
+        color: #500000;
+    }
+}
+
 body {
     background: #8EA4D2;
     background-image: url("../../assets/images/RoboMastersSimulation.jpg");
@@ -60,14 +78,15 @@ p.about {
 
 p.links {
     text-align: center;
+    margin-top: 350px;
 }
 
 p.prog_req {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 400px;
     background-color: #a09abcbf;
+    color: #ffffff;
     display: inline-block;
+    font-size: 24pt;
+    text-align: center;
 }
 
 span.about {
@@ -82,22 +101,28 @@ span.name {
     font-family: 'Ubuntu', sans-serif;
 }
 
-svg.email {
+svg.svg-inline--fa {
     height: 100px;
     width: 100px;
+
+    a & {
+        fill: none;
+        text-decoration: none;
+    }
 }
 
-svg.github {
-    height: 100px;
-    width: 100px;
+svg.fa-github {
+    color: #f4b400;
 }
 
-svg.linkedin {
-    height: 100px;
-    width: 100px;
+svg.fa-linkedin {
+    color: #0077b5;
 }
 
-svg.phone {
-    height: 100px;
-    width: 100px;
+svg.fa-envelope {
+    color: #db4437
+}
+
+svg.fa-phone {
+    color: #0f9d58
 }
