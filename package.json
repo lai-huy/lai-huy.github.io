@@ -2,6 +2,7 @@
 	"name": "lai-huy.github.io",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://myusername.github.io",
 	"dependencies": {
 		"@fortawesome/free-brands-svg-icons": "^6.4.0",
 		"@fortawesome/free-solid-svg-icons": "^6.4.0",
