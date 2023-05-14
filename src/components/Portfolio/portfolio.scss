@@ -1,0 +1,40 @@
+div.h2 {
+	text-align: center;
+	margin: 20px;
+	font-size: 38pt;
+}
+
+header.portfolio {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+iframe.TAMURM_YT {
+	width: 50%;
+	height: 580px;
+}
+
+img.left_wrap {
+	float: right;
+	margin: 5pt;
+	width: 33%;
+}
+
+p {
+	&.chess {
+		text-align: center;
+		font-size: 24pt;
+	}
+
+	&.sb {
+		text-align: center;
+		font-size: 20pt;
+	}
+
+	&.tamu_rm {
+		text-align: center;
+		font-size: 20pt;
+	}
+}

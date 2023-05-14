@@ -30,43 +30,44 @@ const Home = () => {
 	};
 
 	return (<>
-		<header className="name"><span className="name">Huy Quang Lai</span></header>
+		<div className="background">
+			<header className="name"><span className="name">Huy Quang Lai</span></header>
+			<div className="about"><span className="about">About Me</span></div>
+			<div id="about">
+				<p className="about">
+					Howdy! I am a student at <Link to="https://www.tamu.edu/">Texas A&M University</Link> currently
+					studying for a Bachelor of Science in Computer Science
+					with a Minor in Cybersecurity and Mathematics.
+				</p>
+			</div>
 
-		<h2 className="about"><span className="about">About Me</span></h2>
-		<div id="about">
-			<p className="about">
-				Howdy! I am a student at <Link to="https://www.tamu.edu/">Texas A&M University</Link> currently
-				studying for a Bachelor of Science in Computer Science
-				with a Minor in Cybersecurity and Mathematics.
-			</p>
-		</div>
+			<div id="prog">
+				<p className="prog_req">
+					Learn more about the BS in Computer Science <Link to={bs_cs}>here</Link>.<br />
+					Learn more about the Minor in Cybersecurity <Link to={cyber_minor}>here</Link>.<br />
+					Learn more about the Minor in Mathematics <Link to={math_minor}>here</Link>.
+				</p>
+			</div>
 
-		<div id="prog">
-			<p className="prog_req">
-				Learn more about the BS in Computer Science <Link to={bs_cs}>here</Link>.<br />
-				Learn more about the Minor in Cybersecurity <Link to={cyber_minor}>here</Link>.<br />
-				Learn more about the Minor in Mathematics <Link to={math_minor}>here</Link>.
-			</p>
-		</div>
+			<div id="social">
+				<p className="links">
+					<button className="btn-hover github" onClick={handleGithubClick}>
+						<FontAwesomeIcon icon={faGithub} />
+					</button>
 
-		<div id="social">
-			<p className="links">
-				<button className="btn-hover github" onClick={handleGithubClick}>
-					<FontAwesomeIcon icon={faGithub} />
-				</button>
+					<button className="btn-hover linkedin" onClick={handleLinkedinClick}>
+						<FontAwesomeIcon icon={faLinkedin} />
+					</button>
 
-				<button className="btn-hover linkedin" onClick={handleLinkedinClick}>
-					<FontAwesomeIcon icon={faLinkedin} />
-				</button>
+					<button className="btn-hover email" onClick={handleEmailClick}>
+						<FontAwesomeIcon icon={faEnvelope} />
+					</button>
 
-				<button className="btn-hover email" onClick={handleEmailClick}>
-					<FontAwesomeIcon icon={faEnvelope} />
-				</button>
-
-				<button className="btn-hover phone" onClick={handlePhoneClick}>
-					<FontAwesomeIcon icon={faPhone} />
-				</button>
-			</p>
+					<button className="btn-hover phone" onClick={handlePhoneClick}>
+						<FontAwesomeIcon icon={faPhone} />
+					</button>
+				</p>
+			</div>
 		</div>
 	</>);
 };

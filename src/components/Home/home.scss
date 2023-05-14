@@ -18,14 +18,12 @@ a {
 
 body {
 	background: #8EA4D2;
-	background-image: url("../../assets/images/RoboMastersSimulation.jpg");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: #313628;
 	font-family: 'Ubuntu', sans-serif;
 	height: 100%;
-	margin: 20px;
 	padding: 0;
 }
 
@@ -36,7 +34,7 @@ button.btn-hover {
 	cursor: pointer;
 	height: 115px;
 	-o-transition: all .4s ease-in-out;
-	padding: 5px;
+	margin: 5px;
 	text-align: center;
 	transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
@@ -72,6 +70,12 @@ button.btn-hover {
 }
 
 div {
+	&.about {
+		text-align: center;
+		color: #25283D;
+		font-size: 38pt;
+	}
+
 	&#about {
 		text-align: center;
 	}
@@ -85,10 +89,13 @@ div {
 	}
 }
 
-h2.about {
-	text-align: center;
-	color: #25283D;
-	font-size: 38pt;
+div.background {
+	background-image: url("../../assets/images/RoboMastersSimulation.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 }
 
 header.name {
