@@ -4,50 +4,69 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {Link} from 'react-router-dom';
 import "./home.scss";
 
+const bs_cs = "https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext";
+const cyber_minor = "https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext";
+const math_minor = "https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext";
+const github = "https://github.com/lai-huy";
+const linkedin = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
+const email = "mailto:lai.huy.075@gmail.com";
+const phone = "tel:5122107909";
+
 const Home = () => {
+	const handleGithubClick = () => {
+		window.open(github, "_blank");
+	};
+
+	const handleLinkedinClick = () => {
+		window.open(linkedin, "_blank");
+	};
+
+	const handleEmailClick = () => {
+		window.open(email);
+	};
+
+	const handlePhoneClick = () => {
+		window.open(phone);
+	};
+
 	return (<>
 		<header className="name"><span className="name">Huy Quang Lai</span></header>
 
-		<div id="flex_index">
-			<h2 className="about"><span className="about">About Me</span></h2>
-			<div id="about">
-				<p className="about">
-					Howdy! I am a student at <a href="https://www.tamu.edu/">Texas A&M University</a> current
-					studying for a Bachelor of Science in Computer Science
-					with a Minor in Cybersecurity and Mathematics.
-				</p>
-			</div>
+		<h2 className="about"><span className="about">About Me</span></h2>
+		<div id="about">
+			<p className="about">
+				Howdy! I am a student at <Link to="https://www.tamu.edu/">Texas A&M University</Link> currently
+				studying for a Bachelor of Science in Computer Science
+				with a Minor in Cybersecurity and Mathematics.
+			</p>
+		</div>
 
-			<div id="prog">
-				<p className="prog_req">
-					Learn more about the BS in Computer Science <a
-						href="https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext">here</a>.<br />
-					Learn more about the Minor in Cybersecurity <a
-						href="https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext">here</a>.<br />
-					Learn more about the Minor in Mathematics <a
-						href="https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext">here</a>.
-				</p>
-			</div>
+		<div id="prog">
+			<p className="prog_req">
+				Learn more about the BS in Computer Science <Link to={bs_cs}>here</Link>.<br />
+				Learn more about the Minor in Cybersecurity <Link to={cyber_minor}>here</Link>.<br />
+				Learn more about the Minor in Mathematics <Link to={math_minor}>here</Link>.
+			</p>
+		</div>
 
-			<div id="social">
-				<p className="links">
-					<Link to="https://github.com/lai-huy" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faGithub} />
-					</Link>
+		<div id="social">
+			<p className="links">
+				<button className="btn-hover github" onClick={handleGithubClick}>
+					<FontAwesomeIcon icon={faGithub} />
+				</button>
 
-					<Link to="https://www.linkedin.com/in/huy-lai-93a2b4211/" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faLinkedin} />
-					</Link>
+				<button className="btn-hover linkedin" onClick={handleLinkedinClick}>
+					<FontAwesomeIcon icon={faLinkedin} />
+				</button>
 
-					<Link to="mailto:lai.huy.075@gmail.com" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faEnvelope} />
-					</Link>
+				<button className="btn-hover email" onClick={handleEmailClick}>
+					<FontAwesomeIcon icon={faEnvelope} />
+				</button>
 
-					<Link to="tel:5122107909" target="_blank" rel="noreferrer">
-						<FontAwesomeIcon icon={faPhone} />
-					</Link>
-				</p>
-			</div>
+				<button className="btn-hover phone" onClick={handlePhoneClick}>
+					<FontAwesomeIcon icon={faPhone} />
+				</button>
+			</p>
 		</div>
 	</>);
 };

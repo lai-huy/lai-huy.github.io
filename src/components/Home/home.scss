@@ -29,22 +29,59 @@ body {
 	padding: 0;
 }
 
-div#flex_index {
-	display: flex;
-	flex-direction: column;
+button.btn-hover {
+	background-size: 300% 100%;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	height: 115px;
+	-o-transition: all .4s ease-in-out;
+	padding: 5px;
+	text-align: center;
+	transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	width: 115px;
 
-	div#about {
-		order: 1;
+
+	&:hover {
+		background-position: 100% 0;
+		-o-transition: all .4s ease-in-out;
+		transition: all .4s ease-in-out;
+		-webkit-transition: all .4s ease-in-out;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&.github {
+		background-image: linear-gradient(to right, #214E34, #30734C, #3c905f, #48ad72);
+	}
+
+	&.linkedin {
+		background-image: linear-gradient(to right, #372772, #4A3498, #583EB6, #7058C6);
+	}
+
+	&.email {
+		background-image: linear-gradient(to right, #1a17be, #2825E4, #4C49E9, #706EED);
+	}
+
+	&.phone {
+		background-image: linear-gradient(to right, #FF0035, #FF335C, #FF5C7C, #FF859D);
+	}
+}
+
+div {
+	&#about {
 		text-align: center;
 	}
 
-	div#prog {
-		order: 2;
+	&#prog {
 		text-align: center;
 	}
 
-	div#social {
-		order: 3;
+	&#social {
+		text-align: center;
 	}
 }
 
@@ -62,63 +99,69 @@ header.name {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-p.about {
-	background: #d4bebebf;
-	color: #ffffff;
-	font-size: 24pt;
-	text-align: center;
-	width: 45%;
-	overflow-wrap: break-word;
-	display: inline-block;
-	margin-block-start: 0px;
-	margin-block-end: 0px;
-	margin-inline-start: 0px;
-	margin-inline-end: 0px;
-}
+p {
+	&.about {
+		background: #d4bebebf;
+		color: #ffffff;
+		font-size: 24pt;
+		text-align: center;
+		width: 45%;
+		overflow-wrap: break-word;
+		display: inline-block;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	}
 
-p.links {
-	text-align: center;
-	margin-top: 350px;
+	&.links {
+		text-align: center;
+		margin-top: 350px;
 
-	svg.svg-inline--fa {
-		height: 100px;
-		width: 100px;
-		text-decoration: none;
+		svg.svg-inline--fa {
+			height: 85px;
+			width: 85px;
+			text-decoration: none;
+		}
+	}
+
+	&.prog_req {
+		background-color: #a09abcbf;
+		color: #ffffff;
+		display: inline-block;
+		font-size: 24pt;
+		text-align: center;
 	}
 }
 
-p.prog_req {
-	background-color: #a09abcbf;
-	color: #ffffff;
-	display: inline-block;
-	font-size: 24pt;
-	text-align: center;
+span {
+	&.about {
+		background: #a09abcbf;
+	}
+
+	&.name {
+		background: #800000bf;
+		text-align: center;
+		font-weight: bold;
+		font-size: 48pt;
+		font-family: 'Ubuntu', sans-serif;
+	}
 }
 
-span.about {
-	background: #a09abcbf;
-}
+svg {
+	&.fa-github {
+		color: #f4b400;
+	}
 
-span.name {
-	background: #800000bf;
-	text-align: center;
-	font-weight: bold;
-	font-size: 48pt;
-	font-family: 'Ubuntu', sans-serif;
-}
+	&.fa-linkedin {
+		color: #0077b5;
+	}
 
-svg.fa-github {
-	color: #f4b400;
-}
+	&.fa-envelope {
+		color: #db4437
+	}
 
-svg.fa-linkedin {
-	color: #0077b5;
-}
-
-svg.fa-envelope {
-	color: #db4437
-}
-
-svg.fa-phone {
-	color: #0f9d58;
+	&.fa-phone {
+		color: #0f9d58;
+	}
 }
