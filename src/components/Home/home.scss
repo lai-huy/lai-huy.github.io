@@ -87,6 +87,10 @@ div.background {
 	width: 100%;
 }
 
+h1 {
+	all: unset;
+}
+
 header.name {
 	color: #ffffff;
 	text-align: center;
@@ -116,6 +120,17 @@ p {
 		display: inline-block;
 		font-size: 24pt;
 		text-align: center;
+	}
+
+	&.links {
+		text-align: center;
+		margin-top: 350px;
+
+		svg.svg-inline--fa {
+			height: 100px;
+			width: 100px;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -153,16 +168,5 @@ svg {
 
 	&.fa-phone {
 		color: #0f9d58;
-	}
-}
-
-ul.links {
-	text-align: center;
-	margin-top: 350px;
-
-	svg.svg-inline--fa {
-		height: 85px;
-		width: 85px;
-		text-decoration: none;
 	}
 }

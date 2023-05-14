@@ -6,7 +6,7 @@ import cls from "../../assets/images/CLS.jpg";
 
 const Service = () => {
     return (<>
-        <header className="service">Community Service</header>
+        <header className="service"><h1>Community Service</h1></header>
 
         <div className="cls">
             <img className="left_wrap" alt="Chùa Linh Sơn" src={cls} />

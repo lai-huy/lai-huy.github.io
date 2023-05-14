@@ -13,7 +13,7 @@ const tamu_rm = "https://tamurobomasters.com/";
 
 const Portfolio = () => {
 	return (<>
-		<header className="portfolio">Technical Portfolio</header>
+		<header className="portfolio"><h1>Technical Portfolio</h1></header>
 
 		<div className="h2">TAMU RoboMasters</div>
 		<div className="robomasters">

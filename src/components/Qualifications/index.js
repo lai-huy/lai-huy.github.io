@@ -5,7 +5,7 @@ import faCpp from "../../assets/images/Cpp Logo.svg";
 
 const Qualifications = () => {
     return (<>
-        <header className="qualifications">Technical Qualifications</header>
+        <header className="qualifications"><h1>Technical Qualifications</h1></header>
 
         <div className="h2">Resume</div>
         <div className="resume">

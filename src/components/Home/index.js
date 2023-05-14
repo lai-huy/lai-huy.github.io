@@ -31,7 +31,7 @@ const Home = () => {
 
 	return (<>
 		<div className="background">
-			<header className="name"><span className="name">Huy Quang Lai</span></header>
+			<header className="name"><h1><span className="name">Huy Quang Lai</span></h1></header>
 			<div className="about"><span className="about">About Me</span></div>
 			<div id="about">
 				<p className="about">
@@ -51,19 +51,19 @@ const Home = () => {
 
 			<div id="social">
 				<p className="links">
-					<button className="btn-hover github" onClick={handleGithubClick}>
+					<button aria-label="Go to my GitHub profile" className="btn-hover github" onClick={handleGithubClick}>
 						<FontAwesomeIcon icon={faGithub} />
 					</button>
 
-					<button className="btn-hover linkedin" onClick={handleLinkedinClick}>
+					<button aria-label="Go to my LinkedIn profile" className="btn-hover linkedin" onClick={handleLinkedinClick}>
 						<FontAwesomeIcon icon={faLinkedin} />
 					</button>
 
-					<button className="btn-hover email" onClick={handleEmailClick}>
+					<button aria-label="Send me an email" className="btn-hover email" onClick={handleEmailClick}>
 						<FontAwesomeIcon icon={faEnvelope} />
 					</button>
 
-					<button className="btn-hover phone" onClick={handlePhoneClick}>
+					<button aria-label="Send me a phone call" className="btn-hover phone" onClick={handlePhoneClick}>
 						<FontAwesomeIcon icon={faPhone} />
 					</button>
 				</p>
