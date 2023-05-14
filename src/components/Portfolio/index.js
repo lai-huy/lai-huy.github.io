@@ -15,7 +15,7 @@ const Portfolio = () => {
     return (<>
         <header className="portfolio">Technical Portfolio</header>
 
-        <div id="RoboMasters">
+        <div className="robomasters">
             <div className="h2">TAMU RoboMasters</div>
             <div>
                 <img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
@@ -51,7 +51,7 @@ const Portfolio = () => {
             </p>
 
             <p className="tamu_rm">
-                <iframe className="TAMURM_YT" src="https://www.youtube.com/embed/U1AJqZkFVnw" title="About TAMU RoboMasters"
+                <iframe title="About TAMU RoboMasters" className="TAMURM_YT" src="https://www.youtube.com/embed/U1AJqZkFVnw"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen>
@@ -59,7 +59,7 @@ const Portfolio = () => {
             </p>
         </div>
 
-        <div id="Chess">
+        <div className="chess">
             <div className="h2">Chess</div>
             <div>
                 <img className="left_wrap"
@@ -91,7 +91,7 @@ const Portfolio = () => {
             </p>
         </div>
 
-        <div id="skyblock">
+        <div className="skyblock">
             <div className="h2">SkyBlock Minecraft Mod</div>
             <div>
                 <img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel Skyblock" />
