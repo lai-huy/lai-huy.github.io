@@ -110,17 +110,6 @@ p {
 		margin-inline-end: 0px;
 	}
 
-	&.links {
-		text-align: center;
-		margin-top: 350px;
-
-		svg.svg-inline--fa {
-			height: 85px;
-			width: 85px;
-			text-decoration: none;
-		}
-	}
-
 	&.prog_req {
 		background-color: #a09abcbf;
 		color: #ffffff;
@@ -142,6 +131,11 @@ span {
 		font-size: 48pt;
 		font-family: 'Ubuntu', sans-serif;
 	}
+
+	&.visually-hidden {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 svg {
@@ -159,5 +153,16 @@ svg {
 
 	&.fa-phone {
 		color: #0f9d58;
+	}
+}
+
+ul.links {
+	text-align: center;
+	margin-top: 350px;
+
+	svg.svg-inline--fa {
+		height: 85px;
+		width: 85px;
+		text-decoration: none;
 	}
 }

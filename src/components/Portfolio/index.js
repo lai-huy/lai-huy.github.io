@@ -33,11 +33,13 @@ const Portfolio = () => {
 				Learn more about TAMU RoboMasters <Link to={tamu_rm}>here</Link>.
 			</p>
 		</div>
-		<iframe title="About TAMU RoboMasters" className="TAMURM_YT" src="https://www.youtube.com/embed/U1AJqZkFVnw"
-			frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			allowfullscreen>
-		</iframe>
+		<p className="tamurm_yt">
+			<iframe title="About TAMU RoboMasters" className="TAMURM_YT" src="https://www.youtube.com/embed/U1AJqZkFVnw"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen>
+			</iframe>
+		</p>
 
 		<div className="h2">Chess</div>
 		<div className="chess">

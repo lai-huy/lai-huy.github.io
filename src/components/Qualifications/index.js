@@ -70,4 +70,4 @@ const Qualifications = () => {
     </>);
 };
 
-export default Qualifications;;
+export default Qualifications;
