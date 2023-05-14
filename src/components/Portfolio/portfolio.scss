@@ -19,20 +19,10 @@ div.skyblock {
 	p {
 		text-align: center;
 		font-size: 18pt;
-		display: flex;
-		align-items: center;
 		margin: 0;
 
 		&.chess {
 			font-size: 24pt;
-		}
-
-		&.sb {
-			font-size: 18pt;
-		}
-
-		&.tamu_rm {
-			font-size: 18pt;
 		}
 	}
 }
@@ -45,6 +35,8 @@ header.portfolio {
 }
 
 iframe.TAMURM_YT {
-	width: 50%;
 	height: 580px;
+	margin-left: 60px;
+	text-align: center;
+	width: 70%;
 }
