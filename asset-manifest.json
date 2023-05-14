@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1bf5fff5.css",
-    "main.js": "/static/js/main.26c3324d.js",
+    "main.css": "/static/css/main.626f1157.css",
+    "main.js": "/static/js/main.b4559b01.js",
     "static/js/787.c53ffabd.chunk.js": "/static/js/787.c53ffabd.chunk.js",
+    "static/media/RoboMastersFullTeam.jpg": "/static/media/RoboMastersFullTeam.22d9884a59a73e4dfed3.jpg",
     "static/media/RoboMastersSimulation.jpg": "/static/media/RoboMastersSimulation.6a4af06156fbe42e8571.jpg",
+    "static/media/SkyBlock.jpg": "/static/media/SkyBlock.db52bab7a67ce96d6880.jpg",
+    "static/media/CLS.jpg": "/static/media/CLS.5cfc02884f28b2472c7a.jpg",
+    "static/media/Austin Parks and Rec.png": "/static/media/Austin Parks and Rec.7cac403c4b2c2296366d.png",
     "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
     "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/Cpp Logo.svg": "/static/media/Cpp Logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/index.html",
-    "main.1bf5fff5.css.map": "/static/css/main.1bf5fff5.css.map",
-    "main.26c3324d.js.map": "/static/js/main.26c3324d.js.map",
+    "main.626f1157.css.map": "/static/css/main.626f1157.css.map",
+    "main.b4559b01.js.map": "/static/js/main.b4559b01.js.map",
     "787.c53ffabd.chunk.js.map": "/static/js/787.c53ffabd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bf5fff5.css",
-    "static/js/main.26c3324d.js"
+    "static/css/main.626f1157.css",
+    "static/js/main.b4559b01.js"
   ]
 }
