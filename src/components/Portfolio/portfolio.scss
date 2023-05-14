@@ -1,19 +1,40 @@
-div.chess {
-	margin-left: 60px;
-}
-
 div.h2 {
 	text-align: center;
 	margin: 20px;
 	font-size: 38pt;
 }
 
-div.robomasters {
-	margin-left: 60px;
-}
-
+div.chess,
+div.robomasters,
 div.skyblock {
+	display: flex;
+	align-items: center;
 	margin-left: 60px;
+
+	img.left_wrap {
+		margin: 5pt;
+		width: 33%;
+	}
+
+	p {
+		text-align: center;
+		font-size: 18pt;
+		display: flex;
+		align-items: center;
+		margin: 0;
+
+		&.chess {
+			font-size: 24pt;
+		}
+
+		&.sb {
+			font-size: 18pt;
+		}
+
+		&.tamu_rm {
+			font-size: 18pt;
+		}
+	}
 }
 
 header.portfolio {
@@ -26,27 +47,4 @@ header.portfolio {
 iframe.TAMURM_YT {
 	width: 50%;
 	height: 580px;
-}
-
-img.left_wrap {
-	float: right;
-	margin: 5pt;
-	width: 33%;
-}
-
-p {
-	&.chess {
-		text-align: center;
-		font-size: 24pt;
-	}
-
-	&.sb {
-		text-align: center;
-		font-size: 20pt;
-	}
-
-	&.tamu_rm {
-		text-align: center;
-		font-size: 20pt;
-	}
 }

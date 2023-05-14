@@ -1,0 +1,26 @@
+div.cls,
+div.lifeguard {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+header.service {
+    text-align: center;
+    font-weight: bold;
+    font-size: 48pt;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img.left_wrap {
+    float: right;
+    margin: 5pt;
+    width: 33%;
+}
+
+p.cls,
+p.lifeguard {
+    text-align: left;
+    font-size: 18pt;
+    margin: 20px;
+}

@@ -17,9 +17,7 @@ const Portfolio = () => {
 
         <div className="robomasters">
             <div className="h2">TAMU RoboMasters</div>
-            <div>
-                <img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
-            </div>
+            <img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
             <p className="tamu_rm">
                 A project that I have been apart of is the Simulation subteam.
                 This subteam was a part of the Computer Vision team, which was, intern, part of TAMU RoboMasters.<br />
@@ -61,11 +59,9 @@ const Portfolio = () => {
 
         <div className="chess">
             <div className="h2">Chess</div>
-            <div>
-                <img className="left_wrap"
-                    src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
-                    alt="Chess" />
-            </div>
+            <img className="left_wrap"
+                src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
+                alt="Chess" />
             <p className="chess">
                 A personal project I developed was a Java Chess program.<br />
                 This project assisted me in learning the build-in Java GUI Libraries such as Java Swing.<br />
@@ -93,9 +89,7 @@ const Portfolio = () => {
 
         <div className="skyblock">
             <div className="h2">SkyBlock Minecraft Mod</div>
-            <div>
-                <img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel Skyblock" />
-            </div>
+            <img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel Skyblock" />
             <p className="sb">
                 Another personal project I developed was a Minecraft Mod.<br />
                 This projects attempts to emulate the functionality seen in Hypixel's SkyBlock.<br />
