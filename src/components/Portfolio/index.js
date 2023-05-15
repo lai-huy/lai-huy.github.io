@@ -15,8 +15,9 @@ const Portfolio = () => {
 	return (<>
 		<header className="portfolio"><h1>Technical Portfolio</h1></header>
 
-		<div className="h2">TAMU RoboMasters</div>
-		<div className="robomasters">
+		<a href="#robomasters" class="skip-link">Skip to TAMU RoboMasters</a>
+		<div id="robomasters">
+			<div className="h2" role="heading" aria-level="2">TAMU RoboMasters</div>
 			<img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
 			<p className="tamu_rm">
 				A project that I have been apart of is the Simulation subteam.
@@ -33,6 +34,7 @@ const Portfolio = () => {
 				Learn more about TAMU RoboMasters <Link to={tamu_rm}>here</Link>.
 			</p>
 		</div>
+
 		<p className="tamurm_yt">
 			<iframe title="About TAMU RoboMasters" className="TAMURM_YT" src="https://www.youtube.com/embed/U1AJqZkFVnw"
 				frameborder="0"
@@ -41,8 +43,9 @@ const Portfolio = () => {
 			</iframe>
 		</p>
 
-		<div className="h2">Chess</div>
-		<div className="chess">
+		<a href="#chess" class="skip-link">Skip to chess</a>
+		<div id="chess">
+			<div className="h2" role="heading" aria-level="2">Chess</div>
 			<img className="left_wrap"
 				src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
 				alt="Chess" />
@@ -65,9 +68,10 @@ const Portfolio = () => {
 			</p>
 		</div>
 
-		<div className="h2">SkyBlock Minecraft Mod</div>
-		<div className="skyblock">
-			<img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel Skyblock" />
+		<a href="#skyblock" class="skip-link">Skip to Hypixel SkyBlock</a>
+		<div id="skyblock">
+			<div className="h2" role="heading" aria-level="2">SkyBlock Minecraft Mod</div>
+			<img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel SkyBlock" />
 			<p className="sb">
 				Another personal project I developed was a Minecraft Mod.<br />
 				This projects attempts to emulate the functionality seen in Hypixel's SkyBlock.<br />

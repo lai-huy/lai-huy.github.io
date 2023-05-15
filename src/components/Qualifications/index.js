@@ -7,8 +7,9 @@ const Qualifications = () => {
     return (<>
         <header className="qualifications"><h1>Technical Qualifications</h1></header>
 
-        <div className="h2">Resume</div>
-        <div className="resume">
+        <a href="#resume" class="skip-link">Skip to Resume</a>
+        <div id="resume">
+            <div className="h2" role="heading" aria-level="2">Resume</div>
             <p className="resume">
                 <iframe title="resume" className="resume" src="https://drive.google.com/file/d/1RPcuAaha0OvmkaqKLNcUz6VR9HenJvZ0/preview"
                     allow="autoplay"></iframe>
@@ -21,8 +22,9 @@ const Qualifications = () => {
             </p>
         </div>
 
-        <div className="skills">
-            <div className="h2">Technical Skills</div>
+        <a href="#skills" class="skip-link">Skip to Skills</a>
+        <div id="skills">
+            <div className="h2" role="heading" aria-level="2">Technical Skills</div>
             <p className="qualifications">
                 Software Engineering<br />
                 Software Development<br />
@@ -40,8 +42,9 @@ const Qualifications = () => {
             </p>
         </div>
 
-        <div className="interest">
-            <div className="h2">Technical Interests</div>
+        <a href="#interest" class="skip-link">Skip to Interests</a>
+        <div id="interest">
+            <div className="h2" role="heading" aria-level="2">Technical Interests</div>
             <p className="qualifications">
                 I am interested in learning more about Cybersecurity.<br />
                 As more of our world becomes digitized, technology and its capabilities will become increasingly

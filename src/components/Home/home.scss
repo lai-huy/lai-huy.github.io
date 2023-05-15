@@ -14,6 +14,21 @@ a {
 	&:visited {
 		color: #500000;
 	}
+
+	&.skip-link {
+		position: fixed;
+		top: -40px;
+		left: 0;
+		background-color: #fff;
+		color: #000;
+		padding: 10px;
+		z-index: 100;
+
+		&:focus,
+		&:hover {
+			top: 0;
+		}
+	}
 }
 
 button.btn-hover {
@@ -60,20 +75,23 @@ button.btn-hover {
 
 div {
 	&.about {
-		text-align: center;
 		color: #25283D;
 		font-size: 38pt;
+		text-align: center;
 	}
 
 	&#about {
+		color: #25283D;
 		text-align: center;
 	}
 
 	&#prog {
+		color: #25283D;
 		text-align: center;
 	}
 
 	&#social {
+		color: #25283D;
 		text-align: center;
 	}
 }
