@@ -10,7 +10,7 @@ const Sidebar = () => {
 
 	return (<>
 		<div className="nav-bar">
-			<nav className={showNav ? 'mobile-show' : ''} role="navigation">
+			<nav className={showNav ? "mobile-show" : ""} role="navigation">
 				<NavLink activeClassName="active" className="home-link" to="/" onClick={() => setShowNav(false)}>
 					<FontAwesomeIcon icon={faHome} color="#4d4d4e" />
 					<span className="visually-hidden">Home</span>
@@ -30,7 +30,7 @@ const Sidebar = () => {
 				<FontAwesomeIcon onClick={() => setShowNav(false)} icon={faTimes} color="#ffd700" size="3x" className="close-icon" />
 			</nav>
 
-			<ul>
+			<ul role="menu" className="navigation">
 				<li>
 					<a href="https://www.linkedin.com/in/huy-lai-93a2b4211/" target="_blank" rel="noopener noreferrer">
 						<FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-icon" />

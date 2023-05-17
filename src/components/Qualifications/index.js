@@ -1,7 +1,8 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import "./qualifications.scss";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava, faPython, faSass, faReact, faJs, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 import faCpp from "../../assets/images/Cpp Logo.svg";
+import resume from "../../assets/Resume.pdf";
 
 const Qualifications = () => {
     return (<>
@@ -11,14 +12,12 @@ const Qualifications = () => {
         <div id="resume">
             <div className="h2" role="heading" aria-level="2">Resume</div>
             <p className="resume">
-                <iframe title="resume" className="resume" src="https://drive.google.com/file/d/1RPcuAaha0OvmkaqKLNcUz6VR9HenJvZ0/preview"
+                <iframe title="resume" className="resume" src="https://drive.google.com/file/d/18_JxAQ4Iw74NY0gvzzmkNdx1rTX5AY3k/preview"
                     allow="autoplay"></iframe>
             </p>
             <p className="qualifications">
-                Read a more in-depth version of my resume <a href="resume.html">here</a>.<br />
-                If the resume failed to load, download it <a
-                    href="https://drive.google.com/file/d/1RPcuAaha0OvmkaqKLNcUz6VR9HenJvZ0/preview"
-                    download="HuyLaiResume.pdf">here</a>.<br />
+                Read a more in-depth version of my resume <a href="/resume">here</a>.<br />
+                If the resume failed to load, download it <a href={resume} download="HuyLaiResume.pdf">here</a>.<br />
             </p>
         </div>
 

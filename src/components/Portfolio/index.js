@@ -16,8 +16,8 @@ const Portfolio = () => {
 		<header className="portfolio"><h1>Technical Portfolio</h1></header>
 
 		<a href="#robomasters" class="skip-link">Skip to TAMU RoboMasters</a>
+		<div className="h2" role="heading" aria-level="2">TAMU RoboMasters</div>
 		<div id="robomasters">
-			<div className="h2" role="heading" aria-level="2">TAMU RoboMasters</div>
 			<img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
 			<p className="tamu_rm">
 				A project that I have been apart of is the Simulation subteam.
@@ -44,8 +44,8 @@ const Portfolio = () => {
 		</p>
 
 		<a href="#chess" class="skip-link">Skip to chess</a>
+		<div className="h2" role="heading" aria-level="2">Chess</div>
 		<div id="chess">
-			<div className="h2" role="heading" aria-level="2">Chess</div>
 			<img className="left_wrap"
 				src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
 				alt="Chess" />
@@ -69,8 +69,8 @@ const Portfolio = () => {
 		</div>
 
 		<a href="#skyblock" class="skip-link">Skip to Hypixel SkyBlock</a>
+		<div className="h2" role="heading" aria-level="2">SkyBlock Minecraft Mod</div>
 		<div id="skyblock">
-			<div className="h2" role="heading" aria-level="2">SkyBlock Minecraft Mod</div>
 			<img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel SkyBlock" />
 			<p className="sb">
 				Another personal project I developed was a Minecraft Mod.<br />
