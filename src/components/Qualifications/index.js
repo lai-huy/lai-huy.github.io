@@ -1,10 +1,11 @@
-import "./qualifications.scss";
+import {faCss3Alt, faGitAlt, faHtml5, faJava, faJs, faNode, faNpm, faPython, faReact, faSass} from "@fortawesome/free-brands-svg-icons";
+import {faCloudDownload, faDatabase} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faJava, faPython, faSass, faReact, faJs, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
-import faCpp from "../../assets/images/Cpp Logo.svg";
-import resume from "../../assets/Resume.pdf";
 import {Link} from "react-router-dom";
-import {faCloudDownload} from "@fortawesome/free-solid-svg-icons";
+import resume from "../../assets/Resume.pdf";
+import faCpp from "../../assets/images/Cpp Logo.svg";
+import faPostgreSQL from "../../assets/images/PostgreSQL Logo.svg";
+import "./qualifications.scss";
 
 const Qualifications = () => {
     return (<>
@@ -29,14 +30,20 @@ const Qualifications = () => {
             <p className="qualifications">
                 Software Engineering<br />
                 Software Development<br />
-                <FontAwesomeIcon icon={faJava} className="resume" />
                 <img className="svg-inline--fa fa-cpp resume" src={faCpp} alt="c++" />
+                <FontAwesomeIcon icon={faJava} className="resume" />
                 <FontAwesomeIcon icon={faPython} className="resume" />
+                <FontAwesomeIcon icon={faGitAlt} className="resume" />
+                <FontAwesomeIcon icon={faJs} className="resume" />
                 <FontAwesomeIcon icon={faHtml5} className="resume" />
-                <FontAwesomeIcon icon={faCss3} className="resume" />
+                <FontAwesomeIcon icon={faCss3Alt} className="resume" />
                 <FontAwesomeIcon icon={faSass} className="resume" />
                 <FontAwesomeIcon icon={faReact} className="resume" />
-                <FontAwesomeIcon icon={faJs} className="resume" /><br />
+                <FontAwesomeIcon icon={faNode} className="resume" />
+                <FontAwesomeIcon icon={faNpm} className="resume" />
+                <FontAwesomeIcon icon={faDatabase} className="resume" />
+                <img className="svg-inline--fa fa-postgresql resume" src={faPostgreSQL} alt="PostgreSQL" />
+                <br />
                 Teamwork<br />
                 Decision Making<br />
                 Customer Service<br />
