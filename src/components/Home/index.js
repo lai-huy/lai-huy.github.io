@@ -32,7 +32,7 @@ const Home = () => {
 	return (<>
 		<div className="background" role="main">
 			<header className="name"><h1><span className="name">Huy Quang Lai</span></h1></header>
-			<a href="#about" class="skip-link">Skip to about me</a>
+			<a href="#about" className="skip-link">Skip to about me</a>
 			<div className="about" role="heading" aria-level="2"><span className="about">About Me</span></div>
 			<div id="about">
 				<p className="about">
@@ -42,7 +42,7 @@ const Home = () => {
 				</p>
 			</div>
 
-			<a href="#prog" class="skip-link">Skip to Program Requirements</a>
+			<a href="#prog" className="skip-link">Skip to Program Requirements</a>
 			<div id="prog">
 				<p className="prog_req">
 					Learn more about the BS in Computer Science <Link to={bs_cs}>here</Link>.<br />
@@ -51,7 +51,7 @@ const Home = () => {
 				</p>
 			</div>
 
-			<a href="#social" class="skip-link">Skip to my online profiles.</a>
+			<a href="#social" className="skip-link">Skip to my online profiles.</a>
 			<div id="social">
 				<p className="links">
 					<button aria-label="Go to my GitHub profile" className="btn-hover github" onClick={handleGithubClick}>

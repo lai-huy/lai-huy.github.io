@@ -8,10 +8,10 @@ const Service = () => {
     return (<>
         <header className="service"><h1>Community Service</h1></header>
 
-        <a href="#cls" class="skip-link">Skip to Chùa Linh Sơn</a>
+        <a href="#cls" className="skip-link">Skip to Chùa Linh Sơn</a>
         <div id="cls">
             <img className="left_wrap" alt="Chùa Linh Sơn" src={cls} />
-            <p class="cls">
+            <p className="cls">
                 During most of high school, I was entrusted to become a instructor assistant at the local buddhist
                 temple.
                 Here, I assisted the instructors with teaching new students a Traditional Vietnamese Martial Art.
@@ -20,7 +20,7 @@ const Service = () => {
             </p>
         </div>
 
-        <a href="#lifeguard" class="skip-link">Skip to Lifeguarding</a>
+        <a href="#lifeguard" className="skip-link">Skip to Lifeguarding</a>
         <div id="lifeguard">
             <img className="left_wrap" alt="City of Austin Department of Parks and Recreation" src={lifeguard} />
             <p className="lifeguard">

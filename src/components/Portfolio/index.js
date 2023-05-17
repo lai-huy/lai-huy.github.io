@@ -15,7 +15,7 @@ const Portfolio = () => {
 	return (<>
 		<header className="portfolio"><h1>Technical Portfolio</h1></header>
 
-		<a href="#robomasters" class="skip-link">Skip to TAMU RoboMasters</a>
+		<a href="#robomasters" className="skip-link">Skip to TAMU RoboMasters</a>
 		<div className="h2" role="heading" aria-level="2">TAMU RoboMasters</div>
 		<div id="robomasters">
 			<img className="left_wrap" src={RoboMastersFullTeam} alt="TAMU RoboMasters" />
@@ -43,7 +43,7 @@ const Portfolio = () => {
 			</iframe>
 		</p>
 
-		<a href="#chess" class="skip-link">Skip to chess</a>
+		<a href="#chess" className="skip-link">Skip to chess</a>
 		<div className="h2" role="heading" aria-level="2">Chess</div>
 		<div id="chess">
 			<img className="left_wrap"
@@ -68,7 +68,7 @@ const Portfolio = () => {
 			</p>
 		</div>
 
-		<a href="#skyblock" class="skip-link">Skip to Hypixel SkyBlock</a>
+		<a href="#skyblock" className="skip-link">Skip to Hypixel SkyBlock</a>
 		<div className="h2" role="heading" aria-level="2">SkyBlock Minecraft Mod</div>
 		<div id="skyblock">
 			<img className="left_wrap" src={SkyBlock} width="33%" alt="Hypixel SkyBlock" />

@@ -1,7 +1,6 @@
 import "./resume.scss";
 import tamu_rm from "../../assets/images/TAMU RM Logo.png";
 import lifeguard from "../../assets/images/Austin Parks and Rec.png";
-import resume from "../../assets/Resume.pdf";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 

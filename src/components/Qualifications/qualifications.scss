@@ -17,6 +17,13 @@ iframe.resume {
     height: 560px;
 }
 
+img.svg-inline--fa.resume,
+svg.svg-inline--fa.resume {
+    height: 100px;
+    padding: 5px;
+    width: 100px;
+}
+
 p.resume {
     text-align: center;
 }

@@ -3,12 +3,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faJava, faPython, faSass, faReact, faJs, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons";
 import faCpp from "../../assets/images/Cpp Logo.svg";
 import resume from "../../assets/Resume.pdf";
+import {Link} from "react-router-dom";
+import {faCloudDownload} from "@fortawesome/free-solid-svg-icons";
 
 const Qualifications = () => {
     return (<>
         <header className="qualifications"><h1>Technical Qualifications</h1></header>
 
-        <a href="#resume" class="skip-link">Skip to Resume</a>
+        <a href="#resume" className="skip-link">Skip to Resume</a>
         <div id="resume">
             <div className="h2" role="heading" aria-level="2">Resume</div>
             <p className="resume">
@@ -16,32 +18,32 @@ const Qualifications = () => {
                     allow="autoplay"></iframe>
             </p>
             <p className="qualifications">
-                Read a more in-depth version of my resume <a href="/resume">here</a>.<br />
-                If the resume failed to load, download it <a href={resume} download="HuyLaiResume.pdf">here</a>.<br />
+                Read a more in-depth version of my resume <Link to="/resume">here</Link>.<br />
+                If the resume failed to load, download it <a href={resume} download="HuyLaiResume.pdf"><FontAwesomeIcon icon={faCloudDownload} /></a>.<br />
             </p>
         </div>
 
-        <a href="#skills" class="skip-link">Skip to Skills</a>
+        <a href="#skills" className="skip-link">Skip to Skills</a>
         <div id="skills">
             <div className="h2" role="heading" aria-level="2">Technical Skills</div>
             <p className="qualifications">
                 Software Engineering<br />
                 Software Development<br />
-                <FontAwesomeIcon icon={faJava} />
-                <img className="svg-inline--fa fa-cpp" src={faCpp} alt="c++" />
-                <FontAwesomeIcon icon={faPython} />
-                <FontAwesomeIcon icon={faHtml5} />
-                <FontAwesomeIcon icon={faCss3} />
-                <FontAwesomeIcon icon={faSass} />
-                <FontAwesomeIcon icon={faReact} />
-                <FontAwesomeIcon icon={faJs} /><br />
+                <FontAwesomeIcon icon={faJava} className="resume" />
+                <img className="svg-inline--fa fa-cpp resume" src={faCpp} alt="c++" />
+                <FontAwesomeIcon icon={faPython} className="resume" />
+                <FontAwesomeIcon icon={faHtml5} className="resume" />
+                <FontAwesomeIcon icon={faCss3} className="resume" />
+                <FontAwesomeIcon icon={faSass} className="resume" />
+                <FontAwesomeIcon icon={faReact} className="resume" />
+                <FontAwesomeIcon icon={faJs} className="resume" /><br />
                 Teamwork<br />
                 Decision Making<br />
                 Customer Service<br />
             </p>
         </div>
 
-        <a href="#interest" class="skip-link">Skip to Interests</a>
+        <a href="#interest" className="skip-link">Skip to Interests</a>
         <div id="interest">
             <div className="h2" role="heading" aria-level="2">Technical Interests</div>
             <p className="qualifications">

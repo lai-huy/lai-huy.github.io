@@ -1,9 +1,9 @@
-import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
-import {faBars, faBellConcierge, faGraduationCap, faHome, faSuitcase, faTimes} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {useState} from 'react';
-import {NavLink} from 'react-router-dom';
-import './navigation.scss';
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faBars, faBellConcierge, faGraduationCap, faHome, faSuitcase, faTimes} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {useState} from "react";
+import {NavLink} from "react-router-dom";
+import "./navigation.scss";
 
 const Sidebar = () => {
 	const [showNav, setShowNav] = useState(false);
@@ -11,19 +11,19 @@ const Sidebar = () => {
 	return (<>
 		<div className="nav-bar">
 			<nav className={showNav ? "mobile-show" : ""} role="navigation">
-				<NavLink activeClassName="active" className="home-link" to="/" onClick={() => setShowNav(false)}>
+				<NavLink activeclassname="active" className="home-link" to="/" onClick={() => setShowNav(false)}>
 					<FontAwesomeIcon icon={faHome} color="#4d4d4e" />
 					<span className="visually-hidden">Home</span>
 				</NavLink>
-				<NavLink activeClassName="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
+				<NavLink activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
 					<FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
 					<span className="visually-hidden">Portfolio</span>
 				</NavLink>
-				<NavLink activeClassName="active" className="qualifications-link" to="/qualifications" onClick={() => setShowNav(false)}>
+				<NavLink activeclassname="active" className="qualifications-link" to="/qualifications" onClick={() => setShowNav(false)}>
 					<FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
 					<span className="visually-hidden">Qualifications</span>
 				</NavLink>
-				<NavLink activeClassName="active" className="service-link" to="/service" onClick={() => setShowNav(false)}>
+				<NavLink activeclassname="active" className="service-link" to="/service" onClick={() => setShowNav(false)}>
 					<FontAwesomeIcon icon={faBellConcierge} color="#4d4d4e" />
 					<span className="visually-hidden">Service</span>
 				</NavLink>
