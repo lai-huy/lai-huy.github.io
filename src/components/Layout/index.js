@@ -1,16 +1,18 @@
-import {Outlet} from 'react-router-dom';
+import { Outlet } from "react-router-dom";
 import Navigation from "../Navigation/";
-import './index.scss';
+import "./index.scss";
 
 const Layout = () => {
-    return (<>
-        <div className="App">
-            <Navigation />
-            <div className="page">
-                <Outlet />
-            </div>
-        </div>
-    </>);
+	return (
+		<>
+			<div className="App">
+				<Navigation />
+				<div className="page">
+					<Outlet />
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default Layout;
