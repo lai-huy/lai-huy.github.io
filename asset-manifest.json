@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.eb22b91d.css",
-    "main.js": "/static/js/main.d79c9be7.js",
+    "main.css": "/static/css/main.68f5e5f6.css",
+    "main.js": "/static/js/main.9f4986d8.js",
     "static/js/787.c53ffabd.chunk.js": "/static/js/787.c53ffabd.chunk.js",
     "static/media/RoboMastersFullTeam.jpg": "/static/media/RoboMastersFullTeam.22d9884a59a73e4dfed3.jpg",
     "static/media/RoboMastersSimulation.jpg": "/static/media/RoboMastersSimulation.6a4af06156fbe42e8571.jpg",
     "static/media/SkyBlock.jpg": "/static/media/SkyBlock.db52bab7a67ce96d6880.jpg",
+    "static/media/AP Scholar with Distinction Award.pdf": "/static/media/AP Scholar with Distinction Award.85bdde8059e52e06288f.pdf",
     "static/media/TAMU RM Logo.png": "/static/media/TAMU RM Logo.4198822dc453e317d6fd.png",
+    "static/media/FALL 2022 Distinguished Cirtificate.pdf": "/static/media/FALL 2022 Distinguished Cirtificate.ca050779ae9c8c8005eb.pdf",
     "static/media/CLS.jpg": "/static/media/CLS.5cfc02884f28b2472c7a.jpg",
     "static/media/Austin Parks and Rec.png": "/static/media/Austin Parks and Rec.7cac403c4b2c2296366d.png",
     "static/media/Resume.pdf": "/static/media/Resume.c41276ce52e012dca619.pdf",
@@ -18,12 +20,12 @@
     "static/media/PostgreSQL Logo.svg": "/static/media/PostgreSQL Logo.29aef66790dafa021ec4c36bbd59e370.svg",
     "static/media/Cpp Logo.svg": "/static/media/Cpp Logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/index.html",
-    "main.eb22b91d.css.map": "/static/css/main.eb22b91d.css.map",
-    "main.d79c9be7.js.map": "/static/js/main.d79c9be7.js.map",
+    "main.68f5e5f6.css.map": "/static/css/main.68f5e5f6.css.map",
+    "main.9f4986d8.js.map": "/static/js/main.9f4986d8.js.map",
     "787.c53ffabd.chunk.js.map": "/static/js/787.c53ffabd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb22b91d.css",
-    "static/js/main.d79c9be7.js"
+    "static/css/main.68f5e5f6.css",
+    "static/js/main.9f4986d8.js"
   ]
 }
