@@ -79,14 +79,14 @@ const Resume = () => {
 				<br />
 				<div className="award-container">
 					<iframe
+						title="FALL 2022 Distinguished Cirtificate"
 						className="award"
 						src={distinguished}
-						title="FALL 2022 Distinguished Cirtificate"
 					/>
 					<iframe
+						title="AP Scholar with Distinction Award"
 						className="award"
 						src={apScholar}
-						title="AP Scholar with Distinction Award"
 					/>
 				</div>
 			</p>
@@ -146,36 +146,42 @@ const Resume = () => {
 			<div className="h3" role="heading" aria-level="3">
 				Personal Projects
 			</div>
-			<ul className="resume">
-				<li>Basic machine learning algorithms from Udemy</li>
-				<li>Java code for Chess and Minesweeper games.</li>
-			</ul>
-			<a href="https://github.com/lai-huy-075">
-				<FontAwesomeIcon icon={faGithub} />
-			</a>
+			<p className="resume">
+				<ul>
+					<li>Basic machine learning algorithms from Udemy</li>
+					<li>Java code for Chess and Minesweeper games.</li>
+				</ul>
+				<a href="https://github.com/lai-huy-075">
+					<FontAwesomeIcon icon={faGithub} className="resume" />
+				</a>
+			</p>
 
 			<div className="h3" role="heading" aria-level="3">
 				School code Repositories
 			</div>
-			<ul className="resume">
-				<li>Includes code on Data Structures and Algorithms</li>
-				<li>Works on Simulation Team with TAMU RoboMasters</li>
-			</ul>
-			<a href="https://github.com/lai-huy">
-				<FontAwesomeIcon icon={faGithub} />
-			</a>
+			<p className="resume">
+				<ul>
+					<li>Includes code on Data Structures and Algorithms</li>
+					<li>Works on Simulation Team with TAMU RoboMasters</li>
+				</ul>
+				<a href="https://github.com/lai-huy">
+					<FontAwesomeIcon icon={faGithub} className="resume" />
+				</a>
+			</p>
 
 			<div className="h3" role="heading" aria-level="3">
 				CyberSecurity Summer Camp
 			</div>
-			<p className="resume">University of Texas at Austin, Summer 2018</p>
-			<ul className="resume">
-				<li>Exposure to real-world tools and techniques.</li>
-				<li>
-					Knowledge gained on vulnerabilities and countermeasures for
-					current security and privacy.
-				</li>
-			</ul>
+			<p className="resume">
+				University of Texas at Austin, Summer 2018
+				<ul>
+					<li>Exposure to real-world tools and techniques.</li>
+					<li>
+						Knowledge gained on vulnerabilities and countermeasures
+						for current security and privacy.
+					</li>
+				</ul>
+			</p>
 		</>
 	);
 };
