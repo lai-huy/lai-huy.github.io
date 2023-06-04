@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 import resume from "../../assets/Resume.pdf";
 import faCpp from "../../assets/images/Cpp Logo.svg";
 import faPostgreSQL from "../../assets/images/PostgreSQL Logo.svg";
+import faEclipse from "../../assets/images/Eclipse Logo.svg";
+import faVSCode from "../../assets/images/VS Code Logo.svg";
 import "./qualifications.scss";
 
 const Qualifications = () => {
@@ -86,6 +88,22 @@ const Qualifications = () => {
 					<br />
 					Customer Service
 					<br />
+				</p>
+
+				<div className="h2" role="heading" aria-level="2">
+					Integrated Development Environments
+				</div>
+				<p className="qualifications">
+					<img
+						className="svg-inline--fa fa-eclipse resume"
+						src={faEclipse}
+						alt="Eclipse IDE"
+					/>
+					<img
+						className="svg-inline--fa fa-vscode resume"
+						src={faVSCode}
+						alt="Visual Studio Code"
+					/>
 				</p>
 			</div>
 
