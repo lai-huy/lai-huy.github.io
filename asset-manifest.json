@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef6d82be.css",
-    "main.js": "/static/js/main.7fc1c2b3.js",
+    "main.css": "/static/css/main.154609c9.css",
+    "main.js": "/static/js/main.cd81c9ac.js",
     "static/js/787.c53ffabd.chunk.js": "/static/js/787.c53ffabd.chunk.js",
     "static/media/RoboMastersFullTeam.jpg": "/static/media/RoboMastersFullTeam.22d9884a59a73e4dfed3.jpg",
     "static/media/RoboMastersSimulation.jpg": "/static/media/RoboMastersSimulation.6a4af06156fbe42e8571.jpg",
@@ -18,14 +18,16 @@
     "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "static/media/PostgreSQL Logo.svg": "/static/media/PostgreSQL Logo.29aef66790dafa021ec4c36bbd59e370.svg",
+    "static/media/VS Code Logo.svg": "/static/media/VS Code Logo.5f6c87ee85944898b6682f2a2a13df91.svg",
+    "static/media/Eclipse Logo.svg": "/static/media/Eclipse Logo.930aaf4f6a57da34c5080476c4cd2612.svg",
     "static/media/Cpp Logo.svg": "/static/media/Cpp Logo.2441702dffa95ca3c92c20816e386640.svg",
     "index.html": "/index.html",
-    "main.ef6d82be.css.map": "/static/css/main.ef6d82be.css.map",
-    "main.7fc1c2b3.js.map": "/static/js/main.7fc1c2b3.js.map",
+    "main.154609c9.css.map": "/static/css/main.154609c9.css.map",
+    "main.cd81c9ac.js.map": "/static/js/main.cd81c9ac.js.map",
     "787.c53ffabd.chunk.js.map": "/static/js/787.c53ffabd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef6d82be.css",
-    "static/js/main.7fc1c2b3.js"
+    "static/css/main.154609c9.css",
+    "static/js/main.cd81c9ac.js"
   ]
 }
