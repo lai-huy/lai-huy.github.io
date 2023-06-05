@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio/";
 import Qualifications from "./components/Qualifications";
 import Service from "./components/Service";
 import Resume from "./components/Resume";
+import Keys from "./components/Keys";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					/>
 					<Route path="/service" element={<Service />} />
 					<Route path="/resume" element={<Resume />} />
+					<Route path="/keys" element={<Keys />} />
 				</Route>
 			</Routes>
 		</>
