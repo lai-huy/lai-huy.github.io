@@ -4,6 +4,7 @@ import {
 	faBellConcierge,
 	faGraduationCap,
 	faHome,
+	faKey,
 	faSuitcase,
 	faTimes,
 } from "@fortawesome/free-solid-svg-icons";
@@ -56,6 +57,14 @@ const Sidebar = () => {
 							color="#4d4d4e"
 						/>
 						<span className="visually-hidden">Service</span>
+					</NavLink>
+					<NavLink
+						activeclassname="active"
+						className="keys-link"
+						to="/keys"
+						onClick={() => setShowNav(false)}>
+						<FontAwesomeIcon icon={faKey} color="#4d4d4e" />
+						<span className="visually-hidden">Keys</span>
 					</NavLink>
 					<FontAwesomeIcon
 						onClick={() => setShowNav(false)}
