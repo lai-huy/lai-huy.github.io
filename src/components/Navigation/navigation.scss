@@ -111,6 +111,12 @@ ul.navigation {
 			font-size: 15px;
 			line-height: 16px;
 			color: #4d4d4e;
+
+			svg.github {
+				g {
+					fill: #ffd700;
+				}
+			}
 		}
 
 		&:hover {

@@ -1,13 +1,10 @@
-import React from "react";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import {
-	faBars,
 	faBellConcierge,
 	faGraduationCap,
 	faHome,
 	faKey,
 	faSuitcase,
-	faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
@@ -60,13 +57,6 @@ const Sidebar = () => {
 					<FontAwesomeIcon icon={faKey} color="#4d4d4e" />
 					<span className="visually-hidden">Keys</span>
 				</NavLink>
-				<FontAwesomeIcon
-					onClick={() => setShowNav(false)}
-					icon={faTimes}
-					color="#ffd700"
-					size="3x"
-					className="close-icon"
-				/>
 			</nav>
 
 			<ul role="menu" className="navigation">
@@ -86,18 +76,11 @@ const Sidebar = () => {
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<GithubOriginal size="32" color="" />
+						<GithubOriginal size="32" className="devicon github" />
 						<span className="visually-hidden">GitHub</span>
 					</a>
 				</li>
 			</ul>
-			<FontAwesomeIcon
-				onClick={() => setShowNav(true)}
-				icon={faBars}
-				color="#ffd700"
-				size="3x"
-				className="hamburger-icon"
-			/>
 		</div>
 	);
 };

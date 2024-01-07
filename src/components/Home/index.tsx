@@ -79,7 +79,7 @@ const Home = () => {
 						className="btn-hover github"
 						onClick={handleGithubClick}
 					>
-						<GithubOriginal size="100" />
+						<GithubOriginal size="85" className="devicon github" />
 					</button>
 
 					<button
@@ -87,7 +87,7 @@ const Home = () => {
 						className="btn-hover linkedin"
 						onClick={handleLinkedinClick}
 					>
-						<LinkedinOriginal size="100" />
+						<LinkedinOriginal size="85" className="devicon" />
 					</button>
 
 					<button

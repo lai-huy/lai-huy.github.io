@@ -1,12 +1,14 @@
-div.award-container {
-	display: flex;
-	flex-wrap: nowrap;
-}
+div {
+	&.award-container {
+		display: flex;
+		flex-wrap: nowrap;
+	}
 
-div.h3 {
-	font-family: "Ubuntu", sans-serif;
-	font-size: 28pt;
-	margin-left: 80px;
+	&.h3 {
+		font-family: "Ubuntu", sans-serif;
+		font-size: 28pt;
+		margin-left: 80px;
+	}
 }
 
 header.resume {
@@ -22,22 +24,26 @@ iframe.award {
 	margin-right: 10px;
 }
 
-img.lifeguard,
-img.tamu_rm {
-	width: 33%;
-	margin-left: 60px;
+img {
+	&.lifeguard,
+	&.tamu_rm {
+		width: 33%;
+		margin-left: 60px;
+	}
 }
 
-p.location {
-	font-family: "Ubuntu", sans-serif;
-	font-size: 24pt;
-	text-align: center;
-}
+p {
+	&.location {
+		font-family: "Ubuntu", sans-serif;
+		font-size: 24pt;
+		text-align: center;
+	}
 
-p.resume {
-	font-size: 18pt;
-	margin-left: 80px;
-	text-align: left;
+	&.resume {
+		font-size: 18pt;
+		margin-left: 80px;
+		text-align: left;
+	}
 }
 
 svg.resume {
@@ -45,11 +51,13 @@ svg.resume {
 	width: 100px;
 }
 
-ul.classes {
-	list-style-type: square;
-}
+ul {
+	&.classes {
+		list-style-type: square;
+	}
 
-ul.resume {
-	font-size: 18pt;
-	margin-left: 60px;
+	&.resume {
+		font-size: 18pt;
+		margin-left: 60px;
+	}
 }

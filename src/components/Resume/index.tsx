@@ -49,28 +49,24 @@ const Resume = () => {
 			<div className="h2" role="heading" aria-level={2}>
 				Courses
 			</div>
-			<p className="resume">
-				<ul className="classes">
-					<li>CSCE 703: Cybersecurity Risk</li>
-					<li>CSCE 629: Analysis of Algorithms</li>
-					<li>CSCE 606: Software Engineering</li>
-					<li>CSCE 481: Seminar</li>
-					<li>CSCE 421: Machine Learning</li>
-					<li>CSCE 420: Artificial Intelligence</li>
-					<li>CSCE 412: Cloud Computing</li>
-					<li>CSCE 402: Law and Policy in Cybersecurity</li>
-					<li>CSCE 315: Programmng Studio</li>
-					<li>CSCE 314: Programming Languages</li>
-					<li>CSCE 313: Introduction to Computer Systems</li>
-					<li>CSCE 312: Computer Organization</li>
-					<li>CSCE 222: Discrete Structures for Computing</li>
-					<li>CSCE 221: Data Structures and Algorithms</li>
-					<li>CSCE 181: Introduction to Computing</li>
-					<li>
-						CSCE 121: Introduction to Program Design and Concepts
-					</li>
-				</ul>
-			</p>
+			<ul className="classes">
+				<li>CSCE 703: Cybersecurity Risk</li>
+				<li>CSCE 629: Analysis of Algorithms</li>
+				<li>CSCE 606: Software Engineering</li>
+				<li>CSCE 481: Seminar</li>
+				<li>CSCE 421: Machine Learning</li>
+				<li>CSCE 420: Artificial Intelligence</li>
+				<li>CSCE 412: Cloud Computing</li>
+				<li>CSCE 402: Law and Policy in Cybersecurity</li>
+				<li>CSCE 315: Programmng Studio</li>
+				<li>CSCE 314: Programming Languages</li>
+				<li>CSCE 313: Introduction to Computer Systems</li>
+				<li>CSCE 312: Computer Organization</li>
+				<li>CSCE 222: Discrete Structures for Computing</li>
+				<li>CSCE 221: Data Structures and Algorithms</li>
+				<li>CSCE 181: Introduction to Computing</li>
+				<li>CSCE 121: Introduction to Program Design and Concepts</li>
+			</ul>
 
 			<div className="h3" role="heading" aria-level={3}>
 				Honors and Awards
@@ -78,24 +74,24 @@ const Resume = () => {
 			<p className="resume">
 				Computer Science Honors
 				<br />
-				<div className="award-container">
-					<iframe
-						title="FALL 2022 Distinguished Cirtificate"
-						className="award"
-						src="../../assets/fall22.pdf"
-					/>
-					<iframe
-						title="SPRING 2023 Distinguished Cirtificate"
-						className="award"
-						src="../../assets/spring23.pdf"
-					/>
-					<iframe
-						title="AP Scholar with Distinction Award"
-						className="award"
-						src="../../assets/ap_scholar.pdf"
-					/>
-				</div>
 			</p>
+			<div className="award-container">
+				<iframe
+					title="FALL 2022 Distinguished Cirtificate"
+					className="award"
+					src={process.env.PUBLIC_URL + "/assets/fall22.pdf"}
+				/>
+				<iframe
+					title="SPRING 2023 Distinguished Cirtificate"
+					className="award"
+					src={process.env.PUBLIC_URL + "assets/spring23.pdf"}
+				/>
+				<iframe
+					title="AP Scholar with Distinction Award"
+					className="award"
+					src={process.env.PUBLIC_URL + "/assets/ap_scholar.pdf"}
+				/>
+			</div>
 
 			<div className="h3" role="heading" aria-level={3}>
 				Clubs
@@ -103,7 +99,10 @@ const Resume = () => {
 			<p className="resume">
 				<a href="https://tamurobomasters.com/">
 					<img
-						src="../../assets/images/TAMU RM Logo.png"
+						src={
+							process.env.PUBLIC_URL +
+							"/assets/images/TAMU RM Logo.png"
+						}
 						alt="TAMU RoboMasters"
 						className="tamu_rm"
 					/>
@@ -141,7 +140,10 @@ const Resume = () => {
 				<li>Coordinated response to emergencies.</li>
 			</ul>
 			<img
-				src="../../assets/images/Austin Parks and Rec.png"
+				src={
+					process.env.PUBLIC_URL +
+					"/assets/images/Austin Parks and Rec.png"
+				}
 				alt="City of Austin Parks and Recreation"
 				className="lifeguard"
 			/>
@@ -178,16 +180,14 @@ const Resume = () => {
 			<div className="h3" role="heading" aria-level={3}>
 				CyberSecurity Summer Camp
 			</div>
-			<p className="resume">
-				University of Texas at Austin, Summer 2018
-				<ul>
-					<li>Exposure to real-world tools and techniques.</li>
-					<li>
-						Knowledge gained on vulnerabilities and countermeasures
-						for current security and privacy.
-					</li>
-				</ul>
-			</p>
+			<p className="resume">University of Texas at Austin, Summer 2018</p>
+			<ul>
+				<li>Exposure to real-world tools and techniques.</li>
+				<li>
+					Knowledge gained on vulnerabilities and countermeasures for
+					current security and privacy.
+				</li>
+			</ul>
 		</>
 	);
 };

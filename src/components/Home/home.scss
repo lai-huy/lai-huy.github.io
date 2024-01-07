@@ -164,13 +164,21 @@ p {
 	}
 
 	&.links {
-		text-align: center;
+		display: inline-flex;
 		margin-top: 350px;
 
-		svg.svg-inline--fa {
-			height: 85px;
-			width: 85px;
-			text-decoration: none;
+		svg {
+			&.github {
+				g {
+					fill: #ffd700;
+				}
+			}
+
+			&.svg-inline--fa {
+				height: 85px;
+				width: 85px;
+				text-decoration: none;
+			}
 		}
 	}
 }
