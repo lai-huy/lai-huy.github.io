@@ -4,6 +4,7 @@ div.h2 {
 	font-size: 38pt;
 }
 
+div#bvcog,
 div#chess,
 div#robomasters,
 div#skyblock {
@@ -12,6 +13,7 @@ div#skyblock {
 	margin-left: 60px;
 
 	img.left_wrap {
+        float: left;
 		margin: 5pt;
 		width: 33%;
 	}
@@ -20,6 +22,10 @@ div#skyblock {
 		text-align: center;
 		font-size: 18pt;
 		margin: 0;
+
+        &.bvcog {
+            font-size: 20pt;
+        }
 
 		&.chess {
 			font-size: 24pt;
@@ -34,13 +40,13 @@ header.portfolio {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-iframe.TAMURM_YT {
+iframe.youtube {
 	height: 580px;
 	margin-left: 60px;
 	text-align: center;
 	width: 70%;
 }
 
-p.tamurm_yt {
+p.youtube {
 	text-align: center;
 }
