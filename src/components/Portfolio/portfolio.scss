@@ -1,0 +1,46 @@
+div.h2 {
+	text-align: center;
+	margin: 20px;
+	font-size: 38pt;
+}
+
+div#chess,
+div#robomasters,
+div#skyblock {
+	display: flex;
+	align-items: center;
+	margin-left: 60px;
+
+	img.left_wrap {
+		margin: 5pt;
+		width: 33%;
+	}
+
+	p {
+		text-align: center;
+		font-size: 18pt;
+		margin: 0;
+
+		&.chess {
+			font-size: 24pt;
+		}
+	}
+}
+
+header.portfolio {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+iframe.TAMURM_YT {
+	height: 580px;
+	margin-left: 60px;
+	text-align: center;
+	width: 70%;
+}
+
+p.tamurm_yt {
+	text-align: center;
+}
