@@ -5,7 +5,6 @@ import Layout from "./components/Layout/";
 import Portfolio from "./components/Portfolio/";
 import Qualifications from "./components/Qualifications";
 import Service from "./components/Service";
-import Resume from "./components/Resume";
 import Keys from "./components/Keys";
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
 						element={<Qualifications />}
 					/>
 					<Route path="/service" element={<Service />} />
-					<Route path="/resume" element={<Resume />} />
 					<Route path="/keys" element={<Keys />} />
 				</Route>
 			</Routes>

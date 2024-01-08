@@ -60,6 +60,11 @@ const Portfolio = () => {
             </div>
             <div id="bvcog">
                 <p className="bvcog">
+                    You can view the source code for this project{" "}
+                    <a href="https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager">
+                        here
+                    </a>
+                    .<br />
                     You can watch this video below that demonstrates the product
                     that a team of students and I worked on.
                 </p>

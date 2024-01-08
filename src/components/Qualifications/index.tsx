@@ -38,15 +38,13 @@ const Qualifications = () => {
 					<iframe
 						title="resume"
 						className="resume"
-						src="../../assets/Resume.pdf"
+						src={process.env.PUBLIC_URL + "/assets/Resume.pdf"}
 					/>
 				</p>
 				<p className="qualifications">
-					Read a more in-depth version of my resume{" "}
-					<Link to="/resume">here</Link>.<br />
 					If the resume failed to load, download it{" "}
 					<a
-						href="../../assets/Resume.pdf"
+						href={process.env.PUBLIC_URL + "/assets/Resume.pdf"}
 						download="HuyLaiResume.pdf"
 					>
 						<FontAwesomeIcon icon={faCloudDownload} />
@@ -96,12 +94,12 @@ const Qualifications = () => {
 				<p className="qualifications">
 					<img
 						className="svg-inline--fa fa-eclipse resume"
-						src="../../assets/images/Eclipse Logo.svg"
+						src={process.env.PUBLIC_URL + "/assets/images/Eclipse Logo.svg"}
 						alt="Eclipse IDE"
 					/>
 					<img
 						className="svg-inline--fa fa-vscode resume"
-						src="../../assets/images/VS Code Logo.svg"
+						src={process.env.PUBLIC_URL + "/assets/images/VS Code Logo.svg"}
 						alt="Visual Studio Code"
 					/>
 				</p>
