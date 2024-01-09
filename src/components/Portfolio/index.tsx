@@ -69,6 +69,7 @@ const Portfolio = () => {
                     that a team of students and I worked on.
                 </p>
             </div>
+            
             <p className="youtube">
                 <iframe
                     className="youtube"
@@ -78,6 +79,7 @@ const Portfolio = () => {
                     allowFullScreen
                 />
             </p>
+            
             <a href="#robomasters" className="skip-link">
                 Skip to TAMU RoboMasters
             </a>
@@ -137,6 +139,11 @@ const Portfolio = () => {
                     allowFullScreen
                 />
             </p>
+
+            <a href="#pos" className="skip-link" aria-level={2}>
+            <div className="h2" role="heading" aria-level={2}>
+                Point of Sale System
+            </div>
 
             <a href="#chess" className="skip-link">
                 Skip to chess
