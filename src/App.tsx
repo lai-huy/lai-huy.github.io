@@ -8,22 +8,22 @@ import Service from "./components/Service";
 import Keys from "./components/Keys";
 
 function App() {
-	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route index element={<Home />} />
-					<Route path="/portfolio" element={<Portfolio />} />
-					<Route
-						path="/qualifications"
-						element={<Qualifications />}
-					/>
-					<Route path="/service" element={<Service />} />
-					<Route path="/keys" element={<Keys />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
-	);
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="/portfolio" element={<Portfolio />} />
+                    <Route
+                        path="/qualifications"
+                        element={<Qualifications />}
+                    />
+                    <Route path="/service" element={<Service />} />
+                    <Route path="/keys" element={<Keys />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
