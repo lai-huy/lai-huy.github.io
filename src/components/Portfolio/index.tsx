@@ -140,11 +140,6 @@ const Portfolio = () => {
                 />
             </p>
 
-            <a href="#pos" className="skip-link" aria-level={2}>
-            <div className="h2" role="heading" aria-level={2}>
-                Point of Sale System
-            </div>
-
             <a href="#chess" className="skip-link">
                 Skip to chess
             </a>
@@ -255,3 +250,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
