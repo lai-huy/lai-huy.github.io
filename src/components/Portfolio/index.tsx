@@ -89,7 +89,7 @@ const Portfolio = () => {
             </div>
             <div id="robomasters">
                 <img
-                    className="left_wrap"
+                    className="right_wrap"
                     src={
                         process.env.PUBLIC_URL +
                         "/assets/images/RoboMastersFullTeam.jpg"
@@ -185,7 +185,7 @@ const Portfolio = () => {
             </div>
             <div id="chess">
                 <img
-                    className="left_wrap"
+                    className="right_wrap"
                     src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
                     alt="Chess"
                 />

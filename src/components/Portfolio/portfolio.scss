@@ -13,10 +13,18 @@ div#skyblock {
     align-items: center;
     margin-left: 60px;
 
-    img.left_wrap {
-        float: left;
-        margin: 5pt;
-        width: 33%;
+    img {
+        &.left_wrap {
+            float: left;
+            margin: 5pt;
+            width: 33%;
+        }
+
+        &.right_wrap {
+            float: right;
+            margin: 5pt;
+            width: 33%;
+        }
     }
 
     p {
