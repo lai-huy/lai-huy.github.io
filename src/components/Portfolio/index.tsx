@@ -67,7 +67,7 @@ const Portfolio = () => {
                     Uses RSpec and Cucumber to ensure test-driven development
                     and behavior-driven development.
                     <br />
-                    <CucumberPlain size="100" />
+                    <CucumberPlain color="#00A818" size="100" />
                     <RspecOriginal size="100" />
                 </p>
             </div>
