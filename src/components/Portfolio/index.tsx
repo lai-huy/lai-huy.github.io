@@ -1,9 +1,15 @@
 import { Link } from "react-router-dom";
 
-import { CucumberPlain, NodejsOriginal, ReactOriginal, RspecOriginal } from "devicons-react";
+import {
+    CucumberPlain,
+    NodejsOriginal,
+    ReactOriginal,
+    RspecOriginal,
+} from "devicons-react";
 import "./portfolio.scss";
 
-const bvcog: string = "https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager";
+const bvcog: string =
+    "https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager";
 const chess: string = "https://github.com/lai-huy-075/Chess";
 const forge: string =
     "https://files.minecraftforge.net/net/minecraftforge/forge/";
@@ -63,9 +69,7 @@ const Portfolio = () => {
             <div id="bvcog">
                 <p className="bvcog">
                     You can view the source code for this project{" "}
-                    <a href={bvcog}>
-                        here
-                    </a>
+                    <a href={bvcog}>here</a>
                     .<br />
                     You can watch this video below that demonstrates the product
                     that a team of students and I worked on.
@@ -157,8 +161,8 @@ const Portfolio = () => {
                 <p className="pos">
                     A Node.js and React project that creates a Point-of-Sale
                     webpage for a Restaurant located at the Memorial Student
-                    Center at Texas A&M University. Our specific restaurant 
-                    was Chick-fil-A.
+                    Center at Texas A&M University. Our specific restaurant was
+                    Chick-fil-A.
                     <br />
                     Using Google OAuth to authenticate administrator logins,
                     adequate role-based access control is enforced.
@@ -174,10 +178,14 @@ const Portfolio = () => {
                     the back-end of the application.
                     <br />
                     <br />
-                    You can view the source code for this project <a href="https://github.com/CSCE315-Spring23/Team_44_Project_3">here</a>.
+                    You can view the source code for this project{" "}
+                    <a href="https://github.com/CSCE315-Spring23/Team_44_Project_3">
+                        here
+                    </a>
+                    .
                     <br />
-                    <ReactOriginal size="100"/>
-                    <NodejsOriginal size="100"/>
+                    <ReactOriginal size="100" />
+                    <NodejsOriginal size="100" />
                 </p>
             </div>
 
