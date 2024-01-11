@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
-import { CucumberPlain, RspecOriginal } from "devicons-react";
+import { CucumberPlain, NodejsOriginal, ReactOriginal, RspecOriginal } from "devicons-react";
 import "./portfolio.scss";
 
+const bvcog: string = "https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager";
 const chess: string = "https://github.com/lai-huy-075/Chess";
 const forge: string =
     "https://files.minecraftforge.net/net/minecraftforge/forge/";
@@ -62,7 +63,7 @@ const Portfolio = () => {
             <div id="bvcog">
                 <p className="bvcog">
                     You can view the source code for this project{" "}
-                    <a href="https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager">
+                    <a href={bvcog}>
                         here
                     </a>
                     .<br />
@@ -174,6 +175,9 @@ const Portfolio = () => {
                     <br />
                     <br />
                     You can view the source code for this project <a href="https://github.com/CSCE315-Spring23/Team_44_Project_3">here</a>.
+                    <br />
+                    <ReactOriginal size="100"/>
+                    <NodejsOriginal size="100"/>
                 </p>
             </div>
 
