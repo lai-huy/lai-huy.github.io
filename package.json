@@ -4,7 +4,7 @@
 	"homepage": "https://lai-huy.github.io/",
 	"private": true,
 	"dependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
 		"@fortawesome/fontawesome-svg-core": "^6.5.1",
 		"@fortawesome/free-solid-svg-icons": "^6.5.1",
 		"@fortawesome/react-fontawesome": "^0.2.0",
@@ -15,7 +15,7 @@
 		"@types/node": "^16.18.69",
 		"@types/react": "^18.2.47",
 		"@types/react-dom": "^18.2.18",
-		"devicons-react": "^1.2.6",
+		"devicons-react": "^1.2.6-beta-0.3.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-router-dom": "^6.21.1",

@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 
 import {
     CucumberPlain,
+    JupyterOriginalWordmark,
     NodejsOriginal,
+    NumpyOriginal,
+    PandasOriginal,
+    PythonOriginal,
     ReactOriginal,
     RspecOriginal,
 } from "devicons-react";
@@ -13,7 +17,8 @@ const bvcog: string =
 const chess: string = "https://github.com/lai-huy-075/Chess";
 const forge: string =
     "https://files.minecraftforge.net/net/minecraftforge/forge/";
-const github: string = "https://github.com/TAMU-Robomasters/Simulation";
+const mpm: string = "https://github.com/lai-huy/CSCE-421-Final-Project/";
+const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const skyblock: string = "https://wiki.hypixel.net/Introduction";
 const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
 const tamu_rm: string = "https://tamurobomasters.com/";
@@ -107,7 +112,7 @@ const Portfolio = () => {
                     team, which was, intern, part of TAMU RoboMasters.
                     <br />
                     Some of the work I did on this project can be found on the
-                    team's GitHub page found <Link to={github}>here</Link>.
+                    team's GitHub page found <Link to={rm_github}>here</Link>.
                     <br />
                     <br />
                     The purpose of the simulation was to be able to emulate the
@@ -188,6 +193,46 @@ const Portfolio = () => {
                     <NodejsOriginal size="100" />
                 </p>
             </div>
+
+            <a href="#mpm" className="skip-link">
+                Skip to Mortality Prediction Model
+            </a>
+            <div className="h2" role="heading" aria-level={2}>
+                Mortality Prediction Model
+            </div>
+            <div id="mpm">
+                <img
+                    className="mpm"
+                    src="https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/img/logo-m/xgboost.png"
+                    alt="Mortality Prediction Model"
+                />
+                <p className="mpm">
+                    Developed a predictive in-hospital mortality model utilizing
+                    a dataset of several thousand patients.
+                    <br />
+                    Experimented with three different training methods and
+                    compared their perforce.
+                    <br />
+                    Used Logistic Regression, Random Forest, and Extreme
+                    Gradient Boosting to compare against the Professor’s Model.
+                    <br />
+                    The model had a final Area Under the Receiver Operating
+                    Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
+                    better than the Professor’s Model.
+                    <br />
+                    <NumpyOriginal size="100" />
+                    <PandasOriginal size="100" />
+                    <PythonOriginal size="100" />
+                    <JupyterOriginalWordmark size="100" />
+                </p>
+            </div>
+            <p className="youtube">
+                <iframe
+                    className="youtube"
+                    src={process.env.PUBLIC_URL + "/assets/MPM_Report.pdf"}
+                    title="Mortality Prediction Model Report"
+                />
+            </p>
 
             <a href="#chess" className="skip-link">
                 Skip to chess

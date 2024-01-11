@@ -4,10 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     CplusplusOriginal,
     Css3Original,
+    EclipseOriginal,
     GitOriginal,
     Html5Original,
     JavaOriginal,
     JavascriptOriginal,
+    LatexOriginal,
+    NeovimOriginal,
     NodejsOriginal,
     NpmOriginalWordmark,
     PostgresqlOriginal,
@@ -16,6 +19,9 @@ import {
     ReactOriginal,
     RubyOriginal,
     SassOriginal,
+    TypescriptOriginal,
+    VimOriginal,
+    VscodeOriginal,
 } from "devicons-react";
 import "./qualifications.scss";
 
@@ -64,7 +70,9 @@ const Qualifications = () => {
                     <JavaOriginal size="100" />
                     <PythonOriginal size="100" />
                     <GitOriginal size="100" />
+                    <LatexOriginal size="100" />
                     <JavascriptOriginal size="100" />
+                    <TypescriptOriginal size="100" />
                     <Html5Original size="100" />
                     <Css3Original size="100" />
                     <SassOriginal size="100" />
@@ -88,25 +96,13 @@ const Qualifications = () => {
                 </p>
 
                 <div className="h2" role="heading" aria-level={2}>
-                    Integrated Development Environments
+                    Development Environments
                 </div>
                 <p className="qualifications">
-                    <img
-                        className="svg-inline--fa fa-eclipse resume"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/assets/images/Eclipse Logo.svg"
-                        }
-                        alt="Eclipse IDE"
-                    />
-                    <img
-                        className="svg-inline--fa fa-vscode resume"
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/assets/images/VS Code Logo.svg"
-                        }
-                        alt="Visual Studio Code"
-                    />
+                    <EclipseOriginal size="100" />
+                    <VscodeOriginal size="100" />
+                    <NeovimOriginal size="100" />
+                    <VimOriginal size="100" />
                 </p>
             </div>
 
