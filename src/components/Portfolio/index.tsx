@@ -22,6 +22,8 @@ const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const skyblock: string = "https://wiki.hypixel.net/Introduction";
 const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
 const tamu_rm: string = "https://tamurobomasters.com/";
+const report_421: string = "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
+const report_735: string = "https://github.com/lai-huy/CSCE-735/raw/main/Major%20Project/Major%20Project.pdf";
 
 const Portfolio = () => {
     return (
@@ -98,7 +100,38 @@ const Portfolio = () => {
                 Script Search 🔎
             </div>
             <div id="scriptsearch">
+                <img
+                    className="right_wrap"
+                    src="https://script-search.github.io/frontend/_next/static/media/ScriptSearch_New_Logo.0de89b7b.png"
+                    alt="ScriptSearch 🔎"
+                />
+
+                <p className="scriptsearch">
+                    Retrieving specific information from vast video data on platforms like YouTube presents a formidable challenge due to the limitations of traditional metadata-based methods.
+                    <br />
+                    These methods often struggle to capture the intricacies of video content accurately.
+                    <br />
+                    Additionally, the sheer amount of content uploaded to YouTube ensures that a comprehensively nuanced search would take an unreasonable amount of time and effort.
+                    <br />
+                    This paper addresses the pressing need for more accurate and comprehensive video content retrieval by leveraging transcripts.
+                    <br />
+                    By storing YouTube transcripts and developing a dedicated website, this solution aims to enhance search experiences, optimizing performance while maintaining a balance between speed and accuracy.
+                    <br />
+                    The system enables flexible searches with sorting and filtering capabilities, empowering users to efficiently locate videos based on specific words or phrases they recall.
+                    <br />
+                    Evaluation encompasses rigorous unit testing, integration testing, user acceptance testing, and user studies to ensure both functionality and user satisfaction.
+                    <br />
+                    Overall, the website provides an effective tool for navigating and accessing video content with precision and ease.
+                </p>
             </div>
+            <p className="youtube">
+                <iframe
+                    className="youtube"
+                    src="https://www.youtube.com/embed/jeOV_euLox4?si=wxvLCOi18dTVhi75"
+                    title="ScriptSearch 🔎"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                />
+            </p>
 
             <a href="#strassen" className="skip-link">
                 Skip to Strassen's Algorithm
@@ -117,6 +150,7 @@ const Portfolio = () => {
                 />
                 <p className="strassen">
                     Implemented a parallel version of Strassen's matrix multiplication algorithm using OpenMP directives in C/C++.
+                    <br />
                     The project aimed to leverage parallelism to improve the efficiency of large-scale matrix multiplication tasks.
                     <br />
                     Developed a scalable parallel algorithm based on Strassen's matrix multiplication technique, utilizing OpenMP directives for parallelization.
@@ -128,6 +162,14 @@ const Portfolio = () => {
                     Documented the design, implementation details, and performance evaluation results comprehensively for future reference and potential publication.
                 </p>
             </div>
+
+            <p className="pdf_document">
+            <iframe
+                className="pdf_document"
+                src={`https://docs.google.com/viewer?url=${report_735}&embedded=true`}
+                title="Mortality Prediction Model Report"
+            />
+            </p>
 
             <a href="#robomasters" className="skip-link">
                 Skip to TAMU RoboMasters
@@ -145,9 +187,9 @@ const Portfolio = () => {
                     alt="TAMU RoboMasters"
                 />
                 <p className="tamu_rm">
-                    A project that I have been apart of is the Simulation
-                    subteam. This subteam was a part of the Computer Vision
-                    team, which was, intern, part of TAMU RoboMasters.
+                    A project that I have been apart of is the Simulation subteam.
+                    <br />
+                    This subteam was a part of the Computer Vision team, which was, intern, part of TAMU RoboMasters.
                     <br />
                     Some of the work I did on this project can be found on the
                     team's GitHub page found <Link to={rm_github}>here</Link>.
@@ -266,10 +308,10 @@ const Portfolio = () => {
                     <JupyterOriginalWordmark size="100" />
                 </p>
             </div>
-            <p className="youtube">
+            <p className="pdf_document">
                 <iframe
-                    className="youtube"
-                    src={process.env.PUBLIC_URL + "/assets/MPM_Report.pdf"}
+                    className="pdf_document"
+                    src={`https://docs.google.com/viewer?url=${report_421}&embedded=true`}
                     title="Mortality Prediction Model Report"
                 />
             </p>

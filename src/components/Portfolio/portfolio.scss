@@ -9,6 +9,7 @@ div#chess,
 div#mpm,
 div#pos,
 div#robomasters,
+div#scriptsearch,
 div#strassen,
 div#skyblock {
     display: flex;
@@ -68,6 +69,14 @@ iframe.youtube {
     width: 70%;
 }
 
+iframe.pdf_document {
+    height: 1160px;
+    margin-left: 60px;
+    text-align: center;
+    width: 70%;
+}
+
+p.pdf_document,
 p.youtube {
     text-align: center;
 }
