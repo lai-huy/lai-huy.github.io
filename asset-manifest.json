@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e0de3667.css",
-    "main.js": "/static/js/main.29df6ec3.js",
-    "static/js/787.5b1e369c.chunk.js": "/static/js/787.5b1e369c.chunk.js",
+    "main.css": "/static/css/main.7cd3715f.css",
+    "main.js": "/static/js/main.b15f6826.js",
+    "static/js/453.3a789922.chunk.js": "/static/js/453.3a789922.chunk.js",
     "static/media/RoboMastersSimulation.jpg": "/static/media/RoboMastersSimulation.6a4af06156fbe42e8571.jpg",
     "index.html": "/index.html",
-    "main.e0de3667.css.map": "/static/css/main.e0de3667.css.map",
-    "main.29df6ec3.js.map": "/static/js/main.29df6ec3.js.map",
-    "787.5b1e369c.chunk.js.map": "/static/js/787.5b1e369c.chunk.js.map"
+    "main.7cd3715f.css.map": "/static/css/main.7cd3715f.css.map",
+    "main.b15f6826.js.map": "/static/js/main.b15f6826.js.map",
+    "453.3a789922.chunk.js.map": "/static/js/453.3a789922.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0de3667.css",
-    "static/js/main.29df6ec3.js"
+    "static/css/main.7cd3715f.css",
+    "static/js/main.b15f6826.js"
   ]
 }
