@@ -91,6 +91,44 @@ const Portfolio = () => {
                 />
             </p>
 
+            <a href="#scriptsearch" className="skip-link">
+                Skip to Script Search
+            </a>
+            <div className="h2" role="heading" aria-level={2}>
+                Script Search 🔎
+            </div>
+            <div id="scriptsearch">
+            </div>
+
+            <a href="#strassen" className="skip-link">
+                Skip to Strassen's Algorithm
+            </a>
+            <div className="h2" role="heading" aria-level={2}>
+                StrassenMP
+            </div>
+            <div id="strassen">
+                <img
+                    className="right_wrap"
+                    src={
+                        process.env.PUBLIC_URL +
+                        "/assets/images/OpenMP Logo.png"
+                    }
+                    alt="TAMU RoboMasters"
+                />
+                <p className="strassen">
+                    Implemented a parallel version of Strassen's matrix multiplication algorithm using OpenMP directives in C/C++.
+                    The project aimed to leverage parallelism to improve the efficiency of large-scale matrix multiplication tasks.
+                    <br />
+                    Developed a scalable parallel algorithm based on Strassen's matrix multiplication technique, utilizing OpenMP directives for parallelization.
+                    <br />
+                    Optimized the code to efficiently distribute workload across multiple threads, achieving significant speedup compared to the sequential version.
+                    <br />
+                    Conducted rigorous testing and performance analysis to evaluate the scalability and efficiency of the parallel implementation across various input sizes and hardware configurations.
+                    <br />
+                    Documented the design, implementation details, and performance evaluation results comprehensively for future reference and potential publication.
+                </p>
+            </div>
+
             <a href="#robomasters" className="skip-link">
                 Skip to TAMU RoboMasters
             </a>
@@ -219,6 +257,8 @@ const Portfolio = () => {
                     The model had a final Area Under the Receiver Operating
                     Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
                     better than the Professor’s Model.
+                    <br />
+                    See the source code for this project <Link to={mpm}>here</Link>.
                     <br />
                     <NumpyOriginal size="100" />
                     <PandasOriginal size="100" />
