@@ -41,15 +41,15 @@ const Qualifications = () => {
                 </div>
                 <p className="resume">
                     <iframe
-                        title="resume"
                         className="resume"
-                        src={process.env.PUBLIC_URL + "/assets/Resume.pdf"}
+                        title="Huy Lai Resume"
+                        src={`${process.env.PUBLIC_URL}/assets/Resume.pdf`}
                     />
                 </p>
                 <p className="qualifications">
                     If the resume failed to load, download it{" "}
                     <a
-                        href={process.env.PUBLIC_URL + "/assets/Resume.pdf"}
+                        href={`${process.env.PUBLIC_URL}/assets/Resume.pdf`}
                         download="HuyLaiResume.pdf"
                     >
                         <FontAwesomeIcon icon={faCloudDownload} />

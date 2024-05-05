@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Page, Document } from "react-pdf";
 
 import {
     CucumberPlain,
@@ -22,8 +23,12 @@ const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const skyblock: string = "https://wiki.hypixel.net/Introduction";
 const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
 const tamu_rm: string = "https://tamurobomasters.com/";
-const report_421: string = "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
-const report_735: string = "https://github.com/lai-huy/CSCE-735/raw/main/Major%20Project/Major%20Project.pdf";
+const report_421: string =
+    "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
+const report_735: string =
+    "https://github.com/lai-huy/CSCE-735/raw/main/Major%20Project/Major%20Project.pdf";
+const report_421_pdf: string = `https://docs.google.com/viewer?url=${report_421}&embedded=true`;
+const report_735_pdf: string = `https://docs.google.com/viewer?url=${report_735}&embedded=true`;
 
 const Portfolio = () => {
     return (
@@ -41,7 +46,7 @@ const Portfolio = () => {
             <div id="bvcog">
                 <img
                     className="left_wrap"
-                    src={process.env.PUBLIC_URL + "/assets/images/BVCOG.png"}
+                    src={`${process.env.PUBLIC_URL}/assets/images/BVCOG.png`}
                     alt="Brazos Valley Council of Governments"
                 />
                 <p className="bvcog">
@@ -86,7 +91,7 @@ const Portfolio = () => {
             <p className="youtube">
                 <iframe
                     className="youtube"
-                    src="https://www.youtube-nocookie.com/embed/txoTtKQXOrc?si=3Iyv0pE6UJm_2G2r"
+                    src="https://www.youtube.com/embed/txoTtKQXOrc"
                     title="BVCOG CMS Final Presentation & Demo"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -107,21 +112,38 @@ const Portfolio = () => {
                 />
 
                 <p className="scriptsearch">
-                    Retrieving specific information from vast video data on platforms like YouTube presents a formidable challenge due to the limitations of traditional metadata-based methods.
+                    Retrieving specific information from vast video data on
+                    platforms like YouTube presents a formidable challenge due
+                    to the limitations of traditional metadata-based methods.
                     <br />
-                    These methods often struggle to capture the intricacies of video content accurately.
+                    These methods often struggle to capture the intricacies of
+                    video content accurately.
                     <br />
-                    Additionally, the sheer amount of content uploaded to YouTube ensures that a comprehensively nuanced search would take an unreasonable amount of time and effort.
+                    Additionally, the sheer amount of content uploaded to
+                    YouTube ensures that a comprehensively nuanced search would
+                    take an unreasonable amount of time and effort.
                     <br />
-                    This paper addresses the pressing need for more accurate and comprehensive video content retrieval by leveraging transcripts.
+                    This paper addresses the pressing need for more accurate and
+                    comprehensive video content retrieval by leveraging
+                    transcripts.
                     <br />
-                    By storing YouTube transcripts and developing a dedicated website, this solution aims to enhance search experiences, optimizing performance while maintaining a balance between speed and accuracy.
+                    By storing YouTube transcripts and developing a dedicated
+                    website, this solution aims to enhance search experiences,
+                    optimizing performance while maintaining a balance between
+                    speed and accuracy.
                     <br />
-                    The system enables flexible searches with sorting and filtering capabilities, empowering users to efficiently locate videos based on specific words or phrases they recall.
+                    The system enables flexible searches with sorting and
+                    filtering capabilities, empowering users to efficiently
+                    locate videos based on specific words or phrases they
+                    recall.
                     <br />
-                    Evaluation encompasses rigorous unit testing, integration testing, user acceptance testing, and user studies to ensure both functionality and user satisfaction.
+                    Evaluation encompasses rigorous unit testing, integration
+                    testing, user acceptance testing, and user studies to ensure
+                    both functionality and user satisfaction.
                     <br />
-                    Overall, the website provides an effective tool for navigating and accessing video content with precision and ease.
+                    Overall, the website provides an effective tool for
+                    navigating and accessing video content with precision and
+                    ease.
                 </p>
             </div>
             <p className="youtube">
@@ -143,29 +165,40 @@ const Portfolio = () => {
                 <img
                     className="right_wrap"
                     src={`${process.env.PUBLIC_URL}/assets/images/OpenMP Logo.png`}
-                    alt="TAMU RoboMasters"
+                    alt="OpenMP"
                 />
                 <p className="strassen">
-                    Implemented a parallel version of Strassen's matrix multiplication algorithm using OpenMP directives in C/C++.
+                    Implemented a parallel version of Strassen's matrix
+                    multiplication algorithm using OpenMP directives in C/C++.
                     <br />
-                    The project aimed to leverage parallelism to improve the efficiency of large-scale matrix multiplication tasks.
+                    The project aimed to leverage parallelism to improve the
+                    efficiency of large-scale matrix multiplication tasks.
                     <br />
-                    Developed a scalable parallel algorithm based on Strassen's matrix multiplication technique, utilizing OpenMP directives for parallelization.
+                    Developed a scalable parallel algorithm based on Strassen's
+                    matrix multiplication technique, utilizing OpenMP directives
+                    for parallelization.
                     <br />
-                    Optimized the code to efficiently distribute workload across multiple threads, achieving significant speedup compared to the sequential version.
+                    Optimized the code to efficiently distribute workload across
+                    multiple threads, achieving significant speedup compared to
+                    the sequential version.
                     <br />
-                    Conducted rigorous testing and performance analysis to evaluate the scalability and efficiency of the parallel implementation across various input sizes and hardware configurations.
+                    Conducted rigorous testing and performance analysis to
+                    evaluate the scalability and efficiency of the parallel
+                    implementation across various input sizes and hardware
+                    configurations.
                     <br />
-                    Documented the design, implementation details, and performance evaluation results comprehensively for future reference and potential publication.
+                    Documented the design, implementation details, and
+                    performance evaluation results comprehensively for future
+                    reference and potential publication.
                 </p>
             </div>
 
             <p className="pdf_document">
-            <iframe
-                className="pdf_document"
-                src={`https://docs.google.com/viewer?url=${report_735}&embedded=true`}
-                title="Mortality Prediction Model Report"
-            />
+                <iframe
+                    className="pdf_document"
+                    src={report_735_pdf}
+                    title="Strassen's Matrix Multiplication Report"
+                />
             </p>
 
             <a href="#robomasters" className="skip-link">
@@ -177,16 +210,15 @@ const Portfolio = () => {
             <div id="robomasters">
                 <img
                     className="right_wrap"
-                    src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/RoboMastersFullTeam.jpg"
-                    }
+                    src={`${process.env.PUBLIC_URL}/assets/images/RoboMastersFullTeam.jpg`}
                     alt="TAMU RoboMasters"
                 />
                 <p className="tamu_rm">
-                    A project that I have been apart of is the Simulation subteam.
+                    A project that I have been apart of is the Simulation
+                    subteam.
                     <br />
-                    This subteam was a part of the Computer Vision team, which was, intern, part of TAMU RoboMasters.
+                    This subteam was a part of the Computer Vision team, which
+                    was, intern, part of TAMU RoboMasters.
                     <br />
                     Some of the work I did on this project can be found on the
                     team's GitHub page found <Link to={rm_github}>here</Link>.
@@ -237,7 +269,7 @@ const Portfolio = () => {
             <div id="pos">
                 <img
                     className="left_wrap"
-                    src={process.env.PUBLIC_URL + "/assets/images/CFA_MSC.jpg"}
+                    src={`${process.env.PUBLIC_URL}/assets/images/CFA_MSC.jpg`}
                     alt="Chick-fil-A at the Memorial Student Center"
                 />
                 <p className="pos">
@@ -291,13 +323,14 @@ const Portfolio = () => {
                     compared their perforce.
                     <br />
                     Used Logistic Regression, Random Forest, and Extreme
-                    Gradient Boosting to compare against the Professor’s Model.
+                    Gradient Boosting to compare against the Professor's Model.
                     <br />
                     The model had a final Area Under the Receiver Operating
                     Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
-                    better than the Professor’s Model.
+                    better than the Professor's Model.
                     <br />
-                    See the source code for this project <Link to={mpm}>here</Link>.
+                    See the source code for this project{" "}
+                    <Link to={mpm}>here</Link>.
                     <br />
                     <NumpyOriginal size="100" />
                     <PandasOriginal size="100" />
@@ -308,7 +341,7 @@ const Portfolio = () => {
             <p className="pdf_document">
                 <iframe
                     className="pdf_document"
-                    src={`https://docs.google.com/viewer?url=${report_421}&embedded=true`}
+                    src={report_421_pdf}
                     title="Mortality Prediction Model Report"
                 />
             </p>
@@ -408,7 +441,7 @@ const Portfolio = () => {
                     <Link to={skyblock_gh}>here</Link>.<br />
                     <br />
                     <img
-                        src={`${process.env.PUBLIC_URL}/assets/images/SkyBlock_Logo.png`}
+                        src={`${process.env.PUBLIC_URL}/assets/images/Forge_Logo.png`}
                         width="128px"
                         height="128px"
                         alt="Minecraft Forge"
