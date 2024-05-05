@@ -102,7 +102,7 @@ const Portfolio = () => {
             <div id="scriptsearch">
                 <img
                     className="right_wrap"
-                    src="https://script-search.github.io/frontend/_next/static/media/ScriptSearch_New_Logo.0de89b7b.png"
+                    src={`${process.env.PUBLIC_URL}/assets/images/ScriptSearch Logo.svg`}
                     alt="ScriptSearch 🔎"
                 />
 
@@ -142,10 +142,7 @@ const Portfolio = () => {
             <div id="strassen">
                 <img
                     className="right_wrap"
-                    src={
-                        process.env.PUBLIC_URL +
-                        "/assets/images/OpenMP Logo.png"
-                    }
+                    src={`${process.env.PUBLIC_URL}/assets/images/OpenMP Logo.png`}
                     alt="TAMU RoboMasters"
                 />
                 <p className="strassen">
@@ -375,7 +372,7 @@ const Portfolio = () => {
             <div id="skyblock">
                 <img
                     className="left_wrap"
-                    src={process.env.PUBLIC_URL + "/assets/images/SkyBlock.jpg"}
+                    src={`${process.env.PUBLIC_URL}/assets/images/SkyBlock.jpg`}
                     width="33%"
                     alt="Hypixel SkyBlock"
                 />
@@ -411,10 +408,7 @@ const Portfolio = () => {
                     <Link to={skyblock_gh}>here</Link>.<br />
                     <br />
                     <img
-                        src={
-                            process.env.PUBLIC_URL +
-                            "/assets/images/Forge_logo.jpg"
-                        }
+                        src={`${process.env.PUBLIC_URL}/assets/images/SkyBlock_Logo.png`}
                         width="128px"
                         height="128px"
                         alt="Minecraft Forge"
