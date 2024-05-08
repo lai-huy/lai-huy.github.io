@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Page, Document } from "react-pdf";
 
 import {
     CucumberPlain,
