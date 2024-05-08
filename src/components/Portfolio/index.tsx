@@ -26,8 +26,6 @@ const report_421: string =
     "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
 const report_735: string =
     "https://github.com/lai-huy/CSCE-735/raw/main/Major%20Project/Major%20Project.pdf";
-const report_421_pdf: string = `https://docs.google.com/viewer?url=${report_421}&embedded=true`;
-const report_735_pdf: string = `https://docs.google.com/viewer?url=${report_735}&embedded=true`;
 
 const Portfolio = () => {
     return (
@@ -143,6 +141,20 @@ const Portfolio = () => {
                     Overall, the website provides an effective tool for
                     navigating and accessing video content with precision and
                     ease.
+                    <br />
+
+                    <img
+                        src={`${process.env.PUBLIC_URL}/assets/images/Cloud Functions Logo.svg`}
+                        width="128px"
+                        height="128px"
+                        alt="Minecraft Forge"
+                    />
+                    <img
+                        src={`${process.env.PUBLIC_URL}/assets/images/PubSub Logo.svg`}
+                        width="128px"
+                        height="128px"
+                        alt="Minecraft Forge"
+                    />
                 </p>
             </div>
             <p className="youtube">
@@ -195,7 +207,7 @@ const Portfolio = () => {
             <p className="pdf_document">
                 <iframe
                     className="pdf_document"
-                    src={report_735_pdf}
+                    src={`https://docs.google.com/viewer?url=${report_735}&embedded=true`}
                     title="Strassen's Matrix Multiplication Report"
                 />
             </p>
@@ -340,7 +352,7 @@ const Portfolio = () => {
             <p className="pdf_document">
                 <iframe
                     className="pdf_document"
-                    src={report_421_pdf}
+                    src={`https://docs.google.com/viewer?url=${report_421}&embedded=true`}
                     title="Mortality Prediction Model Report"
                 />
             </p>
