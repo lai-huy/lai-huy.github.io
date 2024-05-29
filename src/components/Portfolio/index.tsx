@@ -21,6 +21,8 @@ const mpm: string = "https://github.com/lai-huy/CSCE-421-Final-Project/";
 const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const skyblock: string = "https://wiki.hypixel.net/Introduction";
 const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
+const scriptsearch_frontend: string = "https://github.com/Script-Search/frontend";
+const scriptsearch_backend: string = "https://github.com/Script-Search/backend"
 const tamu_rm: string = "https://tamurobomasters.com/";
 const report_421: string =
     "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
@@ -120,10 +122,6 @@ const Portfolio = () => {
                     YouTube ensures that a comprehensively nuanced search would
                     take an unreasonable amount of time and effort.
                     <br />
-                    This paper addresses the pressing need for more accurate and
-                    comprehensive video content retrieval by leveraging
-                    transcripts.
-                    <br />
                     By storing YouTube transcripts and developing a dedicated
                     website, this solution aims to enhance search experiences,
                     optimizing performance while maintaining a balance between
@@ -141,6 +139,10 @@ const Portfolio = () => {
                     Overall, the website provides an effective tool for
                     navigating and accessing video content with precision and
                     ease.
+                    <br />
+                    You can view the source code for the front end{" "}
+                    <Link to={scriptsearch_frontend}>here</Link> and the back end{" "}
+                    <Link to={scriptsearch_backend}>here</Link>.
                     <br />
 
                     <img
