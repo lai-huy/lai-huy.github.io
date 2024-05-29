@@ -49,14 +49,6 @@ const Sidebar = () => {
                     <FontAwesomeIcon icon={faBellConcierge} color="#4d4d4e" />
                     <span className="visually-hidden">Service</span>
                 </NavLink>
-                <NavLink
-                    className="keys-link"
-                    to="/keys"
-                    onClick={() => setShowNav(false)}
-                >
-                    <FontAwesomeIcon icon={faKey} color="#4d4d4e" />
-                    <span className="visually-hidden">Keys</span>
-                </NavLink>
             </nav>
 
             <ul role="menu" className="navigation">

@@ -5,7 +5,6 @@ import Layout from "./components/Layout/";
 import Portfolio from "./components/Portfolio/";
 import Qualifications from "./components/Qualifications";
 import Service from "./components/Service";
-import Keys from "./components/Keys";
 
 function App() {
     return (
@@ -19,7 +18,6 @@ function App() {
                         element={<Qualifications />}
                     />
                     <Route path="/service" element={<Service />} />
-                    <Route path="/keys" element={<Keys />} />
                 </Route>
             </Routes>
         </BrowserRouter>
