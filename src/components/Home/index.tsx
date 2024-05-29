@@ -5,16 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./home.scss";
 
-const bs_cs =
+const mcs: string = "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext"
+const bs_cs: string =
     "https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext";
-const cyber_minor =
+const cyber_minor: string =
     "https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext";
-const math_minor =
+const math_minor: string =
     "https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext";
-const github = "https://github.com/lai-huy";
-const linkedin = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
-const email = "mailto:lai.huy.075@gmail.com";
-const phone = "tel:5122107909";
+const github: string = "https://github.com/lai-huy";
+const linkedin: string = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
+const email: string = "mailto:lai.huy.075@gmail.com";
+const phone: string = "tel:5122107909";
 
 const Home = () => {
     const handleGithubClick = () => {
@@ -50,13 +51,31 @@ const Home = () => {
                 <p className="about">
                     Howdy! I am a student at{" "}
                     <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}
-                    currently studying for a Bachelor of Science in Computer
-                    Science with a Minor in Cybersecurity and Mathematics.
+                    currently studying for a Master of Computer Science.
                 </p>
             </div>
 
             <a href="#prog" className="skip-link">
-                Skip to Program Requirements
+                Skip to MCS Requirements
+            </a>
+            <div id="prog">
+                <p className="prog_req">
+                    Learn more about the MCS{" "}
+                    <Link to={mcs}>here</Link>.
+                </p>
+            </div>
+
+            <div id="about">
+                <p className="about">
+                    I received my Bachelor of Science in Computer Science from{" "}
+                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}.
+                    <br />
+                    I also have a Minor in Cybersecurity and a Minor in Mathematics.
+                </p>
+            </div>
+
+            <a href="#prog" className="skip-link">
+                Skip to BS Requirements
             </a>
             <div id="prog">
                 <p className="prog_req">

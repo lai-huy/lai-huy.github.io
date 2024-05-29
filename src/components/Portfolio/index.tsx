@@ -25,7 +25,7 @@ const tamu_rm: string = "https://tamurobomasters.com/";
 const report_421: string =
     "https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
 const report_735: string =
-    "https://github.com/lai-huy/CSCE-735/raw/main/Major%20Project/Major%20Project.pdf";
+    "https://github.com/lai-huy/StrassenMP/raw/main/Major%20Project.pdf";
 
 const Portfolio = () => {
     return (
