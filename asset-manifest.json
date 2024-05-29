@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.22244779.css",
-    "main.js": "/static/js/main.45d77099.js",
+    "main.css": "/static/css/main.820d3a41.css",
+    "main.js": "/static/js/main.b4bad323.js",
     "static/js/453.3a789922.chunk.js": "/static/js/453.3a789922.chunk.js",
     "static/media/RoboMastersSimulation.jpg": "/static/media/RoboMastersSimulation.6a4af06156fbe42e8571.jpg",
     "index.html": "/index.html",
-    "main.22244779.css.map": "/static/css/main.22244779.css.map",
-    "main.45d77099.js.map": "/static/js/main.45d77099.js.map",
+    "main.820d3a41.css.map": "/static/css/main.820d3a41.css.map",
+    "main.b4bad323.js.map": "/static/js/main.b4bad323.js.map",
     "453.3a789922.chunk.js.map": "/static/js/453.3a789922.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22244779.css",
-    "static/js/main.45d77099.js"
+    "static/css/main.820d3a41.css",
+    "static/js/main.b4bad323.js"
   ]
 }
