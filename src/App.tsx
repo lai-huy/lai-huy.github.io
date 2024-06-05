@@ -1,14 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { lazy, startTransition, Suspense } from "react";
 import "./App.css";
-import Home from "./components/Home";
-import Layout from "./components/Layout/";
-import Portfolio from "./components/Portfolio/";
-import Qualifications from "./components/Qualifications";
-import Service from "./components/Service";
+const Home = lazy(() => import("./components/Home"));
+const Loading = lazy(() => import("./components/Loading"));
+const Layout = lazy(() => import("./components/Layout/"));
+const Portfolio = lazy(() => import("./components/Portfolio/"));
+const Qualifications = lazy(() => import("./components/Qualifications"));
+const Service = lazy(() => import("./components/Service"))
 
 function App() {
     return (
         <BrowserRouter>
+        <Suspense fallback={<Loading />}>
             <Routes>
                 <Route path="/" element={<Layout />}>
                     <Route index element={<Home />} />
@@ -20,6 +23,7 @@ function App() {
                     <Route path="/service" element={<Service />} />
                 </Route>
             </Routes>
+        </Suspense>
         </BrowserRouter>
     );
 }

@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./home.scss";
 
-const mcs: string = "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext"
+const mcs: string =
+    "https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext";
 const bs_cs: string =
     "https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext";
 const cyber_minor: string =
@@ -60,17 +61,17 @@ const Home = () => {
             </a>
             <div id="prog">
                 <p className="prog_req">
-                    Learn more about the MCS{" "}
-                    <Link to={mcs}>here</Link>.
+                    Learn more about the MCS <Link to={mcs}>here</Link>.
                 </p>
             </div>
 
             <div id="about">
                 <p className="about">
                     I received my Bachelor of Science in Computer Science from{" "}
-                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}.
-                    <br />
-                    I also have a Minor in Cybersecurity and a Minor in Mathematics.
+                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}
+                    .
+                    <br />I also have a Minor in Cybersecurity and a Minor in
+                    Mathematics.
                 </p>
             </div>
 
