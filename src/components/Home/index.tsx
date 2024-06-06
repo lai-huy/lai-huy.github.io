@@ -68,10 +68,8 @@ const Home = () => {
             <div id="about">
                 <p className="about">
                     I received my Bachelor of Science in Computer Science from{" "}
-                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}
-                    .
-                    <br />I also have a Minor in Cybersecurity and a Minor in
-                    Mathematics.
+                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}.<br />
+                    I also have a Minor in Cybersecurity and a Minor in Mathematics.
                 </p>
             </div>
 
