@@ -3,6 +3,7 @@ import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import MediaQuery, { useMediaQuery } from "react-responsive";
 import "./home.scss";
 
 const mcs: string =
@@ -19,6 +20,7 @@ const email: string = "mailto:lai.huy.075@gmail.com";
 const phone: string = "tel:5122107909";
 
 const Home = () => {
+    const isMobile: boolean = useMediaQuery({ query: "(max-width: 768px)" });
     const handleGithubClick = () => {
         window.open(github, "_blank");
     };
@@ -68,8 +70,9 @@ const Home = () => {
             <div id="about">
                 <p className="about">
                     I received my Bachelor of Science in Computer Science from{" "}
-                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}.<br />
-                    I also have a Minor in Cybersecurity and a Minor in Mathematics.
+                    <Link to="https://www.tamu.edu/">Texas A&M University</Link>{" "}
+                    .<br />I also have a Minor in Cybersecurity and a Minor in
+                    Mathematics.
                 </p>
             </div>
 
@@ -97,7 +100,10 @@ const Home = () => {
                         className="btn-hover github"
                         onClick={handleGithubClick}
                     >
-                        <GithubOriginal size="85" className="devicon github" />
+                        <GithubOriginal
+                            size={isMobile ? 40 : 85}
+                            className="devicon github"
+                        />
                     </button>
 
                     <button
@@ -105,7 +111,10 @@ const Home = () => {
                         className="btn-hover linkedin"
                         onClick={handleLinkedinClick}
                     >
-                        <LinkedinOriginal size="85" className="devicon" />
+                        <LinkedinOriginal
+                            size={isMobile ? 40 : 85}
+                            className="devicon"
+                        />
                     </button>
 
                     <button
