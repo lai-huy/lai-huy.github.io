@@ -17,7 +17,6 @@ const math_minor: string =
 const github: string = "https://github.com/lai-huy";
 const linkedin: string = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
 const email: string = "mailto:lai.huy.075@gmail.com";
-const phone: string = "tel:5122107909";
 
 const Home = () => {
     const isMobile: boolean = useMediaQuery({ query: "(max-width: 768px)" });
@@ -31,10 +30,6 @@ const Home = () => {
 
     const handleEmailClick = () => {
         window.open(email);
-    };
-
-    const handlePhoneClick = () => {
-        window.open(phone);
     };
 
     return (
@@ -123,14 +118,6 @@ const Home = () => {
                         onClick={handleEmailClick}
                     >
                         <FontAwesomeIcon icon={faEnvelope} />
-                    </button>
-
-                    <button
-                        aria-label="Send me a phone call"
-                        className="btn-hover phone"
-                        onClick={handlePhoneClick}
-                    >
-                        <FontAwesomeIcon icon={faPhone} />
                     </button>
                 </p>
             </div>
