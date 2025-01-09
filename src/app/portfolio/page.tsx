@@ -1,6 +1,5 @@
 import "./portfolio.scss";
 import Link from "next/link";
-import Image from "next/image";
 
 import {
 	CucumberPlain,
@@ -45,10 +44,13 @@ export default function Portfolio() {
 				Brazos Valley Council of Governments Contract Management System
 			</div>
 			<div id="bvcog">
-				<Image
+				<img
 					className="left_wrap"
 					src="/assets/images/BVCOG.png"
 					alt="Brazos Valley Council of Governments"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="bvcog">
 					A full stack application to serve as a contract management
@@ -106,10 +108,13 @@ export default function Portfolio() {
 				Script Search 🔎
 			</div>
 			<div id="scriptsearch">
-				<Image
+				<img
 					className="right_wrap"
 					src="/assets/images/ScriptSearch Logo.svg"
 					alt="ScriptSearch 🔎"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 
 				<p className="scriptsearch">
@@ -146,13 +151,21 @@ export default function Portfolio() {
 					<Link href={scriptsearch_frontend}>here</Link> and the back
 					end <Link href={scriptsearch_backend}>here</Link>.
 					<br />
-					<Image
+					<img
+						className="logo"
 						src="/assets/images/Cloud Functions Logo.svg"
 						alt="Minecraft Forge"
+						fetchPriority="low"
+						loading="lazy"
+						decoding="async"
 					/>
-					<Image
+					<img
+						className="logo"
 						src="/assets/images/PubSub Logo.svg"
 						alt="Minecraft Forge"
+						fetchPriority="low"
+						loading="lazy"
+						decoding="async"
 					/>
 				</p>
 			</div>
@@ -172,10 +185,13 @@ export default function Portfolio() {
 				StrassenMP
 			</div>
 			<div id="strassen">
-				<Image
+				<img
 					className="right_wrap"
 					src="/assets/images/OpenMP Logo.png"
 					alt="OpenMP"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="strassen">
 					Implemented a parallel version of Strassen&apos;s matrix
@@ -218,10 +234,13 @@ export default function Portfolio() {
 				TAMU RoboMasters
 			</div>
 			<div id="robomasters">
-				<Image
+				<img
 					className="right_wrap"
 					src="/assets/images/RoboMastersFullTeam.jpg"
 					alt="TAMU RoboMasters"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="tamu_rm">
 					A project that I have been apart of is the Simulation
@@ -278,10 +297,13 @@ export default function Portfolio() {
 				Point of Sale System
 			</div>
 			<div id="pos">
-				<Image
+				<img
 					className="left_wrap"
 					src="/assets/images/CFA_MSC.jpg"
 					alt="Chick-fil-A at the Memorial Student Center"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="pos">
 					A Node.js and React project that creates a Point-of-Sale
@@ -321,10 +343,13 @@ export default function Portfolio() {
 				Mortality Prediction Model
 			</div>
 			<div id="mpm">
-				<Image
+				<img
 					className="mpm"
-					src="https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/Image/logo-m/xgboost.png"
+					src="https://xgboost.ai/images/logo/xgboost-logo.png"
 					alt="Mortality Prediction Model"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="mpm">
 					Developed a predictive in-hospital mortality model utilizing
@@ -344,10 +369,10 @@ export default function Portfolio() {
 					See the source code for this project{" "}
 					<Link href={mpm}>here</Link>.
 					<br />
-					<NumpyOriginal size="100" />
-					<PandasOriginal size="100" />
-					<PythonOriginal size="100" />
-					<JupyterOriginalWordmark size="100" />
+					<NumpyOriginal size="128" />
+					<PandasOriginal size="128" />
+					<PythonOriginal size="128" />
+					<JupyterOriginalWordmark size="128" />
 				</p>
 			</div>
 			<p className="pdf_document">
@@ -365,10 +390,13 @@ export default function Portfolio() {
 				Chess
 			</div>
 			<div id="chess">
-				<Image
+				<img
 					className="right_wrap"
 					src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
 					alt="Chess"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="chess">
 					A personal project I developed was a Java Chess program.
@@ -415,10 +443,13 @@ export default function Portfolio() {
 				SkyBlock Minecraft Mod
 			</div>
 			<div id="skyblock">
-				<Image
+				<img
 					className="left_wrap"
 					src="/assets/images/SkyBlock.jpg"
 					alt="Hypixel SkyBlock"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
 				/>
 				<p className="sb">
 					Another personal project I developed was a Minecraft Mod.
@@ -451,9 +482,13 @@ export default function Portfolio() {
 					The source code for this can be found{" "}
 					<Link href={skyblock_gh}>here</Link>.<br />
 					<br />
-					<Image
+					<img
+						className="logo"
 						src="/assets/images/Forge_Logo.png"
 						alt="Minecraft Forge"
+						fetchPriority="low"
+						loading="lazy"
+						decoding="async"
 					/>
 				</p>
 			</div>
