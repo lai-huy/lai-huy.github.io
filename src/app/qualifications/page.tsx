@@ -16,10 +16,12 @@ import {
 	NpmOriginalWordmark,
 	PostgresqlOriginal,
 	PythonOriginal,
+	PytorchOriginal,
 	RailsOriginalWordmark,
 	ReactOriginal,
 	RubyOriginal,
 	SassOriginal,
+	TensorflowOriginal,
 	TypescriptOriginal,
 	VimOriginal,
 	VscodeOriginal,
@@ -63,22 +65,24 @@ export default function Qualifications() {
 					Technical Skills
 				</div>
 				<p className="qualifications">
-					<CplusplusOriginal size="100" />
-					<JavaOriginal size="100" />
-					<PythonOriginal size="100" />
-					<GitOriginal size="100" />
-					<LatexOriginal size="100" />
-					<JavascriptOriginal size="100" />
-					<TypescriptOriginal size="100" />
-					<Html5Original size="100" />
-					<Css3Original size="100" />
-					<SassOriginal size="100" />
-					<ReactOriginal size="100" />
-					<NodejsOriginal size="100" />
-					<NpmOriginalWordmark size="100" />
-					<PostgresqlOriginal size="100" />
-					<RubyOriginal size="100" />
-					<RailsOriginalWordmark size="100" />
+					<CplusplusOriginal size="128" />
+					<JavaOriginal size="128" />
+					<PythonOriginal size="128" />
+					<TensorflowOriginal size="128" />
+					<PytorchOriginal size="128" />
+					<GitOriginal size="128" />
+					<LatexOriginal size="128" />
+					<JavascriptOriginal size="128" />
+					<TypescriptOriginal size="128" />
+					<Html5Original size="128" />
+					<Css3Original size="128" />
+					<SassOriginal size="128" />
+					<ReactOriginal size="128" />
+					<NodejsOriginal size="128" />
+					<NpmOriginalWordmark size="128" />
+					<PostgresqlOriginal size="128" />
+					<RubyOriginal size="128" />
+					<RailsOriginalWordmark size="128" />
 					<br />
 					Software Engineering
 					<br />
@@ -96,11 +100,11 @@ export default function Qualifications() {
 					Development Environments
 				</div>
 				<p className="qualifications">
-					<EclipseOriginal size="100" />
-					<IntellijOriginal size="100" />
-					<VscodeOriginal size="100" />
-					<NeovimOriginal size="100" />
-					<VimOriginal size="100" />
+					<EclipseOriginal size="128" />
+					<IntellijOriginal size="128" />
+					<VscodeOriginal size="128" />
+					<NeovimOriginal size="128" />
+					<VimOriginal size="128" />
 				</p>
 			</div>
 

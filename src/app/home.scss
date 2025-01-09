@@ -1,36 +1,3 @@
-a {
-	&:active {
-		color: #ddfff7;
-	}
-
-	&:link {
-		color: #251351;
-	}
-
-	&:hover {
-		color: #086788;
-	}
-
-	&:visited {
-		color: #500000;
-	}
-
-	&.skip-link {
-		position: fixed;
-		top: -40px;
-		left: 0;
-		background-color: #ffffff;
-		color: #000000;
-		padding: 0px;
-		z-index: 100;
-
-		&:focus,
-		&:hover {
-			top: 0;
-		}
-	}
-}
-
 button.btn-hover {
 	background-size: 300% 100%;
 	border: none;
