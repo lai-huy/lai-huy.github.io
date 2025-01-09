@@ -1,5 +1,6 @@
 import "./portfolio.scss";
 import Link from "next/link";
+import Image from "next/image";
 
 import {
 	CucumberPlain,
@@ -44,7 +45,7 @@ export default function Portfolio() {
 				Brazos Valley Council of Governments Contract Management System
 			</div>
 			<div id="bvcog">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/BVCOG.png"
 					alt="Brazos Valley Council of Governments"
@@ -105,7 +106,7 @@ export default function Portfolio() {
 				Script Search 🔎
 			</div>
 			<div id="scriptsearch">
-				<img
+				<Image
 					className="right_wrap"
 					src="/assets/images/ScriptSearch Logo.svg"
 					alt="ScriptSearch 🔎"
@@ -145,16 +146,12 @@ export default function Portfolio() {
 					<Link href={scriptsearch_frontend}>here</Link> and the back
 					end <Link href={scriptsearch_backend}>here</Link>.
 					<br />
-					<img
+					<Image
 						src="/assets/images/Cloud Functions Logo.svg"
-						width="128px"
-						height="128px"
 						alt="Minecraft Forge"
 					/>
-					<img
+					<Image
 						src="/assets/images/PubSub Logo.svg"
-						width="128px"
-						height="128px"
 						alt="Minecraft Forge"
 					/>
 				</p>
@@ -169,27 +166,27 @@ export default function Portfolio() {
 			</p>
 
 			<a href="#strassen" className="skip-link">
-				Skip to Strassen's Algorithm
+				Skip to Strassen&apos;s Algorithm
 			</a>
 			<div className="h2" role="heading" aria-level={2}>
 				StrassenMP
 			</div>
 			<div id="strassen">
-				<img
+				<Image
 					className="right_wrap"
 					src="/assets/images/OpenMP Logo.png"
 					alt="OpenMP"
 				/>
 				<p className="strassen">
-					Implemented a parallel version of Strassen's matrix
+					Implemented a parallel version of Strassen&apos;s matrix
 					multiplication algorithm using OpenMP directives in C/C++.
 					<br />
 					The project aimed to leverage parallelism to improve the
 					efficiency of large-scale matrix multiplication tasks.
 					<br />
-					Developed a scalable parallel algorithm based on Strassen's
-					matrix multiplication technique, utilizing OpenMP directives
-					for parallelization.
+					Developed a scalable parallel algorithm based on
+					Strassen&apos;s matrix multiplication technique, utilizing
+					OpenMP directives for parallelization.
 					<br />
 					Optimized the code to efficiently distribute workload across
 					multiple threads, achieving significant speedup compared to
@@ -221,7 +218,7 @@ export default function Portfolio() {
 				TAMU RoboMasters
 			</div>
 			<div id="robomasters">
-				<img
+				<Image
 					className="right_wrap"
 					src="/assets/images/RoboMastersFullTeam.jpg"
 					alt="TAMU RoboMasters"
@@ -234,7 +231,8 @@ export default function Portfolio() {
 					was, intern, part of TAMU RoboMasters.
 					<br />
 					Some of the work I did on this project can be found on the
-					team's GitHub page found <Link href={rm_github}>here</Link>.
+					team&apos;s GitHub page found{" "}
+					<Link href={rm_github}>here</Link>.
 					<br />
 					<br />
 					The purpose of the simulation was to be able to emulate the
@@ -280,7 +278,7 @@ export default function Portfolio() {
 				Point of Sale System
 			</div>
 			<div id="pos">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/CFA_MSC.jpg"
 					alt="Chick-fil-A at the Memorial Student Center"
@@ -323,9 +321,9 @@ export default function Portfolio() {
 				Mortality Prediction Model
 			</div>
 			<div id="mpm">
-				<img
+				<Image
 					className="mpm"
-					src="https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/img/logo-m/xgboost.png"
+					src="https://raw.githubusercontent.com/dmlc/dmlc.github.io/master/Image/logo-m/xgboost.png"
 					alt="Mortality Prediction Model"
 				/>
 				<p className="mpm">
@@ -336,11 +334,12 @@ export default function Portfolio() {
 					compared their perforce.
 					<br />
 					Used Logistic Regression, Random Forest, and Extreme
-					Gradient Boosting to compare against the Professor's Model.
+					Gradient Boosting to compare against the Professor&apos;s
+					Model.
 					<br />
 					The model had a final Area Under the Receiver Operating
 					Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
-					better than the Professor's Model.
+					better than the Professor&apos;s Model.
 					<br />
 					See the source code for this project{" "}
 					<Link href={mpm}>here</Link>.
@@ -366,7 +365,7 @@ export default function Portfolio() {
 				Chess
 			</div>
 			<div id="chess">
-				<img
+				<Image
 					className="right_wrap"
 					src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
 					alt="Chess"
@@ -416,17 +415,16 @@ export default function Portfolio() {
 				SkyBlock Minecraft Mod
 			</div>
 			<div id="skyblock">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/SkyBlock.jpg"
-					width="33%"
 					alt="Hypixel SkyBlock"
 				/>
 				<p className="sb">
 					Another personal project I developed was a Minecraft Mod.
 					<br />
 					This projects attempts to emulate the functionality seen in
-					Hypixel's SkyBlock.
+					Hypixel&apos;s SkyBlock.
 					<br />
 					This project assisted me in learning about working with
 					existing code and adding modifications ontop of it.
@@ -453,10 +451,8 @@ export default function Portfolio() {
 					The source code for this can be found{" "}
 					<Link href={skyblock_gh}>here</Link>.<br />
 					<br />
-					<img
+					<Image
 						src="/assets/images/Forge_Logo.png"
-						width="128px"
-						height="128px"
 						alt="Minecraft Forge"
 					/>
 				</p>

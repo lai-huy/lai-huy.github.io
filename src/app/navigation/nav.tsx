@@ -1,10 +1,8 @@
 import "./nav.scss";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import {
-	faBellConcierge,
 	faGraduationCap,
 	faHome,
-	faKey,
 	faSuitcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

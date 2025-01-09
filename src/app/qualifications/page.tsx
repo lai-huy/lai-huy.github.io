@@ -136,7 +136,7 @@ export default function Qualifications() {
 					these automated systems can respond to potential problems.
 					<br />
 					We have seen the capabilities of Machine Learning with
-					DeepMind's AlphaGo.
+					DeepMind&apos;s AlphaGo.
 					<br />
 					Learn more about AlphaGo{" "}
 					<a href="https://www.deepmind.com/research/highlighted-research/alphago">
