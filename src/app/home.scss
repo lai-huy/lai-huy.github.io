@@ -1,0 +1,260 @@
+a {
+	&:active {
+		color: #ddfff7;
+	}
+
+	&:link {
+		color: #251351;
+	}
+
+	&:hover {
+		color: #086788;
+	}
+
+	&:visited {
+		color: #500000;
+	}
+
+	&.skip-link {
+		position: fixed;
+		top: -40px;
+		left: 0;
+		background-color: #ffffff;
+		color: #000000;
+		padding: 0px;
+		z-index: 100;
+
+		&:focus,
+		&:hover {
+			top: 0;
+		}
+	}
+}
+
+button.btn-hover {
+	background-size: 300% 100%;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	height: 115px;
+	-o-transition: all 0.4s ease-in-out;
+	margin: 5px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	width: 115px;
+
+	&:hover {
+		background-position: 100% 0;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&.github {
+		background-image: linear-gradient(
+			to right,
+			#214e34,
+			#30734c,
+			#3c905f,
+			#48ad72
+		);
+	}
+
+	&.linkedin {
+		background-image: linear-gradient(
+			to right,
+			#372772,
+			#4a3498,
+			#583eb6,
+			#7058c6
+		);
+	}
+
+	&.email {
+		background-image: linear-gradient(
+			to right,
+			#1a17be,
+			#2825e4,
+			#4c49e9,
+			#706eed
+		);
+	}
+
+	&.phone {
+		background-image: linear-gradient(
+			to right,
+			#ff0035,
+			#ff335c,
+			#ff5c7c,
+			#ff859d
+		);
+	}
+}
+
+div {
+	&.about {
+		color: #25283d;
+		font-size: 38pt;
+		text-align: center;
+	}
+
+	&.background {
+		background-image: url("../../public/assets/images/RoboMastersSimulation.jpg");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	&#about {
+		color: #25283d;
+		text-align: center;
+	}
+
+	&#prog {
+		color: #25283d;
+		text-align: center;
+	}
+
+	&#social {
+		color: #25283d;
+		text-align: center;
+	}
+}
+
+h1 {
+	all: unset;
+}
+
+header.name {
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	font-family: "Ubuntu", sans-serif;
+}
+
+p {
+	&.about {
+		background: #d4bebebf;
+		color: #ffffff;
+		font-size: 24pt;
+		text-align: center;
+		width: 45%;
+		overflow-wrap: break-word;
+		display: inline-block;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+	}
+
+	&.prog_req {
+		background-color: #a09abcbf;
+		color: #ffffff;
+		display: inline-block;
+		font-size: 24pt;
+		text-align: center;
+	}
+
+	&.links {
+		display: inline-flex;
+		margin-top: 175px;
+
+		svg {
+			&.github {
+				g {
+					fill: #ffd700;
+				}
+			}
+
+			&.svg-inline--fa {
+				height: 85px;
+				width: 85px;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+span {
+	&.about {
+		background: #a09abcbf;
+	}
+
+	&.name {
+		background: #800000bf;
+		text-align: center;
+		font-weight: bold;
+		font-size: 48pt;
+		font-family: "Ubuntu", sans-serif;
+	}
+
+	&.visually-hidden {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+svg {
+	&.fa-github {
+		color: #f4b400;
+	}
+
+	&.fa-linkedin {
+		color: #0077b5;
+	}
+
+	&.fa-envelope {
+		color: #db4437;
+	}
+
+	&.fa-phone {
+		color: #0f9d58;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	div {
+		&.about {
+			font-size: 24pt;
+			width: 100%;
+		}
+
+		p {
+			&.about {
+				font-size: 18pt;
+				width: 100%;
+			}
+
+			&.prog_req {
+				font-size: 18pt;
+				width: 100%;
+			}
+		}
+	}
+
+	p.links {
+		margin-top: 50px;
+		svg.svg-inline--fa {
+			height: 40px;
+			width: 40px;
+			text-decoration: none;
+		}
+	}
+
+	span.name {
+		font-size: 30pt;
+	}
+
+	button.btn-hover {
+		height: 60px;
+		width: 60px;
+	}
+}

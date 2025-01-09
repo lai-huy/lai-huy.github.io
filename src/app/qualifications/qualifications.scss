@@ -1,0 +1,41 @@
+div.h2 {
+	text-align: center;
+	margin: 20px;
+	font-size: 38pt;
+}
+
+div#interest,
+div#resume,
+div#skills {
+	margin-left: 60px;
+}
+
+header.qualifications {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	font-family: "Ubuntu", sans-serif;
+}
+
+iframe.resume {
+	margin: 20px;
+	width: 90%;
+	height: 1130px;
+}
+
+img.svg-inline--fa.resume,
+svg.svg-inline--fa.resume {
+	height: 100px;
+	padding: 5px;
+	width: 100px;
+}
+
+p.resume {
+	text-align: center;
+}
+
+p.qualifications {
+	text-align: left;
+	font-size: 18pt;
+	margin: 20px;
+}

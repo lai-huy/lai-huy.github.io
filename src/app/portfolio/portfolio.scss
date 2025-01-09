@@ -1,0 +1,82 @@
+div.h2 {
+	text-align: center;
+	margin: 20px;
+	font-size: 38pt;
+}
+
+div#bvcog,
+div#chess,
+div#mpm,
+div#pos,
+div#robomasters,
+div#scriptsearch,
+div#strassen,
+div#skyblock {
+	display: flex;
+	align-items: center;
+	margin-left: 60px;
+
+	img {
+		&.left_wrap {
+			float: left;
+			margin: 5pt;
+			width: 33%;
+		}
+
+		&.right_wrap {
+			float: right;
+			margin: 5pt;
+			width: 33%;
+		}
+	}
+
+	p {
+		text-align: center;
+		font-size: 18pt;
+		margin: 0;
+
+		&.bvcog {
+			font-size: 20pt;
+		}
+
+		&.chess {
+			font-size: 24pt;
+		}
+
+		&.pos {
+			font-size: 20pt;
+		}
+	}
+}
+
+div#bvcog {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header.portfolio {
+	text-align: center;
+	font-weight: bold;
+	font-size: 48pt;
+	font-family: "Ubuntu", sans-serif;
+}
+
+iframe.youtube {
+	height: 900px;
+	margin-left: 60px;
+	text-align: center;
+	width: 90%;
+}
+
+iframe.pdf_document {
+	height: 1160px;
+	margin-left: 60px;
+	text-align: center;
+	width: 70%;
+}
+
+p.pdf_document,
+p.youtube {
+	text-align: center;
+}

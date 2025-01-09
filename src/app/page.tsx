@@ -1,101 +1,132 @@
-import Image from "next/image";
+"use client";
+
+import "./home.scss";
+import Link from "next/link";
+import { GithubOriginal, LinkedinOriginal } from "devicons-react";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useMediaQuery } from "usehooks-ts";
+
+const mcs: string =
+	"https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext";
+const bs_cs: string =
+	"https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext";
+const cyber_minor: string =
+	"https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext";
+const math_minor: string =
+	"https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext";
+const github: string = "https://github.com/lai-huy";
+const linkedin: string = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
+const email: string = "mailto:lai.huy.075@gmail.com";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+	const isMobile: boolean = useMediaQuery("(max-width: 768px)");
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	const handleGithubClick = () => {
+		window.open(github, "_blank");
+	};
+
+	const handleLinkedinClick = () => {
+		window.open(linkedin, "_blank");
+	};
+
+	const handleEmailClick = () => {
+		window.open(email);
+	};
+
+	return (
+		<div className="background" role="main">
+			<header className="name">
+				<h1>
+					<span className="name">Huy Quang Lai</span>
+				</h1>
+			</header>
+			<a href="#about" className="skip-link">
+				Skip to about me
+			</a>
+			<div className="about" role="heading" aria-level={2}>
+				<span className="about">About Me</span>
+			</div>
+			<div id="about">
+				<p className="about">
+					Howdy! I am a student at{" "}
+					<Link href="https://www.tamu.edu/">
+						Texas A&M University
+					</Link>{" "}
+					currently studying for a Master of Computer Science.
+				</p>
+			</div>
+
+			<a href="#prog" className="skip-link">
+				Skip to MCS Requirements
+			</a>
+			<div id="prog">
+				<p className="prog_req">
+					Learn more about the MCS <Link href={mcs}>here</Link>.
+				</p>
+			</div>
+
+			<div id="about">
+				<p className="about">
+					I received my Bachelor of Science in Computer Science from{" "}
+					<Link href="https://www.tamu.edu/">
+						Texas A&M University
+					</Link>{" "}
+					.<br />I also have a Minor in Cybersecurity and a Minor in
+					Mathematics.
+				</p>
+			</div>
+
+			<a href="#prog" className="skip-link">
+				Skip to BS Requirements
+			</a>
+			<div id="prog">
+				<p className="prog_req">
+					Learn more about the BS in Computer Science{" "}
+					<Link href={bs_cs}>here</Link>.<br />
+					Learn more about the Minor in Cybersecurity{" "}
+					<Link href={cyber_minor}>here</Link>.<br />
+					Learn more about the Minor in Mathematics{" "}
+					<Link href={math_minor}>here</Link>.
+				</p>
+			</div>
+
+			<a href="#social" className="skip-link">
+				Skip to my online profiles.
+			</a>
+			<div id="social">
+				<p className="links">
+					<button
+						aria-label="Go to my GitHub profile"
+						className="btn-hover github"
+						onClick={handleGithubClick}
+					>
+						<GithubOriginal
+							size={isMobile ? 40 : 85}
+							className="devicon github"
+						/>
+					</button>
+
+					<button
+						aria-label="Go to my LinkedIn profile"
+						className="btn-hover linkedin"
+						onClick={handleLinkedinClick}
+					>
+						<LinkedinOriginal
+							size={isMobile ? 40 : 85}
+							className="devicon"
+						/>
+					</button>
+
+					<button
+						aria-label="Send me an email"
+						className="btn-hover email"
+						onClick={handleEmailClick}
+					>
+						<FontAwesomeIcon icon={faEnvelope} />
+					</button>
+				</p>
+			</div>
+		</div>
+	);
 }
