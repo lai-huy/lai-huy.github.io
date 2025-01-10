@@ -1,4 +1,3 @@
-import "./qualifications.scss";
 import { faCloudDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,7 +13,6 @@ import {
 	IntellijOriginal,
 	JavaOriginal,
 	JavascriptOriginal,
-	JupyterOriginal,
 	JupyterOriginalWordmark,
 	LatexOriginal,
 	MatplotlibOriginal,
@@ -24,7 +22,6 @@ import {
 	NodejsOriginal,
 	NpmOriginalWordmark,
 	NumpyOriginal,
-	PandasLineWordmark,
 	PandasOriginal,
 	PostgresqlOriginal,
 	PythonOriginal,
@@ -39,6 +36,7 @@ import {
 	VimOriginal,
 	VscodeOriginal,
 } from "devicons-react";
+import "./qualifications.scss";
 
 export default function Qualifications() {
 	return (

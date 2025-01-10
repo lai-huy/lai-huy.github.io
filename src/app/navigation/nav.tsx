@@ -1,12 +1,12 @@
-import "./nav.scss";
-import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import {
 	faGraduationCap,
 	faHome,
 	faSuitcase,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import Link from "next/link";
+import "./nav.scss";
 
 export function Navbar() {
 	return (

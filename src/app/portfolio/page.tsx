@@ -1,5 +1,5 @@
-import "./portfolio.scss";
 import Link from "next/link";
+import "./portfolio.scss";
 
 import {
 	CucumberPlain,
@@ -10,10 +10,10 @@ import {
 	PandasOriginal,
 	PythonOriginal,
 	PytorchOriginal,
-	ScikitlearnOriginal,
-	TensorflowOriginal,
 	ReactOriginal,
 	RspecOriginal,
+	ScikitlearnOriginal,
+	TensorflowOriginal,
 } from "devicons-react";
 
 const bvcog: string =
