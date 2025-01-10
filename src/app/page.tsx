@@ -31,14 +31,19 @@ export default function Home() {
 		window.open(email);
 	};
 
-	const userAgentData =
-		typeof window !== "undefined" ? navigator.userAgentData : "";
+	function isMobileDevice(): boolean {
+		const userAgent =
+			typeof window !== "undefined" ? navigator.userAgent : "";
+		return /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/.test(
+			userAgent
+		);
+	}
+
+	const isMobile = isMobileDevice();
 
 	return (
 		<div
-			className={`background ${
-				userAgentData.mobile ? "mobile" : "desktop"
-			}`}
+			className={`background ${isMobile ? "mobile" : "desktop"}`}
 			role="main"
 		>
 			<header className="name">
