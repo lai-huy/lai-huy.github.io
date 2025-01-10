@@ -99,7 +99,37 @@ div {
 	}
 
 	&.mobile {
-		display: none;
+		&.background {
+			background-image: url("../../public/assets/images/RoboMastersSimulation.jpg");
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+		}
+
+		div {
+			&.about {
+				color: #25283d;
+				font-size: 19pt;
+				text-align: center;
+			}
+
+			&#about {
+				color: #25283d;
+				text-align: center;
+			}
+
+			&#prog {
+				color: #25283d;
+				text-align: center;
+			}
+
+			&#social {
+				color: #25283d;
+				text-align: center;
+			}
+		}
 	}
 }
 
