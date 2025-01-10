@@ -96,11 +96,83 @@ div {
 				text-align: center;
 			}
 		}
+
+		h1 {
+			all: unset;
+		}
+
+		header.name {
+			color: #ffffff;
+			text-align: center;
+			font-weight: bold;
+			font-size: 48pt;
+			font-family: "Ubuntu", sans-serif;
+		}
+
+		p {
+			&.about {
+				background: #d4bebebf;
+				font-size: 24pt;
+				text-align: center;
+				width: 45%;
+				overflow-wrap: break-word;
+				display: inline-block;
+				margin-block-start: 0px;
+				margin-block-end: 0px;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+			}
+
+			&.prog_req {
+				background-color: #a09abcbf;
+				display: inline-block;
+				font-size: 24pt;
+				text-align: center;
+			}
+
+			&.links {
+				display: inline-flex;
+				margin-top: 175px;
+
+				svg {
+					&.github {
+						g {
+							fill: #ffd700;
+						}
+					}
+
+					&.svg-inline--fa {
+						height: 85px;
+						width: 85px;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		span {
+			&.about {
+				background: #a09abcbf;
+			}
+
+			&.name {
+				background: #800000bf;
+				text-align: center;
+				font-weight: bold;
+				font-size: 48pt;
+				font-family: "Ubuntu", sans-serif;
+			}
+
+			&.visually-hidden {
+				display: none;
+				visibility: hidden;
+			}
+		}
 	}
 
 	&.mobile {
 		&.background {
-			background-image: url("../../public/assets/images/RoboMastersSimulation.jpg");
+			background-image: url("../../public/assets/images/face.jpg");
 			background-position: top;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -130,78 +202,78 @@ div {
 				text-align: center;
 			}
 		}
-	}
-}
 
-h1 {
-	all: unset;
-}
+		h1 {
+			all: unset;
+		}
 
-header.name {
-	color: #ffffff;
-	text-align: center;
-	font-weight: bold;
-	font-size: 48pt;
-	font-family: "Ubuntu", sans-serif;
-}
+		header.name {
+			color: #ffffff;
+			text-align: center;
+			font-weight: bold;
+			font-size: 24pt;
+			font-family: "Ubuntu", sans-serif;
+		}
 
-p {
-	&.about {
-		background: #d4bebebf;
-		font-size: 24pt;
-		text-align: center;
-		width: 45%;
-		overflow-wrap: break-word;
-		display: inline-block;
-		margin-block-start: 0px;
-		margin-block-end: 0px;
-		margin-inline-start: 0px;
-		margin-inline-end: 0px;
-	}
+		p {
+			&.about {
+				background: #d4bebebf;
+				font-size: 12pt;
+				text-align: center;
+				width: 45%;
+				overflow-wrap: break-word;
+				display: inline-block;
+				margin-block-start: 0px;
+				margin-block-end: 0px;
+				margin-inline-start: 0px;
+				margin-inline-end: 0px;
+			}
 
-	&.prog_req {
-		background-color: #a09abcbf;
-		display: inline-block;
-		font-size: 24pt;
-		text-align: center;
-	}
+			&.prog_req {
+				background-color: #a09abcbf;
+				display: inline-block;
+				font-size: 12pt;
+				text-align: center;
+			}
 
-	&.links {
-		display: inline-flex;
-		margin-top: 175px;
+			&.links {
+				display: inline-flex;
+				margin-top: 87.5px;
 
-		svg {
-			&.github {
-				g {
-					fill: #ffd700;
+				svg {
+					&.github {
+						g {
+							fill: #ffd700;
+						}
+					}
+
+					&.svg-inline--fa {
+						height: 43px;
+						width: 43px;
+						text-decoration: none;
+					}
 				}
 			}
+		}
 
-			&.svg-inline--fa {
-				height: 85px;
-				width: 85px;
-				text-decoration: none;
+		span {
+			&.about {
+				background: #a09abcbf;
+			}
+
+			&.name {
+				background: #800000bf;
+				text-align: center;
+				font-weight: bold;
+				font-size: 24pt;
+				font-family: "Ubuntu", sans-serif;
+			}
+
+			&.visually-hidden {
+				display: none;
+				visibility: hidden;
 			}
 		}
-	}
-}
-
-span {
-	&.about {
-		background: #a09abcbf;
-	}
-
-	&.name {
-		background: #800000bf;
-		text-align: center;
-		font-weight: bold;
-		font-size: 48pt;
-		font-family: "Ubuntu", sans-serif;
-	}
-
-	&.visually-hidden {
-		display: none;
-		visibility: hidden;
 	}
 }
 
