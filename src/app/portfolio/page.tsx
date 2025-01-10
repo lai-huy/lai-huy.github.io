@@ -3,11 +3,15 @@ import Link from "next/link";
 
 import {
 	CucumberPlain,
+	FirebaseOriginal,
 	JupyterOriginalWordmark,
 	NodejsOriginal,
 	NumpyOriginal,
 	PandasOriginal,
 	PythonOriginal,
+	PytorchOriginal,
+	ScikitlearnOriginal,
+	TensorflowOriginal,
 	ReactOriginal,
 	RspecOriginal,
 } from "devicons-react";
@@ -17,7 +21,7 @@ const bvcog: string =
 const chess: string = "https://github.com/lai-huy-075/Chess";
 const forge: string =
 	"https://files.minecraftforge.net/net/minecraftforge/forge/";
-const mpm: string = "https://github.com/lai-huy/CSCE-421-Final-Project/";
+const mpm_github: string = "https://github.com/lai-huy/CSCE-421-Final-Project/";
 const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const skyblock: string = "https://wiki.hypixel.net/Introduction";
 const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
@@ -25,10 +29,12 @@ const scriptsearch_frontend: string =
 	"https://github.com/Script-Search/frontend";
 const scriptsearch_backend: string = "https://github.com/Script-Search/backend";
 const tamu_rm: string = "https://tamurobomasters.com/";
-const report_421: string =
-	"https://github.com/lai-huy/CSCE-421-Final-Project/raw/master/Final%20report/Final%20Project.pdf";
-const report_735: string =
+const report_mpm: string =
+	"https://github.com/lai-huy/Machine-Learning-for-Mortality-Prognosis/raw/main/Final%20report/Final%20Project.pdf";
+const report_strassenmp: string =
 	"https://github.com/lai-huy/StrassenMP/raw/main/Major%20Project.pdf";
+const report_clip: string =
+	"https://github.com/lai-huy/Improving-CLIP-Training/raw/main/Improving%20CLIP%20Training.pdf";
 
 export default function Portfolio() {
 	return (
@@ -84,13 +90,11 @@ export default function Portfolio() {
 			<div id="bvcog">
 				<p className="bvcog">
 					You can view the source code for this project{" "}
-					<a href={bvcog}>here</a>
-					.<br />
+					<a href={bvcog}>here</a>.<br />
 					You can watch this video below that demonstrates the product
 					that a team of students and I worked on.
 				</p>
 			</div>
-
 			<p className="youtube">
 				<iframe
 					className="youtube"
@@ -108,15 +112,6 @@ export default function Portfolio() {
 				Script Search 🔎
 			</div>
 			<div id="scriptsearch">
-				<img
-					className="right_wrap"
-					src="/assets/images/ScriptSearch Logo.svg"
-					alt="ScriptSearch 🔎"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
-
 				<p className="scriptsearch">
 					Retrieving specific information from vast video data on
 					platforms like YouTube presents a formidable challenge due
@@ -167,7 +162,16 @@ export default function Portfolio() {
 						loading="lazy"
 						decoding="async"
 					/>
+					<FirebaseOriginal size="100" />
 				</p>
+				<img
+					className="right_wrap"
+					src="/assets/images/ScriptSearch Logo.svg"
+					alt="ScriptSearch 🔎"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
+				/>
 			</div>
 			<p className="youtube">
 				<iframe
@@ -218,11 +222,10 @@ export default function Portfolio() {
 					reference and potential publication.
 				</p>
 			</div>
-
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${report_735}&embedded=true`}
+					src={`https://docs.google.com/viewer?url=${report_strassenmp}&embedded=true`}
 					title="Strassen's Matrix Multiplication Report"
 				/>
 			</p>
@@ -234,14 +237,6 @@ export default function Portfolio() {
 				TAMU RoboMasters
 			</div>
 			<div id="robomasters">
-				<img
-					className="right_wrap"
-					src="/assets/images/RoboMastersFullTeam.jpg"
-					alt="TAMU RoboMasters"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
 				<p className="tamu_rm">
 					A project that I have been apart of is the Simulation
 					subteam.
@@ -278,8 +273,15 @@ export default function Portfolio() {
 					Learn more about TAMU RoboMasters{" "}
 					<Link href={tamu_rm}>here</Link>.
 				</p>
+				<img
+					className="right_wrap"
+					src="/assets/images/RoboMastersFullTeam.jpg"
+					alt="TAMU RoboMasters"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
+				/>
 			</div>
-
 			<p className="youtube">
 				<iframe
 					title="About TAMU RoboMasters"
@@ -336,6 +338,93 @@ export default function Portfolio() {
 				</p>
 			</div>
 
+			<a href="#clip" className="skip-link">
+				Skip to Improving CLIP
+			</a>
+			<div className="h2" role="heading" aria-level={2}>
+				Improving CLIP Training
+			</div>
+			<div id="clip">
+				<p className="clip">
+					This project focuses on improving the training of CLIP
+					(Contrastive Language-Image Pretraining) models by
+					optimizing the global contrastive loss for bimodal
+					contrastive self-supervised learning.
+					<br />
+					Self-supervised learning (SSL) has gained prominence for its
+					ability to generalize across downstream tasks in areas such
+					as natural language processing and computer vision.
+					<br />
+					Among SSL frameworks, Contrastive Learning (CL) has proven
+					effective by maximizing the similarity between positive
+					pairs and minimizing it between negative pairs.
+					<br />
+					While CLIP has demonstrated success in aligning image and
+					text representations, challenges persist, such as slow
+					convergence in large-scale bimodal datasets.
+					<br />
+					Participants are tasked with accelerating global contrastive
+					loss optimization and enhancing model performance on
+					provided benchmarks.
+					<br />
+					<br />
+					Trainig of CLIP models used a 100k subset of the Conceptual
+					Captions 3M dataset for training and validate the models on
+					MSCOCO and ImageNet datasets.
+					<br />
+					They must evaluate model performance based on retrieval
+					accuracy and zero-shot classification metrics.
+					<br />
+					Models are restricted to using ResNet-50 and DistilBERT as
+					encoders, with fixed hyperparameters, and must compare at
+					least two optimizers and three loss functions.
+					<br />
+					Deliverables include model code, trained models, and a
+					detailed report covering experimental results, all adhering
+					to specified guidelines.
+					<br />
+					Evaluation criteria include experimental breadth, report
+					quality, presentation, and innovative ideas.
+					<br />
+					<br />
+					<PytorchOriginal size="100" />
+					<TensorflowOriginal size="100" />
+					<ScikitlearnOriginal size="100" />
+				</p>
+				<img
+					className="right_wrap"
+					src="https://raw.githubusercontent.com/openai/CLIP/main/CLIP.png"
+					alt="CLIP Training"
+					fetchPriority="low"
+					loading="lazy"
+					decoding="async"
+				/>
+			</div>
+			<div id="clip">
+				<p className="clip">
+					The following video presents the results of this project.
+					<br />
+					Additionally a report is provided for more in-depth
+					analysis.
+				</p>
+			</div>
+			<p className="youtube">
+				<iframe
+					title="Improving CLIP Training"
+					className="youtube"
+					src="https://www.youtube.com/embed/-O5g3cn_PkM"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowFullScreen
+				/>
+			</p>
+			<p className="pdf_document">
+				<iframe
+					className="pdf_document"
+					src={`https://docs.google.com/viewer?url=${report_clip}&embedded=true`}
+					title="Improving CLIP Training"
+				/>
+			</p>
+
 			<a href="#mpm" className="skip-link">
 				Skip to Mortality Prediction Model
 			</a>
@@ -344,7 +433,7 @@ export default function Portfolio() {
 			</div>
 			<div id="mpm">
 				<img
-					className="mpm"
+					className="left_wrap"
 					src="https://xgboost.ai/images/logo/xgboost-logo.png"
 					alt="Mortality Prediction Model"
 					fetchPriority="low"
@@ -367,7 +456,7 @@ export default function Portfolio() {
 					better than the Professor&apos;s Model.
 					<br />
 					See the source code for this project{" "}
-					<Link href={mpm}>here</Link>.
+					<Link href={mpm_github}>here</Link>.
 					<br />
 					<NumpyOriginal size="128" />
 					<PandasOriginal size="128" />
@@ -378,7 +467,7 @@ export default function Portfolio() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${report_421}&embedded=true`}
+					src={`https://docs.google.com/viewer?url=${report_mpm}&embedded=true`}
 					title="Mortality Prediction Model Report"
 				/>
 			</p>
