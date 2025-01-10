@@ -5,7 +5,6 @@ import Link from "next/link";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMediaQuery } from "usehooks-ts";
 
 const mcs: string =
 	"https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext";
@@ -20,8 +19,6 @@ const linkedin: string = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
 const email: string = "mailto:lai.huy.075@gmail.com";
 
 export default function Home() {
-	const isMobile: boolean = useMediaQuery("(max-width: 768px)");
-
 	const handleGithubClick = () => {
 		window.open(github, "_blank");
 	};
@@ -34,8 +31,16 @@ export default function Home() {
 		window.open(email);
 	};
 
+	const userAgentData =
+		typeof window !== "undefined" ? navigator.userAgentData : "";
+
 	return (
-		<div className="background" role="main">
+		<div
+			className={`background ${
+				userAgentData.mobile ? "mobile" : "desktop"
+			}`}
+			role="main"
+		>
 			<header className="name">
 				<h1>
 					<span className="name">Huy Quang Lai</span>
@@ -101,10 +106,7 @@ export default function Home() {
 						className="btn-hover github"
 						onClick={handleGithubClick}
 					>
-						<GithubOriginal
-							size={isMobile ? 40 : 85}
-							className="devicon github"
-						/>
+						<GithubOriginal size="85" className="devicon github" />
 					</button>
 
 					<button
@@ -112,10 +114,7 @@ export default function Home() {
 						className="btn-hover linkedin"
 						onClick={handleLinkedinClick}
 					>
-						<LinkedinOriginal
-							size={isMobile ? 40 : 85}
-							className="devicon"
-						/>
+						<LinkedinOriginal size="85" className="devicon" />
 					</button>
 
 					<button

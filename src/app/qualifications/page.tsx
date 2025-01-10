@@ -40,7 +40,7 @@ import "./qualifications.scss";
 
 export default function Qualifications() {
 	return (
-		<>
+		<div>
 			<header className="qualifications">
 				<h1>Technical Qualifications</h1>
 			</header>
@@ -171,6 +171,6 @@ export default function Qualifications() {
 					.
 				</p>
 			</div>
-		</>
+		</div>
 	);
 }
