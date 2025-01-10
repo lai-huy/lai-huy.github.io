@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Navbar } from "./navigation/nav";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://lai-huy.github.io"),
 	title: "Huy Quang Lai",
 	description: "My personal website",
 	openGraph: {

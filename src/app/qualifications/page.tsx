@@ -5,15 +5,27 @@ import {
 	CplusplusOriginal,
 	Css3Original,
 	EclipseOriginal,
+	FirebaseOriginal,
+	GithubOriginal,
 	GitOriginal,
+	GooglecloudOriginal,
+	HerokuOriginal,
 	Html5Original,
 	IntellijOriginal,
 	JavaOriginal,
 	JavascriptOriginal,
+	JupyterOriginal,
+	JupyterOriginalWordmark,
 	LatexOriginal,
+	MatplotlibOriginal,
+	NanoOriginal,
 	NeovimOriginal,
+	NextjsOriginal,
 	NodejsOriginal,
 	NpmOriginalWordmark,
+	NumpyOriginal,
+	PandasLineWordmark,
+	PandasOriginal,
 	PostgresqlOriginal,
 	PythonOriginal,
 	PytorchOriginal,
@@ -21,6 +33,7 @@ import {
 	ReactOriginal,
 	RubyOriginal,
 	SassOriginal,
+	ScikitlearnOriginal,
 	TensorflowOriginal,
 	TypescriptOriginal,
 	VimOriginal,
@@ -68,9 +81,15 @@ export default function Qualifications() {
 					<CplusplusOriginal size="128" />
 					<JavaOriginal size="128" />
 					<PythonOriginal size="128" />
+					<MatplotlibOriginal size="128" />
+					<ScikitlearnOriginal size="128" />
 					<TensorflowOriginal size="128" />
 					<PytorchOriginal size="128" />
+					<NumpyOriginal size="128" />
+					<PandasOriginal size="128" />
+					<JupyterOriginalWordmark size="128" />
 					<GitOriginal size="128" />
+					<GithubOriginal size="128" className="devicon github" />
 					<LatexOriginal size="128" />
 					<JavascriptOriginal size="128" />
 					<TypescriptOriginal size="128" />
@@ -80,9 +99,13 @@ export default function Qualifications() {
 					<ReactOriginal size="128" />
 					<NodejsOriginal size="128" />
 					<NpmOriginalWordmark size="128" />
-					<PostgresqlOriginal size="128" />
+					<NextjsOriginal size="128" />
 					<RubyOriginal size="128" />
 					<RailsOriginalWordmark size="128" />
+					<HerokuOriginal size="128" />
+					<GooglecloudOriginal size="128" />
+					<FirebaseOriginal size="128" />
+					<PostgresqlOriginal size="128" />
 					<br />
 					Software Engineering
 					<br />
@@ -103,6 +126,7 @@ export default function Qualifications() {
 					<EclipseOriginal size="128" />
 					<IntellijOriginal size="128" />
 					<VscodeOriginal size="128" />
+					<NanoOriginal size="128" />
 					<NeovimOriginal size="128" />
 					<VimOriginal size="128" />
 				</p>
