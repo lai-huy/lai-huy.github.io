@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
 import Link from "next/link";
 import "./nav.scss";
+import "../globals.scss";
 
 export function Navbar() {
 	return (
@@ -32,10 +33,6 @@ export function Navbar() {
 					<FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
 					<span className="visually-hidden">Qualifications</span>
 				</Link>
-				{/* <Link className="service-link" href="/service" key="/service">
-					<FontAwesomeIcon icon={faBellConcierge} color="#4d4d4e" />
-					<span className="visually-hidden">Service</span>
-				</Link> */}
 			</nav>
 
 			<ul role="menu" className="navigation">

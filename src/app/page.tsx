@@ -111,7 +111,10 @@ export default function Home() {
 						className="btn-hover github"
 						onClick={handleGithubClick}
 					>
-						<GithubOriginal size="85" className="devicon github" />
+						<GithubOriginal
+							size={isMobile ? 40 : 85}
+							className="devicon github"
+						/>
 					</button>
 
 					<button
@@ -119,7 +122,10 @@ export default function Home() {
 						className="btn-hover linkedin"
 						onClick={handleLinkedinClick}
 					>
-						<LinkedinOriginal size="85" className="devicon" />
+						<LinkedinOriginal
+							size={isMobile ? 40 : 85}
+							className="devicon"
+						/>
 					</button>
 
 					<button
@@ -127,7 +133,10 @@ export default function Home() {
 						className="btn-hover email"
 						onClick={handleEmailClick}
 					>
-						<FontAwesomeIcon icon={faEnvelope} />
+						<FontAwesomeIcon
+							icon={faEnvelope}
+							className="devicon"
+						/>
 					</button>
 				</p>
 			</div>
