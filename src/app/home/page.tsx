@@ -44,7 +44,11 @@ export default function Home() {
 			>
 				<header className="name">
 					<h1>
-						<span className="name">Huy Quang Lai</span>
+						<span className="name">
+							{isMobile
+								? "Huy Quang Lai (Mobile)"
+								: "Huy Quang Lai"}
+						</span>
 					</h1>
 				</header>
 				<a href="#about" className="skip-link">
