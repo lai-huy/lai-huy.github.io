@@ -42,3 +42,14 @@ span.visually-hidden {
 	display: none;
 	visibility: hidden;
 }
+
+div {
+	&.page {
+		display: flex;
+	}
+
+	&.content {
+		margin-left: 60px;
+		width: calc(100% - 60px);
+	}
+}

@@ -3,13 +3,11 @@ button.btn-hover {
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
-	height: 115px;
 	-o-transition: all 0.4s ease-in-out;
 	margin: 5px;
 	text-align: center;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
-	width: 115px;
 
 	&:hover {
 		background-position: 100% 0;
@@ -103,6 +101,19 @@ div {
 		font-family: "Ubuntu", sans-serif;
 	}
 
+	span {
+		&.about {
+			background: #a09abcbf;
+		}
+
+		&.name {
+			background: #800000bf;
+			text-align: center;
+			font-weight: bold;
+			font-family: "Ubuntu", sans-serif;
+		}
+	}
+
 	p {
 		&.about {
 			background: #d4bebebf;
@@ -167,17 +178,19 @@ div {
 		}
 
 		span {
-			&.about {
-				background: #a09abcbf;
-			}
-
 			&.name {
-				background: #800000bf;
-				text-align: center;
-				font-weight: bold;
 				font-size: 48pt;
-				font-family: "Ubuntu", sans-serif;
 			}
+		}
+
+		button.btn-hover {
+			width: 115px;
+			height: 115px;
+		}
+
+		svg.devicon {
+			width: 85px;
+			height: 85px;
 		}
 	}
 
@@ -214,6 +227,16 @@ div {
 			&.name {
 				font-size: 24pt;
 			}
+		}
+
+		button.btn-hover {
+			width: 57px;
+			height: 57px;
+		}
+
+		svg.devicon {
+			width: 42px;
+			height: 42px;
 		}
 	}
 }

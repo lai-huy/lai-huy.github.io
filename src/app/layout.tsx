@@ -1,6 +1,5 @@
 import "./globals.scss";
 import type { Metadata } from "next";
-import { Navbar } from "./navigation/nav";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://lai-huy.github.io"),
@@ -35,10 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className="antialiased">
-				<main className="">
-					<Navbar />
-					{children}
-				</main>
+				<main className="">{children}</main>
 			</body>
 		</html>
 	);
