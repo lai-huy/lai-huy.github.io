@@ -81,8 +81,6 @@ export default function Home() {
 						</Link>{" "}
 						.<br />I also have a Minor in Cybersecurity and a Minor
 						in Mathematics.
-						<br />
-						{navigator.userAgent}
 					</p>
 				</div>
 
