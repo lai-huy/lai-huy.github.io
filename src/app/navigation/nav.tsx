@@ -9,7 +9,7 @@ import Link from "next/link";
 import "./nav.scss";
 import "../globals.scss";
 
-export function Navbar() {
+export default function Navbar() {
 	return (
 		<div className="nav-bar">
 			<nav className="" role="navigation">

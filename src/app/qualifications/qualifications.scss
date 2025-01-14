@@ -40,8 +40,14 @@ p.qualifications {
 	margin: 20px;
 }
 
-svg.github {
-	g {
-		fill: #ffd700;
+svg {
+	&.github {
+		g {
+			fill: #ffd700;
+		}
+	}
+
+	&.latex {
+		fill: #ffffff;
 	}
 }

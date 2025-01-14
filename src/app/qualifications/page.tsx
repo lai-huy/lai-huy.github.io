@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	CplusplusOriginal,
 	Css3Original,
+	CucumberPlain,
 	EclipseOriginal,
 	FirebaseOriginal,
 	GithubOriginal,
@@ -28,6 +29,7 @@ import {
 	PytorchOriginal,
 	RailsOriginalWordmark,
 	ReactOriginal,
+	RspecOriginal,
 	RubyOriginal,
 	SassOriginal,
 	ScikitlearnOriginal,
@@ -36,14 +38,14 @@ import {
 	VimOriginal,
 	VscodeOriginal,
 } from "devicons-react";
-import { Navbar } from "../navigation/nav";
+import Navbar from "../navigation/nav";
 import "./qualifications.scss";
 
 export default function Qualifications() {
 	return (
 		<div className="page">
 			<Navbar />
-			<div>
+			<div className="content">
 				<header className="qualifications">
 					<h1>Technical Qualifications</h1>
 				</header>
@@ -93,8 +95,8 @@ export default function Qualifications() {
 						<PandasOriginal size="128" />
 						<JupyterOriginalWordmark size="128" />
 						<GitOriginal size="128" />
-						<GithubOriginal size="128" className="devicon github" />
-						<LatexOriginal size="128" />
+						<GithubOriginal size="128" className="github" />
+						<LatexOriginal size="128" className="latex" />
 						<JavascriptOriginal size="128" />
 						<TypescriptOriginal size="128" />
 						<Html5Original size="128" />
@@ -105,7 +107,9 @@ export default function Qualifications() {
 						<NpmOriginalWordmark size="128" />
 						<NextjsOriginal size="128" />
 						<RubyOriginal size="128" />
+						<RspecOriginal size="128" />
 						<RailsOriginalWordmark size="128" />
+						<CucumberPlain size="128" color="#00A818" />
 						<HerokuOriginal size="128" />
 						<GooglecloudOriginal size="128" />
 						<FirebaseOriginal size="128" />
