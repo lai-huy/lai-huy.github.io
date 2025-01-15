@@ -9,7 +9,7 @@ import Social from "./social";
 
 export default function Home() {
 	return (
-		<div className="page">
+		<main className="page">
 			<Navbar />
 			<div
 				className={`content background ${
@@ -24,11 +24,8 @@ export default function Home() {
 				</header>
 				<About />
 
-				<a href="#social" className="skip-link">
-					Skip to my online profiles.
-				</a>
 				<Social />
 			</div>
-		</div>
+		</main>
 	);
 }

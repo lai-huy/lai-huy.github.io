@@ -1,4 +1,3 @@
-import "./home.scss";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
@@ -21,32 +20,43 @@ export default function Social() {
 	};
 
 	return (
-		<div id="social">
-			<p className="links">
-				<button
-					aria-label="Go to my GitHub profile"
-					className="btn-hover github"
-					onClick={handleGithubClick}
-				>
-					<GithubOriginal size="5rem" className="devicon github" />
-				</button>
+		<div>
+			<a href="#social" className="skip-link">
+				Skip to my online profiles.
+			</a>
+			<div id="social">
+				<p className="links">
+					<button
+						aria-label="Go to my GitHub profile"
+						className="btn-hover github"
+						onClick={handleGithubClick}
+					>
+						<GithubOriginal
+							size="5rem"
+							className="devicon github"
+						/>
+					</button>
 
-				<button
-					aria-label="Go to my LinkedIn profile"
-					className="btn-hover linkedin"
-					onClick={handleLinkedinClick}
-				>
-					<LinkedinOriginal size="5rem" className="devicon" />
-				</button>
+					<button
+						aria-label="Go to my LinkedIn profile"
+						className="btn-hover linkedin"
+						onClick={handleLinkedinClick}
+					>
+						<LinkedinOriginal size="5rem" className="devicon" />
+					</button>
 
-				<button
-					aria-label="Send me an email"
-					className="btn-hover email"
-					onClick={handleEmailClick}
-				>
-					<FontAwesomeIcon icon={faEnvelope} className="devicon" />
-				</button>
-			</p>
+					<button
+						aria-label="Send me an email"
+						className="btn-hover email"
+						onClick={handleEmailClick}
+					>
+						<FontAwesomeIcon
+							icon={faEnvelope}
+							className="devicon"
+						/>
+					</button>
+				</p>
+			</div>
 		</div>
 	);
 }

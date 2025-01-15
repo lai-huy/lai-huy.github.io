@@ -3,6 +3,7 @@ import { FirebaseOriginal } from "devicons-react";
 const scriptsearch_frontend: string = String.raw`https://github.com/Script-Search/frontend`;
 const scriptsearch_backend: string = String.raw`https://github.com/Script-Search/backend`;
 const scriptsearch_report: string = String.raw`https://github.com/Script-Search/Report/raw/main/Capstone%20Project%20Report.pdf`;
+
 export default function ScriptSearch() {
 	return (
 		<div>
