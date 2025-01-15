@@ -28,7 +28,7 @@ export default function Social() {
 					className="btn-hover github"
 					onClick={handleGithubClick}
 				>
-					<GithubOriginal size="" className="devicon github" />
+					<GithubOriginal size="5rem" className="devicon github" />
 				</button>
 
 				<button
@@ -36,7 +36,7 @@ export default function Social() {
 					className="btn-hover linkedin"
 					onClick={handleLinkedinClick}
 				>
-					<LinkedinOriginal size="" className="devicon" />
+					<LinkedinOriginal size="5rem" className="devicon" />
 				</button>
 
 				<button
