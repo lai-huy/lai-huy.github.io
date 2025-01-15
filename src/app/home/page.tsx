@@ -1,10 +1,10 @@
 "use client";
 
-import "./home.scss";
-
 import { isMobile } from "react-device-detect";
 import Navbar from "../navigation/nav";
+import "../navigation/nav.scss";
 import About from "./about";
+import "./home.scss";
 import Social from "./social";
 
 export default function Home() {

@@ -1,20 +1,19 @@
 import Link from "next/link";
 import Navbar from "../navigation/nav";
-import "./portfolio.scss";
-
+import "../navigation/nav.scss";
 import BVCOG from "./bvcog";
 import Clip from "./clip";
+import MPM from "./mpm";
+import "./portfolio.scss";
 import POS from "./pos";
 import RoboMasters from "./robomasters";
 import ScriptSearch from "./scriptsearch";
 import Strassen from "./strassen";
-import MPM from "./mpm";
 
-const chess: string = "https://github.com/lai-huy-075/Chess";
-const forge: string =
-	"https://files.minecraftforge.net/net/minecraftforge/forge/";
-const skyblock: string = "https://wiki.hypixel.net/Introduction";
-const skyblock_gh: string = "https://github.com/MrPineapple070/SkyBlock-1.19.2";
+const chess: string = String.raw`https://github.com/lai-huy-075/Chess`;
+const forge: string = String.raw`https://files.minecraftforge.net/net/minecraftforge/forge/`;
+const skyblock: string = String.raw`https://wiki.hypixel.net/Introduction`;
+const skyblock_gh: string = String.raw`https://github.com/MrPineapple070/SkyBlock-1.19.2`;
 
 export default function Portfolio() {
 	return (

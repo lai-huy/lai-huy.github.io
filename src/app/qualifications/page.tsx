@@ -39,6 +39,7 @@ import {
 	VscodeOriginal,
 } from "devicons-react";
 import Navbar from "../navigation/nav";
+import "../navigation/nav.scss";
 import "./qualifications.scss";
 
 export default function Qualifications() {
@@ -84,36 +85,36 @@ export default function Qualifications() {
 						Technical Skills
 					</div>
 					<p className="qualifications">
-						<CplusplusOriginal size="128" />
-						<JavaOriginal size="128" />
-						<PythonOriginal size="128" />
-						<MatplotlibOriginal size="128" />
-						<ScikitlearnOriginal size="128" />
-						<TensorflowOriginal size="128" />
-						<PytorchOriginal size="128" />
-						<NumpyOriginal size="128" />
-						<PandasOriginal size="128" />
-						<JupyterOriginalWordmark size="128" />
-						<GitOriginal size="128" />
-						<GithubOriginal size="128" className="github" />
-						<LatexOriginal size="128" className="latex" />
-						<JavascriptOriginal size="128" />
-						<TypescriptOriginal size="128" />
-						<Html5Original size="128" />
-						<Css3Original size="128" />
-						<SassOriginal size="128" />
-						<ReactOriginal size="128" />
-						<NodejsOriginal size="128" />
-						<NpmOriginalWordmark size="128" />
-						<NextjsOriginal size="128" />
-						<RubyOriginal size="128" />
-						<RspecOriginal size="128" />
-						<RailsOriginalWordmark size="128" />
-						<CucumberPlain size="128" color="#00A818" />
-						<HerokuOriginal size="128" />
-						<GooglecloudOriginal size="128" />
-						<FirebaseOriginal size="128" />
-						<PostgresqlOriginal size="128" />
+						<CplusplusOriginal size="8rem" />
+						<JavaOriginal size="8rem" />
+						<PythonOriginal size="8rem" />
+						<MatplotlibOriginal size="8rem" />
+						<ScikitlearnOriginal size="8rem" />
+						<TensorflowOriginal size="8rem" />
+						<PytorchOriginal size="8rem" />
+						<NumpyOriginal size="8rem" />
+						<PandasOriginal size="8rem" />
+						<JupyterOriginalWordmark size="8rem" />
+						<GitOriginal size="8rem" />
+						<GithubOriginal size="8rem" className="github" />
+						<LatexOriginal size="8rem" className="latex" />
+						<JavascriptOriginal size="8rem" />
+						<TypescriptOriginal size="8rem" />
+						<Html5Original size="8rem" />
+						<Css3Original size="8rem" />
+						<SassOriginal size="8rem" />
+						<ReactOriginal size="8rem" />
+						<NodejsOriginal size="8rem" />
+						<NpmOriginalWordmark size="8rem" />
+						<NextjsOriginal size="8rem" />
+						<RubyOriginal size="8rem" />
+						<RspecOriginal size="8rem" />
+						<RailsOriginalWordmark size="8rem" />
+						<CucumberPlain size="8rem" color="#00A818" />
+						<HerokuOriginal size="8rem" />
+						<GooglecloudOriginal size="8rem" />
+						<FirebaseOriginal size="8rem" />
+						<PostgresqlOriginal size="8rem" />
 						<br />
 						Software Engineering
 						<br />
@@ -131,12 +132,12 @@ export default function Qualifications() {
 						Development Environments
 					</div>
 					<p className="qualifications">
-						<EclipseOriginal size="128" />
-						<IntellijOriginal size="128" />
-						<VscodeOriginal size="128" />
-						<NanoOriginal size="128" />
-						<NeovimOriginal size="128" />
-						<VimOriginal size="128" />
+						<EclipseOriginal size="8rem" />
+						<IntellijOriginal size="8rem" />
+						<VscodeOriginal size="8rem" />
+						<NanoOriginal size="8rem" />
+						<NeovimOriginal size="8rem" />
+						<VimOriginal size="8rem" />
 					</p>
 				</div>
 
