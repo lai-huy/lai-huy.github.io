@@ -18,10 +18,18 @@ header.qualifications {
 	font-family: "Ubuntu", sans-serif;
 }
 
-iframe.resume {
-	margin: 20px;
-	width: 90%;
-	height: 1130px;
+iframe {
+	&.resume {
+		margin: 20px;
+		width: 90%;
+		height: 1130px;
+	}
+
+	&.award {
+		margin: 1rem;
+		width: 45%;
+		height: 35rem;
+	}
 }
 
 img.svg-inline--fa.resume,
@@ -31,14 +39,21 @@ svg.svg-inline--fa.resume {
 	width: 100px;
 }
 
-p.resume {
-	text-align: center;
-}
+p {
+	&.resume {
+		text-align: center;
+	}
 
-p.qualifications {
-	text-align: left;
-	font-size: 18pt;
-	margin: 20px;
+	&.qualifications {
+		text-align: left;
+		font-size: 18pt;
+		margin: 20px;
+	}
+
+	&.awards {
+		align-items: center;
+		text-align: center;
+	}
 }
 
 svg {

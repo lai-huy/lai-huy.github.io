@@ -1,5 +1,6 @@
 import Navbar from "../navigation/nav";
 import "../navigation/nav.scss";
+import Awards from "./awards";
 import DevEnv from "./devenv";
 import Interest from "./interest";
 import "./qualifications.scss";
@@ -16,6 +17,7 @@ export default function Qualifications() {
 				</header>
 
 				<Resume />
+				<Awards />
 				<Skill />
 				<DevEnv />
 				<Interest />
