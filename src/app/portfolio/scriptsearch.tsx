@@ -44,9 +44,9 @@ export default function ScriptSearch() {
 					navigating and accessing video content with precision and
 					ease.
 					<br />
-					You can view the source code for the front end{" "}
-					<a href={scriptsearch_frontend}>here</a> and the back end{" "}
-					<a href={scriptsearch_backend}>here</a>.
+					You can view the source code for the{" "}
+					<a href={scriptsearch_frontend}>front end</a> and{" "}
+					<a href={scriptsearch_backend}>back end</a>.
 					<br />
 					<img
 						className="logo"

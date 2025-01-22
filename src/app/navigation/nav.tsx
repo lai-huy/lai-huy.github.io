@@ -14,7 +14,11 @@ export default function Navbar() {
 		<div className="nav-bar">
 			<nav className="" role="navigation">
 				<Link className="home-link" href="/" key="/">
-					<FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+					<FontAwesomeIcon
+						icon={faHome}
+						color="#4d4d4e"
+						aria-hidden={true}
+					/>
 					<span className="visually-hidden">Home</span>
 				</Link>
 				<Link
@@ -22,7 +26,11 @@ export default function Navbar() {
 					href="/portfolio"
 					key="/portfolio"
 				>
-					<FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+					<FontAwesomeIcon
+						icon={faSuitcase}
+						color="#4d4d4e"
+						aria-hidden={true}
+					/>
 					<span className="visually-hidden">Portfolio</span>
 				</Link>
 				<Link
@@ -30,29 +38,41 @@ export default function Navbar() {
 					href="/qualifications"
 					key="/qualifications"
 				>
-					<FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
+					<FontAwesomeIcon
+						icon={faGraduationCap}
+						color="#4d4d4e"
+						aria-hidden={true}
+					/>
 					<span className="visually-hidden">Qualifications</span>
 				</Link>
 			</nav>
 
-			<ul role="menu" className="navigation">
-				<li>
+			<ul
+				role="menu"
+				className="navigation"
+				aria-label="Social Media Links"
+			>
+				<li role="menuitem">
 					<a
 						href="https://www.linkedin.com/in/huy-lai-93a2b4211/"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<LinkedinOriginal size="32" />
+						<LinkedinOriginal size="32" aria-hidden={true} />
 						<span className="visually-hidden">LinkedIn</span>
 					</a>
 				</li>
-				<li>
+				<li role="menuitem">
 					<a
 						href="https://github.com/lai-huy"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						<GithubOriginal size="32" className="devicon github" />
+						<GithubOriginal
+							size="32"
+							className="devicon github"
+							aria-hidden={true}
+						/>
 						<span className="visually-hidden">GitHub</span>
 					</a>
 				</li>

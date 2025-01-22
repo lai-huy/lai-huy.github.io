@@ -24,7 +24,7 @@ export default function About() {
 			</a>
 			<div id="prog">
 				<p className="prog_req">
-					Learn more about the MCS <a href={mcs}>here</a>.
+					Learn more about the <a href={mcs}>MCS</a>.
 				</p>
 			</div>
 			<div id="about">
@@ -41,12 +41,12 @@ export default function About() {
 			</a>
 			<div id="prog">
 				<p className="prog_req">
-					Learn more about the BS in Computer Science{" "}
-					<a href={bs_cs}>here</a>.<br />
-					Learn more about the Minor in Cybersecurity{" "}
-					<a href={cyber_minor}>here</a>.<br />
-					Learn more about the Minor in Mathematics{" "}
-					<a href={math_minor}>here</a>.
+					Learn more about the{" "}
+					<a href={bs_cs}>BS in Computer Science</a>.<br />
+					Learn more about the{" "}
+					<a href={cyber_minor}>Minor in Cybersecurity</a>.<br />
+					Learn more about the{" "}
+					<a href={math_minor}>Minor in Mathematics</a>.
 				</p>
 			</div>
 		</div>

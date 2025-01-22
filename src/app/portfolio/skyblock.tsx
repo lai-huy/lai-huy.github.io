@@ -36,7 +36,7 @@ export default function Skyblock() {
 					<br />
 					This mod was developed using Forge as a framework.
 					<br />
-					Learn more about Minecraft Forge <a href={forge}>here</a>.
+					Learn more about <a href={forge}>Minecraft Forge </a>.
 					<br />
 					<br />
 					This project also helped me understand maintaining a
@@ -46,10 +46,10 @@ export default function Skyblock() {
 					generation of loot tables were standardized within the code.
 					<br />
 					<br />
-					More information about SkyBlock can be found{" "}
-					<a href={skyblock}>here</a>.<br />
-					The source code for this can be found{" "}
-					<a href={skyblock_gh}>here</a>.<br />
+					<a href={skyblock}>More information about SkyBlock.</a>
+					<br />
+					The <a href={skyblock_gh}>source code</a> for this can be
+					found .<br />
 					<br />
 					<img
 						className="logo"

@@ -35,9 +35,9 @@ export default function Interest() {
 					We have seen the capabilities of Machine Learning with
 					DeepMind&apos;s AlphaGo.
 					<br />
-					Learn more about AlphaGo{" "}
+					Learn more about{" "}
 					<a href="https://www.deepmind.com/research/highlighted-research/alphago">
-						here
+						AlphaGo
 					</a>
 					.
 				</p>

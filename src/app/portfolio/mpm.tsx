@@ -40,8 +40,8 @@ export default function MPM() {
 					Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
 					better than the Professor&apos;s Model.
 					<br />
-					See the source code for this project{" "}
-					<a href={mpm_github}>here</a>.
+					See the <a href={mpm_github}>source code</a> for this
+					project.
 					<br />
 					<NumpyOriginal size="128" />
 					<PandasOriginal size="128" />

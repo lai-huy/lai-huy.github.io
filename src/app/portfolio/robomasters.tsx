@@ -19,7 +19,7 @@ export default function RoboMasters() {
 					was, intern, part of TAMU RoboMasters.
 					<br />
 					Some of the work I did on this project can be found on the
-					team&apos;s GitHub page found <a href={rm_github}>here</a>.
+					team&apos;s <a href={rm_github}>GitHub page</a>.
 					<br />
 					<br />
 					The purpose of the simulation was to be able to emulate the
@@ -43,8 +43,7 @@ export default function RoboMasters() {
 					Some of these algorithms include, new de-noise algorithms,
 					more optimal armor plate detector.
 					<br />
-					Learn more about TAMU RoboMasters <a href={tamu_rm}>here</a>
-					.
+					<a href={tamu_rm}>Learn more about TAMU RoboMasters </a>.
 				</p>
 				<img
 					className="right_wrap"

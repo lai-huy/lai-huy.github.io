@@ -51,8 +51,8 @@ export default function Chess() {
 					of War, or Duck Chess.
 					<br />
 					<br />
-					The source code for this project can be found{" "}
-					<a href={chess}>here</a>.
+					The <a href={chess}>source code</a> for this project can be
+					found.
 				</p>
 			</div>
 		</div>

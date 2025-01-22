@@ -1,5 +1,7 @@
 import { NodejsOriginal, ReactOriginal } from "devicons-react";
 
+const pos_github: string = String.raw`https://github.com/CSCE315-Spring23/Team_44_Project_3`;
+
 export default function POS() {
 	return (
 		<div>
@@ -38,11 +40,8 @@ export default function POS() {
 					the back-end of the application.
 					<br />
 					<br />
-					You can view the source code for this project{" "}
-					<a href="https://github.com/CSCE315-Spring23/Team_44_Project_3">
-						here
-					</a>
-					.
+					You can view the <a href={pos_github}>source code</a> for
+					this project.
 					<br />
 					<ReactOriginal size="100" />
 					<NodejsOriginal size="100" />

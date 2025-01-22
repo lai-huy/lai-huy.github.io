@@ -1,6 +1,7 @@
 import { CucumberPlain, RspecOriginal } from "devicons-react";
 
 const bvcog: string = String.raw`https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager`;
+const bvcog_report: string = String.raw`https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager/raw/main/documentation/Fall2023/BVCOG_FinalReport.pdf`;
 
 export default function BVCOG() {
 	return (
@@ -51,8 +52,9 @@ export default function BVCOG() {
 			</div>
 			<div id="bvcog">
 				<p className="bvcog">
-					You can view the source code for this project{" "}
-					<a href={bvcog}>here</a>.<br />
+					You can view the <a href={bvcog}>source code</a> for this
+					project.
+					<br />
 					You can watch this video below that demonstrates the product
 					that a team of students and I worked on.
 				</p>
@@ -64,6 +66,13 @@ export default function BVCOG() {
 					title="BVCOG CMS Final Presentation & Demo"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowFullScreen
+				/>
+			</p>
+			<p className="pdf_document">
+				<iframe
+					className="pdf_document"
+					src={`https://docs.google.com/viewer?url=${bvcog_report}&embedded=true`}
+					title="BVCOG Contract Management System Report"
 				/>
 			</p>
 		</div>
