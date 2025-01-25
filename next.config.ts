@@ -1,12 +1,18 @@
 import type { NextConfig } from "next";
 
+let envImageUnoptimize = process.env.NODE_ENV !== "production" ? false : true;
+
 const nextConfig: NextConfig = {
-    output: "export",
-    basePath: "/",
+    output: process.env.NODE_ENV !== "production" ? undefined: "export",
     trailingSlash: true,
     reactStrictMode: true,
     images: {
-        unoptimized: true,
+        unoptimized: envImageUnoptimize,
+        remotePatterns: [
+            {
+                "hostname": "images.unsplash.com",
+            }
+        ]
     },
 };
 
