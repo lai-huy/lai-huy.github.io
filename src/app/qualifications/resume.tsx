@@ -20,7 +20,7 @@ export default function Resume() {
 				</p>
 				<p className="qualifications">
 					If the resume failed to load, download it{" "}
-					<a href="/assets/Resume.pdf" download="HuyLaiResume.pdf">
+					<a href="/assets/Resume.pdf" download="HuyLaiResume.pdf" aria-label="Download Resume">
 						<FontAwesomeIcon icon={faCloudDownload} />
 					</a>
 					.<br />
