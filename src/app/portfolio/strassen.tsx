@@ -1,4 +1,4 @@
-const strassenmp_report: string = String.raw`https://github.com/lai-huy/StrassenMP/raw/main/Major%20Project.pdf`;
+const strassenmp_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/StrassenMP/main/Major%20Project.pdf`;
 
 export default function Strassen() {
 	return (

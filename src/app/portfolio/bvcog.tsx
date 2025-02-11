@@ -1,7 +1,7 @@
 import { CucumberPlain, RspecOriginal } from "devicons-react";
 
 const bvcog: string = String.raw`https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager`;
-const bvcog_report: string = String.raw`https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager/raw/main/documentation/Fall2023/BVCOG_FinalReport.pdf`;
+const bvcog_report: string = String.raw`https://raw.githubusercontent.com/BVCOG-Contract-Management/BVGOG-Contract-Manager/main/documentation/Fall2023/BVCOG_FinalReport.pdf`;
 
 export default function BVCOG() {
 	return (

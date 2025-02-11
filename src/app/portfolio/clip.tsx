@@ -4,7 +4,7 @@ import {
 	TensorflowOriginal,
 } from "devicons-react";
 
-const report_clip: string = String.raw`https://github.com/lai-huy/Improving-CLIP-Training/raw/main/Improving%20CLIP%20Training.pdf`;
+const report_clip: string = String.raw`https://raw.githubusercontent.com/lai-huy/Improving-CLIP-Training/main/Improving%20CLIP%20Training.pdf`;
 export default function Clip() {
 	return (
 		<div>
