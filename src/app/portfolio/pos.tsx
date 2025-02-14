@@ -43,8 +43,8 @@ export default function POS() {
 					You can view the <a href={pos_github}>source code</a> for
 					this project.
 					<br />
-					<ReactOriginal size="100" />
-					<NodejsOriginal size="100" />
+					<ReactOriginal size="128" aria-label="React" />
+					<NodejsOriginal size="128" aria-label="Node.js" />
 				</p>
 			</div>
 		</div>

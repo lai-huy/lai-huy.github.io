@@ -46,8 +46,12 @@ export default function BVCOG() {
 					Uses RSpec and Cucumber to ensure test-driven development
 					and behavior-driven development.
 					<br />
-					<CucumberPlain color="#00A818" size="100" />
-					<RspecOriginal size="100" />
+					<CucumberPlain
+						color="#00A818"
+						size="100"
+						aria-label="Cucumber"
+					/>
+					<RspecOriginal size="100" aria-label="RSpec" />
 				</p>
 			</div>
 			<div id="bvcog">

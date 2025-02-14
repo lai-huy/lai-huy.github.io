@@ -51,7 +51,7 @@ export default function ScriptSearch() {
 					<img
 						className="logo"
 						src="/assets/images/Cloud Functions Logo.svg"
-						alt="Minecraft Forge"
+						alt="GCP Cloud Functions"
 						fetchPriority="low"
 						loading="lazy"
 						decoding="async"
@@ -59,12 +59,12 @@ export default function ScriptSearch() {
 					<img
 						className="logo"
 						src="/assets/images/PubSub Logo.svg"
-						alt="Minecraft Forge"
+						alt="GCP Pub/Sub"
 						fetchPriority="low"
 						loading="lazy"
 						decoding="async"
 					/>
-					<FirebaseOriginal size="100" />
+					<FirebaseOriginal size="128" aria-label="Firebase" />
 				</p>
 				<img
 					className="right_wrap"

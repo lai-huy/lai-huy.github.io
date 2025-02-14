@@ -57,9 +57,9 @@ export default function Clip() {
 					quality, presentation, and innovative ideas.
 					<br />
 					<br />
-					<PytorchOriginal size="100" />
-					<TensorflowOriginal size="100" />
-					<ScikitlearnOriginal size="100" />
+					<PytorchOriginal size="100" aria-label="PyTorch"/>
+					<TensorflowOriginal size="100" aria-label="TensorFlow"/>
+					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn"/>
 				</p>
 				<img
 					className="right_wrap"

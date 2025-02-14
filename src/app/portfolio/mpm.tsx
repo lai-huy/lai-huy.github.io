@@ -43,10 +43,10 @@ export default function MPM() {
 					See the <a href={mpm_github}>source code</a> for this
 					project.
 					<br />
-					<NumpyOriginal size="128" />
-					<PandasOriginal size="128" />
-					<PythonOriginal size="128" />
-					<JupyterOriginalWordmark size="128" />
+					<NumpyOriginal size="128" aria-label="NumPy"/>
+					<PandasOriginal size="128" aria-label="Pandas"/>
+					<PythonOriginal size="128" aria-label="Python"/>
+					<JupyterOriginalWordmark size="128" aria-label="Jupyter"/>
 				</p>
 			</div>
 			<p className="pdf_document">

@@ -14,12 +14,12 @@ export default function DevEnv() {
 				Development Environments
 			</div>
 			<p className="qualifications">
-				<EclipseOriginal size="8rem" />
-				<IntellijOriginal size="8rem" />
-				<VscodeOriginal size="8rem" />
-				<NanoOriginal size="8rem" />
-				<NeovimOriginal size="8rem" />
-				<VimOriginal size="8rem" />
+				<EclipseOriginal size="8rem" aria-label="Eclipse" />
+				<IntellijOriginal size="8rem" aria-label="Intellij" />
+				<VscodeOriginal size="8rem" aria-label="Visual Studio Code" />
+				<NanoOriginal size="8rem" aria-label="Nano" />
+				<NeovimOriginal size="8rem" aria-label="Neovim" />
+				<VimOriginal size="8rem" aria-label="Vim" />
 			</p>
 		</div>
 	);
