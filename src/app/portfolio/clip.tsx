@@ -4,7 +4,7 @@ import {
 	TensorflowOriginal,
 } from "devicons-react";
 
-const report_clip: string = String.raw`https://raw.githubusercontent.com/lai-huy/Improving-CLIP-Training/main/Improving%20CLIP%20Training.pdf`;
+const clip_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/Improving-CLIP-Training/main/Improving%20CLIP%20Training.pdf`;
 export default function Clip() {
 	return (
 		<div>
@@ -90,7 +90,7 @@ export default function Clip() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${report_clip}&embedded=true`}
+                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
 					title="Improving CLIP Training"
 				/>
 			</p>

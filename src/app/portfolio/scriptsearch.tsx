@@ -68,7 +68,7 @@ export default function ScriptSearch() {
 				</p>
 				<img
 					className="right_wrap"
-					src="/assets/images/ScriptSearch Logo.svg"
+					src="https://script-search.github.io/frontend/ScriptSearch_New_Logo.png"
 					alt="ScriptSearch 🔎"
 					fetchPriority="low"
 					loading="lazy"
@@ -86,7 +86,7 @@ export default function ScriptSearch() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${scriptsearch_report}&embedded=true`}
+                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${scriptsearch_report}#zoom=page-width&sidebar=0`}
 					title="Strassen's Matrix Multiplication Report"
 				/>
 			</p>

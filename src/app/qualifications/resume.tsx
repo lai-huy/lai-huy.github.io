@@ -1,7 +1,7 @@
 import { faCloudDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const resume = String.raw`https://github.com/lai-huy/Resume/raw/main/resume.pdf`;
+const resume = String.raw`https://raw.githubusercontent.com/lai-huy/Resume/main/resume.pdf`;
 
 export default function Resume() {
 	return (
@@ -17,7 +17,7 @@ export default function Resume() {
 					<iframe
 						className="resume"
 						title="Huy Lai Resume"
-						src={`https://docs.google.com/viewer?url=${resume}&embedded=true`}
+						src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${resume}#zoom=page-width&sidebar=0`}
 					/>
 				</p>
 				<p className="qualifications">

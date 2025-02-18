@@ -75,7 +75,7 @@ export default function BVCOG() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${bvcog_report}&embedded=true`}
+                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${bvcog_report}#zoom=page-width&sidebar=0`}
 					title="BVCOG Contract Management System Report"
 				/>
 			</p>

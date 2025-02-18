@@ -6,7 +6,7 @@ import {
 } from "devicons-react";
 
 const mpm_github: string = String.raw`https://github.com/lai-huy/CSCE-421-Final-Project/`;
-const report_mpm: string = String.raw`https://raw.githubusercontent.com/lai-huy/Machine-Learning-for-Mortality-Prognosis/main/Final%20report/Final%20Project.pdf`;
+const mpm_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/Machine-Learning-for-Mortality-Prognosis/main/Final%20report/Final%20Project.pdf`;
 export default function MPM() {
 	return (
 		<div>
@@ -52,8 +52,8 @@ export default function MPM() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-					src={`https://docs.google.com/viewer?url=${report_mpm}&embedded=true`}
-					title="Mortality Prediction Model Report"
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${mpm_report}#zoom=page-width&sidebar=0`}
+                    title="Mortality Prediction Model Report"
 				/>
 			</p>
 		</div>
