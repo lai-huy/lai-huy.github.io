@@ -4,15 +4,15 @@ div.h2 {
 	font-size: 38pt;
 }
 
-div#bvcog,
-div#chess,
-div#clip,
-div#mpm,
-div#pos,
-div#robomasters,
-div#scriptsearch,
-div#strassen,
-div#skyblock {
+div.bvcog,
+div.chess,
+div.clip,
+div.mpm,
+div.pos,
+div.robomasters,
+div.scriptsearch,
+div.strassen,
+div.skyblock {
 	display: flex;
 	align-items: center;
 	justify-content: center;

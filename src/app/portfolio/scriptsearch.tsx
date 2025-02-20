@@ -13,7 +13,7 @@ export default function ScriptSearch() {
 			<div className="h2" role="heading" aria-level={2}>
 				Script Search 🔎
 			</div>
-			<div id="scriptsearch">
+			<div className="scriptsearch">
 				<p className="scriptsearch">
 					Retrieving specific information from vast video data on
 					platforms like YouTube presents a formidable challenge due
@@ -86,7 +86,7 @@ export default function ScriptSearch() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${scriptsearch_report}#zoom=page-width&sidebar=0`}
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${scriptsearch_report}#zoom=page-width&sidebar=0`}
 					title="Strassen's Matrix Multiplication Report"
 				/>
 			</p>

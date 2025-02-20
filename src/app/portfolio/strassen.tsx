@@ -9,7 +9,7 @@ export default function Strassen() {
 			<div className="h2" role="heading" aria-level={2}>
 				StrassenMP
 			</div>
-			<div id="strassen">
+			<div className="strassen">
 				<img
 					className="right_wrap"
 					src="/assets/images/OpenMP Logo.png"
@@ -46,7 +46,7 @@ export default function Strassen() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${strassenmp_report}#zoom=page-width&sidebar=0`}
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${strassenmp_report}#zoom=page-width&sidebar=0`}
 					title="Strassen's Matrix Multiplication Report"
 				/>
 			</p>

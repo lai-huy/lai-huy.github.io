@@ -12,7 +12,7 @@ export default function BVCOG() {
 			<div className="h2" role="heading" aria-level={2}>
 				Brazos Valley Council of Governments Contract Management System
 			</div>
-			<div id="bvcog">
+			<div className="bvcog">
 				<img
 					className="left_wrap"
 					src="/assets/images/BVCOG.png"
@@ -54,10 +54,13 @@ export default function BVCOG() {
 					<RspecOriginal size="100" aria-label="RSpec" />
 				</p>
 			</div>
-			<div id="bvcog">
+			<div className="bvcog">
 				<p className="bvcog">
-					You can view the <a href={bvcog}>source code</a> for this
-					project.
+					You can view the{" "}
+					<a href={bvcog}>
+						BVCOG Contract Management System source code on GitHub
+					</a>
+					.
 					<br />
 					You can watch this video below that demonstrates the product
 					that a team of students and I worked on.
@@ -75,7 +78,7 @@ export default function BVCOG() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${bvcog_report}#zoom=page-width&sidebar=0`}
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${bvcog_report}#zoom=page-width&sidebar=0`}
 					title="BVCOG Contract Management System Report"
 				/>
 			</p>

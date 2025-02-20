@@ -11,7 +11,7 @@ export default function Skyblock() {
 			<div className="h2" role="heading" aria-level={2}>
 				SkyBlock Minecraft Mod
 			</div>
-			<div id="skyblock">
+			<div className="skyblock">
 				<img
 					className="left_wrap"
 					src="/assets/images/SkyBlock.jpg"

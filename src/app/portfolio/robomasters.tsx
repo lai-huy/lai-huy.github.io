@@ -10,7 +10,7 @@ export default function RoboMasters() {
 			<div className="h2" role="heading" aria-level={2}>
 				TAMU RoboMasters
 			</div>
-			<div id="robomasters">
+			<div className="robomasters">
 				<p className="tamu_rm">
 					A project that I have been apart of is the Simulation
 					subteam.

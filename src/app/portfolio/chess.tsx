@@ -9,7 +9,7 @@ export default function Chess() {
 			<div className="h2" role="heading" aria-level={2}>
 				Chess
 			</div>
-			<div id="chess">
+			<div className="chess">
 				<img
 					className="right_wrap"
 					src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
@@ -51,8 +51,12 @@ export default function Chess() {
 					of War, or Duck Chess.
 					<br />
 					<br />
-					The <a href={chess}>source code</a> for this project can be
-					found.
+					The{" "}
+					<a href={chess}>
+						chess source code for this project can be found on
+						GitHub
+					</a>
+					.
 				</p>
 			</div>
 		</div>

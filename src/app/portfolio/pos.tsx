@@ -11,7 +11,7 @@ export default function POS() {
 			<div className="h2" role="heading" aria-level={2}>
 				Point of Sale System
 			</div>
-			<div id="pos">
+			<div className="pos">
 				<img
 					className="left_wrap"
 					src="/assets/images/CFA_MSC.jpg"

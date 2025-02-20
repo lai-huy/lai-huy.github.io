@@ -16,7 +16,7 @@ export default function MPM() {
 			<div className="h2" role="heading" aria-level={2}>
 				Mortality Prediction Model
 			</div>
-			<div id="mpm">
+			<div className="mpm">
 				<img
 					className="left_wrap"
 					src="https://xgboost.ai/images/logo/xgboost-logo.png"
@@ -26,34 +26,45 @@ export default function MPM() {
 					decoding="async"
 				/>
 				<p className="mpm">
-					Developed a predictive in-hospital mortality model utilizing
-					a dataset of several thousand patients.
+					This project focuses on developing a predictive model for
+					in-hospital patient mortality using machine learning
+					techniques.
 					<br />
-					Experimented with three different training methods and
-					compared their perforce.
+					Leveraging the eICU dataset, which includes critical patient
+					metrics such as heart rate, blood pressure, and oxygen
+					saturation, the study employs an XGBoostClassifier model to
+					enhance mortality prediction accuracy.
 					<br />
-					Used Logistic Regression, Random Forest, and Extreme
-					Gradient Boosting to compare against the Professor&apos;s
-					Model.
+					Through rigorous data preprocessing, feature selection, and
+					hyperparameter tuning, the model achieved an AUC-ROC score
+					of 0.89, outperforming the baseline and demonstrating strong
+					predictive capabilities.
 					<br />
-					The model had a final Area Under the Receiver Operating
-					Characteristic curve (AUC-ROC) Score of 0.89288 which was 5%
-					better than the Professor&apos;s Model.
 					<br />
-					See the <a href={mpm_github}>source code</a> for this
-					project.
+					The research highlights the importance of machine learning
+					in healthcare by identifying key indicators of patient
+					mortality, allowing for more informed clinical decisions.
 					<br />
-					<NumpyOriginal size="128" aria-label="NumPy"/>
-					<PandasOriginal size="128" aria-label="Pandas"/>
-					<PythonOriginal size="128" aria-label="Python"/>
-					<JupyterOriginalWordmark size="128" aria-label="Jupyter"/>
+					By analyzing feature importance, the study provides valuable
+					insights into which health parameters most significantly
+					impact patient outcomes.
+					<br />
+					The findings suggest potential applications in real-time
+					hospital monitoring systems, where predictive analytics can
+					assist medical professionals in prioritizing patient care
+					and improving overall treatment strategies.
+					<br />
+					<NumpyOriginal size="128" aria-label="NumPy" />
+					<PandasOriginal size="128" aria-label="Pandas" />
+					<PythonOriginal size="128" aria-label="Python" />
+					<JupyterOriginalWordmark size="128" aria-label="Jupyter" />
 				</p>
 			</div>
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
 					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${mpm_report}#zoom=page-width&sidebar=0`}
-                    title="Mortality Prediction Model Report"
+					title="Mortality Prediction Model Report"
 				/>
 			</p>
 		</div>

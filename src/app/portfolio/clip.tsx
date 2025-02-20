@@ -4,6 +4,7 @@ import {
 	TensorflowOriginal,
 } from "devicons-react";
 
+const clip_github: string = String.raw`https://github.com/lai-huy/Improving-CLIP-Training`;
 const clip_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/Improving-CLIP-Training/main/Improving%20CLIP%20Training.pdf`;
 export default function Clip() {
 	return (
@@ -14,7 +15,7 @@ export default function Clip() {
 			<div className="h2" role="heading" aria-level={2}>
 				Improving CLIP Training
 			</div>
-			<div id="clip">
+			<div className="clip">
 				<p className="clip">
 					This project focuses on improving the training of CLIP
 					(Contrastive Language-Image Pretraining) models by
@@ -57,9 +58,9 @@ export default function Clip() {
 					quality, presentation, and innovative ideas.
 					<br />
 					<br />
-					<PytorchOriginal size="100" aria-label="PyTorch"/>
-					<TensorflowOriginal size="100" aria-label="TensorFlow"/>
-					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn"/>
+					<PytorchOriginal size="100" aria-label="PyTorch" />
+					<TensorflowOriginal size="100" aria-label="TensorFlow" />
+					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn" />
 				</p>
 				<img
 					className="right_wrap"
@@ -70,12 +71,18 @@ export default function Clip() {
 					decoding="async"
 				/>
 			</div>
-			<div id="clip">
+			<div className="clip">
 				<p className="clip">
 					The following video presents the results of this project.
 					<br />
 					Additionally a report is provided for more in-depth
 					analysis.
+					<br />
+					You can view the{" "}
+					<a href="{clip_github}">
+						source code for Improving CLIP Training on GitHub
+					</a>
+					.
 				</p>
 			</div>
 			<p className="youtube">
@@ -90,7 +97,7 @@ export default function Clip() {
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
-                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
 					title="Improving CLIP Training"
 				/>
 			</p>
