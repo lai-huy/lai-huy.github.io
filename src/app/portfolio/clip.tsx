@@ -79,7 +79,7 @@ export default function Clip() {
 					analysis.
 					<br />
 					You can view the{" "}
-					<a href="{clip_github}">
+					<a href={clip_github}>
 						source code for Improving CLIP Training on GitHub
 					</a>
 					.

@@ -60,6 +60,9 @@ export default function MPM() {
 					<JupyterOriginalWordmark size="128" aria-label="Jupyter" />
 				</p>
 			</div>
+            <p className="mpm">
+                You can find the <a href={mpm_github}>source code for this project on GitHub</a>.
+            </p>
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
