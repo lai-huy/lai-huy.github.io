@@ -43,7 +43,7 @@ export default function RoboMasters() {
 					Some of these algorithms include, new de-noise algorithms,
 					more optimal armor plate detector.
 					<br />
-					<a href={tamu_rm}>Learn more about TAMU RoboMasters </a>.
+					Learn more about them by visiting <a href={tamu_rm}>RoboMaster's homepage</a>.
 				</p>
 				<img
 					className="right_wrap"

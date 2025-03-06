@@ -22,11 +22,11 @@ export default function Portfolio() {
 
 				<BVCOG />
 				<ScriptSearch />
-				<Strassen />
 				<RoboMasters />
-				<POS />
+				<Strassen />
 				<Clip />
 				<MPM />
+				<POS />
 				<Chess />
 				<Skyblock />
 			</div>
