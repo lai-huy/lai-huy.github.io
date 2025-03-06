@@ -54,15 +54,15 @@ export default function MPM() {
 					assist medical professionals in prioritizing patient care
 					and improving overall treatment strategies.
 					<br />
-					<NumpyOriginal size="128" aria-label="NumPy" />
+                    <br />
+                    You can find the <a href={mpm_github}>source code for this project on GitHub</a>.
+					<br />
+                    <NumpyOriginal size="128" aria-label="NumPy" />
 					<PandasOriginal size="128" aria-label="Pandas" />
 					<PythonOriginal size="128" aria-label="Python" />
 					<JupyterOriginalWordmark size="128" aria-label="Jupyter" />
 				</p>
 			</div>
-            <p className="mpm">
-                You can find the <a href={mpm_github}>source code for this project on GitHub</a>.
-            </p>
 			<p className="pdf_document">
 				<iframe
 					className="pdf_document"
