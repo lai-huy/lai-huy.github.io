@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const chess: string = String.raw`https://github.com/lai-huy-075/Chess`;
 
 export default function Chess() {
@@ -10,14 +12,6 @@ export default function Chess() {
 				Chess
 			</div>
 			<div className="chess">
-				<img
-					className="right_wrap"
-					src="https://repository-images.githubusercontent.com/488395489/22d1519c-feda-4238-8fce-e01b690b5094"
-					alt="Chess"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
 				<p className="chess">
 					A personal project I developed was a Java Chess program.
 					<br />
@@ -53,11 +47,19 @@ export default function Chess() {
 					<br />
 					The{" "}
 					<a href={chess}>
-						chess source code for this project can be found on
-						GitHub
+						source code for this project can be found on GitHub
 					</a>
 					.
 				</p>
+				<Image
+					className="right_wrap"
+					src="https://app.fide.com/upload/28659/6bd8407bf6d5ceee8602e3fad4c3511f.jpg"
+					alt="Chess"
+					width={1200}
+					height={725}
+					priority={false}
+					loading="eager"
+				/>
 			</div>
 		</div>
 	);

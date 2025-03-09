@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const rm_github: string = "https://github.com/TAMU-Robomasters/Simulation";
 const tamu_rm: string = "https://tamurobomasters.com/";
 
@@ -11,6 +13,15 @@ export default function RoboMasters() {
 				TAMU RoboMasters
 			</div>
 			<div className="robomasters">
+				<Image
+					className="right_wrap"
+					src="/assets/images/RoboMastersFullTeam.jpg"
+					alt="TAMU RoboMasters"
+					width={5472}
+					height={3648}
+					priority={false}
+					loading="eager"
+				/>
 				<p className="tamu_rm">
 					A project that I have been apart of is the Simulation
 					subteam.
@@ -43,16 +54,9 @@ export default function RoboMasters() {
 					Some of these algorithms include, new de-noise algorithms,
 					more optimal armor plate detector.
 					<br />
-					Learn more about them by visiting <a href={tamu_rm}>RoboMaster&apos;s homepage</a>.
+					Learn more about them by visiting{" "}
+					<a href={tamu_rm}>RoboMaster&apos;s homepage</a>.
 				</p>
-				<img
-					className="right_wrap"
-					src="/assets/images/RoboMastersFullTeam.jpg"
-					alt="TAMU RoboMasters"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
 			</div>
 			<p className="youtube">
 				<iframe

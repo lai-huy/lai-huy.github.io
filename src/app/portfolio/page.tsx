@@ -22,10 +22,10 @@ export default function Portfolio() {
 
 				<BVCOG />
 				<ScriptSearch />
-				<RoboMasters />
-				<Strassen />
 				<Clip />
 				<MPM />
+				<RoboMasters />
+				<Strassen />
 				<POS />
 				<Chess />
 				<Skyblock />

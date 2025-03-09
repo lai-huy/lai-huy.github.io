@@ -1,4 +1,5 @@
 import { CucumberPlain, RspecOriginal } from "devicons-react";
+import Image from "next/image";
 
 const bvcog: string = String.raw`https://github.com/BVCOG-Contract-Management/BVGOG-Contract-Manager`;
 const bvcog_report: string = String.raw`https://raw.githubusercontent.com/BVCOG-Contract-Management/BVGOG-Contract-Manager/main/documentation/Fall2023/BVCOG_FinalReport.pdf`;
@@ -13,13 +14,14 @@ export default function BVCOG() {
 				Brazos Valley Council of Governments Contract Management System
 			</div>
 			<div className="bvcog">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/BVCOG.png"
 					alt="Brazos Valley Council of Governments"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
+					width={1080}
+					height={648}
+					priority={false}
+					loading="eager"
 				/>
 				<p className="bvcog">
 					A full stack application to serve as a contract management
@@ -46,16 +48,7 @@ export default function BVCOG() {
 					Uses RSpec and Cucumber to ensure test-driven development
 					and behavior-driven development.
 					<br />
-					<CucumberPlain
-						color="#00A818"
-						size="100"
-						aria-label="Cucumber"
-					/>
-					<RspecOriginal size="100" aria-label="RSpec" />
-				</p>
-			</div>
-			<div className="bvcog">
-				<p className="bvcog">
+					<br />
 					You can view the{" "}
 					<a href={bvcog}>
 						BVCOG Contract Management System source code on GitHub
@@ -64,6 +57,14 @@ export default function BVCOG() {
 					<br />
 					You can watch this video below that demonstrates the product
 					that a team of students and I worked on.
+					<br />
+					<br />
+					<CucumberPlain
+						color="#00A818"
+						size="100"
+						aria-label="Cucumber"
+					/>
+					<RspecOriginal size="100" aria-label="RSpec" />
 				</p>
 			</div>
 			<p className="youtube">

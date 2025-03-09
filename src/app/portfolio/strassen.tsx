@@ -1,3 +1,4 @@
+import Image from "next/image";
 const strassenmp_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/StrassenMP/main/Major%20Project.pdf`;
 
 export default function Strassen() {
@@ -10,14 +11,6 @@ export default function Strassen() {
 				StrassenMP
 			</div>
 			<div className="strassen">
-				<img
-					className="right_wrap"
-					src="/assets/images/OpenMP Logo.png"
-					alt="OpenMP"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
 				<p className="strassen">
 					Implemented a parallel version of Strassen&apos;s matrix
 					multiplication algorithm using OpenMP directives in C/C++.
@@ -42,6 +35,15 @@ export default function Strassen() {
 					performance evaluation results comprehensively for future
 					reference and potential publication.
 				</p>
+				<Image
+					className="right_wrap"
+					src="/assets/images/OpenMP Logo.png"
+					alt="OpenMP"
+					width={1467}
+					height={476}
+					priority={false}
+					loading="eager"
+				/>
 			</div>
 			<p className="pdf_document">
 				<iframe

@@ -1,4 +1,5 @@
 import { FirebaseOriginal } from "devicons-react";
+import Image from "next/image";
 
 const scriptsearch_frontend: string = String.raw`https://github.com/Script-Search/frontend`;
 const scriptsearch_backend: string = String.raw`https://github.com/Script-Search/backend`;
@@ -44,35 +45,34 @@ export default function ScriptSearch() {
 					navigating and accessing video content with precision and
 					ease.
 					<br />
+					<br />
 					You can view the source code for the{" "}
 					<a href={scriptsearch_frontend}>front end</a> and{" "}
-					<a href={scriptsearch_backend}>back end</a>.
+					<a href={scriptsearch_backend}>back end</a> via the previous
+					links.
 					<br />
-					<img
+					<Image
 						className="logo"
 						src="/assets/images/Cloud Functions Logo.svg"
 						alt="GCP Cloud Functions"
-						fetchPriority="low"
-						loading="lazy"
-						decoding="async"
+						width={1}
+						height={1}
 					/>
-					<img
+					<Image
 						className="logo"
 						src="/assets/images/PubSub Logo.svg"
 						alt="GCP Pub/Sub"
-						fetchPriority="low"
-						loading="lazy"
-						decoding="async"
+						width={1}
+						height={1}
 					/>
 					<FirebaseOriginal size="128" aria-label="Firebase" />
 				</p>
-				<img
+				<Image
 					className="right_wrap"
 					src="https://script-search.github.io/frontend/ScriptSearch_New_Logo.png"
 					alt="ScriptSearch 🔎"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
+					width={398}
+					height={396}
 				/>
 			</div>
 			<p className="youtube">

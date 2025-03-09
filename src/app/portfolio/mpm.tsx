@@ -4,9 +4,11 @@ import {
 	PandasOriginal,
 	PythonOriginal,
 } from "devicons-react";
+import Image from "next/image";
 
 const mpm_github: string = String.raw`https://github.com/lai-huy/CSCE-421-Final-Project/`;
 const mpm_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/Machine-Learning-for-Mortality-Prognosis/main/Final%20report/Final%20Project.pdf`;
+
 export default function MPM() {
 	return (
 		<div>
@@ -17,14 +19,6 @@ export default function MPM() {
 				Mortality Prediction Model
 			</div>
 			<div className="mpm">
-				<img
-					className="left_wrap"
-					src="https://xgboost.ai/images/logo/xgboost-logo.png"
-					alt="Mortality Prediction Model"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
 				<p className="mpm">
 					This project focuses on developing a predictive model for
 					in-hospital patient mortality using machine learning
@@ -54,14 +48,27 @@ export default function MPM() {
 					assist medical professionals in prioritizing patient care
 					and improving overall treatment strategies.
 					<br />
-                    <br />
-                    You can find the <a href={mpm_github}>source code for this project on GitHub</a>.
 					<br />
-                    <NumpyOriginal size="128" aria-label="NumPy" />
+					You can find the{" "}
+					<a href={mpm_github}>
+						source code for this project on GitHub
+					</a>
+					.
+					<br />
+					<NumpyOriginal size="128" aria-label="NumPy" />
 					<PandasOriginal size="128" aria-label="Pandas" />
 					<PythonOriginal size="128" aria-label="Python" />
 					<JupyterOriginalWordmark size="128" aria-label="Jupyter" />
 				</p>
+				<Image
+					className="right_wrap"
+					src="https://xgboost.ai/images/logo/xgboost-logo.png"
+					alt="Mortality Prediction Model"
+					width={408}
+					height={141}
+					priority={false}
+					loading="eager"
+				/>
 			</div>
 			<p className="pdf_document">
 				<iframe

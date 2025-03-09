@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const forge: string = String.raw`https://files.minecraftforge.net/net/minecraftforge/forge/`;
 const skyblock: string = String.raw`https://wiki.hypixel.net/Introduction`;
 const skyblock_gh: string = String.raw`https://github.com/MrPineapple070/SkyBlock-1.19.2`;
@@ -12,13 +14,14 @@ export default function Skyblock() {
 				SkyBlock Minecraft Mod
 			</div>
 			<div className="skyblock">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/SkyBlock.jpg"
 					alt="Hypixel SkyBlock"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
+					width={3840}
+					height={2160}
+					priority={false}
+					loading="eager"
 				/>
 				<p className="sb">
 					Another personal project I developed was a Minecraft Mod.
@@ -51,13 +54,12 @@ export default function Skyblock() {
 					The <a href={skyblock_gh}>source code</a> for this can be
 					found .<br />
 					<br />
-					<img
+					<Image
 						className="logo"
 						src="/assets/images/Forge_Logo.png"
 						alt="Minecraft Forge"
-						fetchPriority="low"
-						loading="lazy"
-						decoding="async"
+						width={200}
+						height={200}
 					/>
 				</p>
 			</div>

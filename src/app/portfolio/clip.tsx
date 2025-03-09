@@ -3,6 +3,7 @@ import {
 	ScikitlearnOriginal,
 	TensorflowOriginal,
 } from "devicons-react";
+import Image from "next/image";
 
 const clip_github: string = String.raw`https://github.com/lai-huy/Improving-CLIP-Training`;
 const clip_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/Improving-CLIP-Training/main/Improving%20CLIP%20Training.pdf`;
@@ -16,6 +17,15 @@ export default function Clip() {
 				Improving CLIP Training
 			</div>
 			<div className="clip">
+				<Image
+					className="left_wrap"
+					src="https://raw.githubusercontent.com/openai/CLIP/main/CLIP.png"
+					alt="CLIP Training"
+					width={2162}
+					height={762}
+					priority={false}
+					loading="eager"
+				/>
 				<p className="clip">
 					This project focuses on improving the training of CLIP
 					(Contrastive Language-Image Pretraining) models by
@@ -58,21 +68,6 @@ export default function Clip() {
 					quality, presentation, and innovative ideas.
 					<br />
 					<br />
-					<PytorchOriginal size="100" aria-label="PyTorch" />
-					<TensorflowOriginal size="100" aria-label="TensorFlow" />
-					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn" />
-				</p>
-				<img
-					className="right_wrap"
-					src="https://raw.githubusercontent.com/openai/CLIP/main/CLIP.png"
-					alt="CLIP Training"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
-				/>
-			</div>
-			<div className="clip">
-				<p className="clip">
 					The following video presents the results of this project.
 					<br />
 					Additionally a report is provided for more in-depth
@@ -83,6 +78,10 @@ export default function Clip() {
 						source code for Improving CLIP Training on GitHub
 					</a>
 					.
+					<br />
+					<PytorchOriginal size="100" aria-label="PyTorch" />
+					<TensorflowOriginal size="100" aria-label="TensorFlow" />
+					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn" />
 				</p>
 			</div>
 			<p className="youtube">

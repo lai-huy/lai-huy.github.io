@@ -1,4 +1,5 @@
 import { NodejsOriginal, ReactOriginal } from "devicons-react";
+import Image from "next/image";
 
 const pos_github: string = String.raw`https://github.com/CSCE315-Spring23/Team_44_Project_3`;
 
@@ -12,13 +13,14 @@ export default function POS() {
 				Point of Sale System
 			</div>
 			<div className="pos">
-				<img
+				<Image
 					className="left_wrap"
 					src="/assets/images/CFA_MSC.jpg"
 					alt="Chick-fil-A at the Memorial Student Center"
-					fetchPriority="low"
-					loading="lazy"
-					decoding="async"
+					width={1920}
+					height={1281}
+					priority={false}
+					loading="eager"
 				/>
 				<p className="pos">
 					A Node.js and React project that creates a Point-of-Sale
@@ -40,8 +42,9 @@ export default function POS() {
 					the back-end of the application.
 					<br />
 					<br />
-					You can view the <a href={pos_github}>source code</a> for
-					this project.
+					You can view the{" "}
+					<a href={pos_github}>Point of Sale source code</a> by
+					clicking the previous link.
 					<br />
 					<ReactOriginal size="128" aria-label="React" />
 					<NodejsOriginal size="128" aria-label="Node.js" />
