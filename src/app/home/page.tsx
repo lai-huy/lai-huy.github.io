@@ -23,7 +23,6 @@ export default function Home() {
 					</h1>
 				</header>
 				<About />
-
 				<Social />
 			</div>
 		</main>
