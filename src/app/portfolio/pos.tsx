@@ -23,28 +23,45 @@ export default function POS() {
 					loading="eager"
 				/>
 				<p className="pos">
-					A Node.js and React project that creates a Point-of-Sale
-					webpage for a Restaurant located at the Memorial Student
-					Center at Texas A&M University. Our specific restaurant was
-					Chick-fil-A.
+					For this project, our team developed a full-stack
+					Point-of-Sale (POS) web application tailored for the
+					<a href="https://www.chick-fil-a.com/locations/tx/texas-am-university-memorial-student-center">
+						Chick-fil-A location at Texas A&M University&apos;s
+						Memorial Student Center
+					</a>
+					.
 					<br />
-					Using Google OAuth to authenticate administrator logins,
-					adequate role-based access control is enforced.
+					Utilizing <a href="https://react.dev/">React</a> for the
+					frontend and <a href="https://nodejs.org/">Node.js</a> for
+					the backend, we created an intuitive interface that
+					streamlines order processing for both customers and staff.
 					<br />
-					This project also uses a Google Translate API to ensure
-					proper internationalization.
+					The application integrates seamlessly with a structured SQL
+					database, ensuring efficient data management and real-time
+					updates.
 					<br />
-					Finally, this project uses a weather API to display weather
-					information as well as recomend certain items during cooler
-					weather.
-					<br />
-					A custom REST API to communicate between the front-end and
-					the back-end of the application.
+					Key features include dynamic menu displays, order
+					customization, and secure transaction handling, all designed
+					to enhance the dining experience and operational efficiency.
 					<br />
 					<br />
-					You can view the{" "}
-					<a href={pos_github}>Point of Sale source code</a> by
-					clicking the previous link.
+					Throughout the development process, we adhered to agile
+					methodologies, conducting regular scrum meetings to plan
+					sprints, address challenges, and implement user feedback.
+					<br />
+					This collaborative approach allowed us to iteratively refine
+					the application, incorporating features such as
+					accessibility enhancements and responsive design to cater to
+					a diverse user base.
+					<br />
+					The project not only honed our technical skills in modern
+					web development frameworks but also emphasized the
+					importance of teamwork and adaptability in software
+					engineering.
+					<br />
+					<br />
+					The source code and further documentation are available on
+					our <a href={pos_github}>GitHub repository</a>.
 					<br />
 					<ReactOriginal size="128" aria-label="React" />
 					<NodejsOriginal size="128" aria-label="Node.js" />

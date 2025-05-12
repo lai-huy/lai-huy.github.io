@@ -19,10 +19,10 @@ export default function Strassen() {
 					matrix multiplication algorithm using OpenMP in C++. The
 					project focused on reducing computational complexity by
 					replacing the standard{" "}
-					<MathJax inline>{"\\(O(n^3)\\)"}</MathJax> matrix
+					<MathJax inline>{"\\(\\mathcal{O}(n^3)\\)"}</MathJax> matrix
 					multiplication with Strassen&apos;s recursive{" "}
 					<MathJax inline>
-						{"\\(O\\left(n^{\\log_27}\\right)\\)"}
+						{"\\(\\mathcal{O}\\left(n^{\\log_27}\\right)\\)"}
 					</MathJax>{" "}
 					approach.
 					<br />
