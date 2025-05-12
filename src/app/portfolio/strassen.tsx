@@ -1,5 +1,6 @@
 import Image from "next/image";
 const strassenmp_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/StrassenMP/main/Major%20Project.pdf`;
+const strassenmp_github: string = String.raw`https://github.com/lai-huy/StrassenMP`;
 
 export default function Strassen() {
 	return (
@@ -12,29 +13,18 @@ export default function Strassen() {
 			</div>
 			<div className="strassen">
 				<p className="strassen">
-					Implemented a parallel version of Strassen&apos;s matrix
-					multiplication algorithm using OpenMP directives in C/C++.
-					<br />
-					The project aimed to leverage parallelism to improve the
-					efficiency of large-scale matrix multiplication tasks.
-					<br />
-					Developed a scalable parallel algorithm based on
-					Strassen&apos;s matrix multiplication technique, utilizing
-					OpenMP directives for parallelization.
-					<br />
-					Optimized the code to efficiently distribute workload across
-					multiple threads, achieving significant speedup compared to
-					the sequential version.
-					<br />
-					Conducted rigorous testing and performance analysis to
-					evaluate the scalability and efficiency of the parallel
-					implementation across various input sizes and hardware
-					configurations.
-					<br />
-					Documented the design, implementation details, and
-					performance evaluation results comprehensively for future
-					reference and potential publication.
-				</p>
+                    As part of a graduate-level high-performance computing course, I implemented a parallel version of Strassen’s matrix multiplication algorithm using OpenMP in C++.
+                    <br/>
+                    This project involved optimizing recursive matrix operations by parallelizing both the computation of Strassen’s seven intermediate products and the combination of matrix quadrants.
+                    <br/>
+                    I designed the program to accept configurable matrix sizes and recursion thresholds, enabling detailed performance analysis across varying workloads.
+                    <br/>
+                    Through extensive benchmarking, I evaluated speedup, efficiency, and memory usage, applying best practices in thread management and memory optimization.
+                    <br/>
+                    This experience strengthened my skills in parallel programming, algorithm optimization, and performance engineering on shared-memory architectures.
+                    <br />
+                    The source code for this project can be found on{" "} <a href={strassenmp_github}>GitHub</a>.
+                </p>
 				<Image
 					className="right_wrap"
 					src="/assets/images/OpenMP Logo.png"
