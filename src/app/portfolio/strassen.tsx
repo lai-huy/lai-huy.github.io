@@ -1,10 +1,11 @@
 import Image from "next/image";
+import { MathJaxContext, MathJax } from "better-react-mathjax";
 const strassenmp_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/StrassenMP/main/Major%20Project.pdf`;
 const strassenmp_github: string = String.raw`https://github.com/lai-huy/StrassenMP`;
 
 export default function Strassen() {
 	return (
-		<div>
+		<MathJaxContext>
 			<a href="#strassen" className="skip-link">
 				Skip to Strassen&apos;s Algorithm
 			</a>
@@ -13,18 +14,50 @@ export default function Strassen() {
 			</div>
 			<div className="strassen">
 				<p className="strassen">
-                    As part of a graduate-level high-performance computing course, I implemented a parallel version of Strassen’s matrix multiplication algorithm using OpenMP in C++.
-                    <br/>
-                    This project involved optimizing recursive matrix operations by parallelizing both the computation of Strassen’s seven intermediate products and the combination of matrix quadrants.
-                    <br/>
-                    I designed the program to accept configurable matrix sizes and recursion thresholds, enabling detailed performance analysis across varying workloads.
-                    <br/>
-                    Through extensive benchmarking, I evaluated speedup, efficiency, and memory usage, applying best practices in thread management and memory optimization.
-                    <br/>
-                    This experience strengthened my skills in parallel programming, algorithm optimization, and performance engineering on shared-memory architectures.
-                    <br />
-                    The source code for this project can be found on{" "} <a href={strassenmp_github}>GitHub</a>.
-                </p>
+					As part of a graduate course in high-performance computing,
+					I implemented a parallelized version of Strassen&apos;s
+					matrix multiplication algorithm using OpenMP in C++. The
+					project focused on reducing computational complexity by
+					replacing the standard{" "}
+					<MathJax inline>{"\\(O(n^3)\\)"}</MathJax> matrix
+					multiplication with Strassen&apos;s recursive{" "}
+					<MathJax inline>
+						{"\\(O\\left(n^{\\log_27}\\right)\\)"}
+					</MathJax>{" "}
+					approach.
+					<br />
+					I parallelized the computation of the algorithm&apos;s seven
+					intermediate matrix products as well as the final
+					combination of submatrices, allowing the program to scale
+					effectively across multiple threads.
+					<br />
+					The implementation supports configurable matrix sizes and
+					recursion thresholds, enabling flexible experimentation.
+					<br />
+					<br />
+					I conducted performance benchmarking across various matrix
+					dimensions and thread counts, analyzing speedup, efficiency,
+					and memory usage.
+					<br />
+					To prevent memory overload, I implemented controlled
+					deallocation and synchronization techniques.
+					<br />
+					The final solution demonstrated significant runtime
+					improvements as shown in plotted performance graphs.
+					<br />
+					This project sharpened my skills in multithreading,
+					algorithmic optimization, and systems-level programming
+					capabilities directly applicable to software engineering
+					roles focused on performance, scalability, and parallel
+					computation.
+					<br />
+					<br />
+					You can find the{" "}
+					<a href={strassenmp_github}>
+						source code for this project on GitHub
+					</a>
+					.
+				</p>
 				<Image
 					className="right_wrap"
 					src="/assets/images/OpenMP Logo.png"
@@ -42,6 +75,6 @@ export default function Strassen() {
 					title="Strassen's Matrix Multiplication Report"
 				/>
 			</p>
-		</div>
+		</MathJaxContext>
 	);
 }
