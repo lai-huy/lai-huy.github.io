@@ -1,85 +1,103 @@
-div.h2 {
+h1 {
+	font-size: 48pt;
 	text-align: center;
-	margin: 20px;
-	font-size: 38pt;
 }
 
-div.bvcog,
-div.chess,
-div.clip,
-div.mpm,
-div.pos,
-div.robomasters,
-div.scriptsearch,
-div.strassen,
-div.skyblock {
+h2 {
+	font-size: 38pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+h4 {
+	font-size: 24pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+header {
+	font-size: 48pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+div.pdf_document {
+	align-items: center;
+	text-align: center;
+}
+
+div.tech-stack {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-size: 18pt;
+	font-family: "Ubuntu", sans-serif;
+	align-items: center;
+}
+
+div.stack-item {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	margin-left: 60px;
-
-	img {
-		&.left_wrap {
-			float: left;
-			margin: 5pt;
-			width: 33%;
-			height: auto;
-		}
-
-		&.right_wrap {
-			float: right;
-			margin: 5pt;
-			width: 33%;
-			height: auto;
-		}
-
-		&.logo {
-			width: 128px;
-			height: 128px;
-		}
-	}
-
-	p {
-		text-align: center;
-		font-size: 18pt;
-		margin: 0;
-
-		&.bvcog {
-			font-size: 20pt;
-		}
-
-		&.chess {
-			font-size: 24pt;
-		}
-
-		&.pos {
-			font-size: 20pt;
-		}
-	}
+	gap: 12px;
 }
 
-header.portfolio {
+div.youtube {
+	align-items: center;
 	text-align: center;
-	font-weight: bold;
-	font-size: 6rem;
-	font-family: "Ubuntu", sans-serif;
-}
-
-iframe.youtube {
-	height: 900px;
-	margin-left: 60px;
-	text-align: center;
-	width: 90%;
 }
 
 iframe.pdf_document {
-	height: 1160px;
-	margin-left: 60px;
-	text-align: center;
-	width: 70%;
+	align-items: center;
+	width: 80rem;
+	height: 100rem;
 }
 
-p.pdf_document,
-p.youtube {
+iframe.youtube {
+	align-items: center;
+	width: 80rem;
+	height: 45rem;
+}
+
+img.logo_left {
+	width: 33rem;
+	height: auto;
+	float: left;
+}
+
+img.logo_right {
+	width: 33rem;
+	height: auto;
+	float: right;
+}
+
+img.logo {
+	width: auto;
+	height: 4rem;
+}
+
+p.bvcog,
+p.clip,
+p.chess,
+p.mpm,
+p.pos,
+p.sb,
+p.scriptsearch,
+p.strassen,
+p.tamu_rm {
+	font-size: 18pt;
 	text-align: center;
+}
+
+ul.bvcog,
+ul.scriptsearch {
+	font-size: 18pt;
+	text-align: left;
+	list-style-type: disc;
+	list-style-position: inside;
 }

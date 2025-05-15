@@ -10,12 +10,12 @@ export default function Skyblock() {
 			<a href="#skyblock" className="skip-link">
 				Skip to Hypixel SkyBlock
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				SkyBlock Minecraft Mod
-			</div>
+			</h2>
 			<div className="skyblock">
 				<Image
-					className="left_wrap"
+					className="logo_left"
 					src="/assets/images/SkyBlock.jpg"
 					alt="Hypixel SkyBlock"
 					width={3840}

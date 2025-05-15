@@ -9,12 +9,12 @@ export default function POS() {
 			<a href="#pos" className="skip-link">
 				Skip to point of sale system
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				Point of Sale System
-			</div>
+			</h2>
 			<div className="pos">
 				<Image
-					className="left_wrap"
+					className="logo_left"
 					src="/assets/images/CFA_MSC.jpg"
 					alt="Chick-fil-A at the Memorial Student Center"
 					width={1920}

@@ -13,12 +13,12 @@ export default function Clip() {
 			<a href="#clip" className="skip-link">
 				Skip to Improving CLIP
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				Improving CLIP Training
-			</div>
+			</h2>
 			<div className="clip">
 				<Image
-					className="left_wrap"
+					className="logo_left"
 					src="https://raw.githubusercontent.com/openai/CLIP/main/CLIP.png"
 					alt="CLIP Training"
 					width={2162}
@@ -84,7 +84,7 @@ export default function Clip() {
 					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn" />
 				</p>
 			</div>
-			<p className="youtube">
+			<div className="youtube">
 				<iframe
 					title="Improving CLIP Training"
 					className="youtube"
@@ -92,14 +92,14 @@ export default function Clip() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowFullScreen
 				/>
-			</p>
-			<p className="pdf_document">
+			</div>
+			<div className="pdf_document">
 				<iframe
 					className="pdf_document"
 					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
 					title="Improving CLIP Training"
 				/>
-			</p>
+			</div>
 		</div>
 	);
 }

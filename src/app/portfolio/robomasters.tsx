@@ -9,12 +9,12 @@ export default function RoboMasters() {
 			<a href="#robomasters" className="skip-link">
 				Skip to TAMU RoboMasters
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				TAMU RoboMasters
-			</div>
+			</h2>
 			<div className="robomasters">
 				<Image
-					className="right_wrap"
+					className="logo_left"
 					src="/assets/images/RoboMastersFullTeam.jpg"
 					alt="TAMU RoboMasters"
 					width={5472}
@@ -58,7 +58,7 @@ export default function RoboMasters() {
 					<a href={tamu_rm}>RoboMaster&apos;s homepage</a>.
 				</p>
 			</div>
-			<p className="youtube">
+			<div className="youtube">
 				<iframe
 					title="About TAMU RoboMasters"
 					className="youtube"
@@ -66,7 +66,7 @@ export default function RoboMasters() {
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 					allowFullScreen
 				/>
-			</p>
+			</div>
 		</div>
 	);
 }

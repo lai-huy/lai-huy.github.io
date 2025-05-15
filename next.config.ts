@@ -24,6 +24,9 @@ const nextConfig: NextConfig = {
 			{
 				hostname: "script-search.github.io",
 			},
+			{
+				hostname: "prawnpdf.org",
+			},
 		],
 	},
 };

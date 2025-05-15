@@ -8,10 +8,19 @@ export default function Chess() {
 			<a href="#chess" className="skip-link">
 				Skip to chess
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				Chess
-			</div>
+			</h2>
 			<div className="chess">
+				<Image
+					className="logo_right"
+					src="https://app.fide.com/upload/28659/6bd8407bf6d5ceee8602e3fad4c3511f.jpg"
+					alt="Chess"
+					width={1200}
+					height={725}
+					priority={false}
+					loading="eager"
+				/>
 				<p className="chess">
 					A personal project I developed was a Java Chess program.
 					<br />
@@ -51,15 +60,6 @@ export default function Chess() {
 					</a>
 					.
 				</p>
-				<Image
-					className="right_wrap"
-					src="https://app.fide.com/upload/28659/6bd8407bf6d5ceee8602e3fad4c3511f.jpg"
-					alt="Chess"
-					width={1200}
-					height={725}
-					priority={false}
-					loading="eager"
-				/>
 			</div>
 		</div>
 	);

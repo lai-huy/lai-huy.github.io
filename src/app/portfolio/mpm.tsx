@@ -15,10 +15,19 @@ export default function MPM() {
 			<a href="#mpm" className="skip-link">
 				Skip to Mortality Prediction Model
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				Mortality Prediction Model
-			</div>
+			</h2>
 			<div className="mpm">
+				<Image
+					className="logo_right"
+					src="https://xgboost.ai/images/logo/xgboost-logo.png"
+					alt="Mortality Prediction Model"
+					width={408}
+					height={141}
+					priority={false}
+					loading="eager"
+				/>
 				<p className="mpm">
 					This project focuses on developing a predictive model for
 					in-hospital patient mortality using machine learning
@@ -60,23 +69,14 @@ export default function MPM() {
 					<PythonOriginal size="128" aria-label="Python" />
 					<JupyterOriginalWordmark size="128" aria-label="Jupyter" />
 				</p>
-				<Image
-					className="right_wrap"
-					src="https://xgboost.ai/images/logo/xgboost-logo.png"
-					alt="Mortality Prediction Model"
-					width={408}
-					height={141}
-					priority={false}
-					loading="eager"
-				/>
 			</div>
-			<p className="pdf_document">
+			<div className="pdf_document">
 				<iframe
 					className="pdf_document"
 					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${mpm_report}#zoom=page-width&sidebar=0`}
 					title="Mortality Prediction Model Report"
 				/>
-			</p>
+			</div>
 		</div>
 	);
 }

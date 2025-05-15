@@ -9,10 +9,19 @@ export default function Strassen() {
 			<a href="#strassen" className="skip-link">
 				Skip to Strassen&apos;s Algorithm
 			</a>
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				StrassenMP
-			</div>
+			</h2>
 			<div className="strassen">
+				<Image
+					className="logo_right"
+					src="/assets/images/OpenMP Logo.png"
+					alt="OpenMP"
+					width={1467}
+					height={476}
+					priority={false}
+					loading="eager"
+				/>
 				<p className="strassen">
 					As part of a graduate course in high-performance computing,
 					I implemented a parallelized version of Strassen&apos;s
@@ -58,23 +67,14 @@ export default function Strassen() {
 					</a>
 					.
 				</p>
-				<Image
-					className="right_wrap"
-					src="/assets/images/OpenMP Logo.png"
-					alt="OpenMP"
-					width={1467}
-					height={476}
-					priority={false}
-					loading="eager"
-				/>
 			</div>
-			<p className="pdf_document">
+			<div className="pdf_document">
 				<iframe
 					className="pdf_document"
 					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${strassenmp_report}#zoom=page-width&sidebar=0`}
 					title="Strassen's Matrix Multiplication Report"
 				/>
-			</p>
+			</div>
 		</MathJaxContext>
 	);
 }
