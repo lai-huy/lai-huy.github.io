@@ -3,6 +3,7 @@ import {
 	GithubactionsOriginal,
 	GithubOriginal,
 	GoOriginal,
+	NextjsOriginal,
 	PuppeteerOriginal,
 	PytestOriginal,
 	PythonOriginal,
@@ -169,6 +170,7 @@ export default function ScriptSearch() {
 					<div className="stack-item">
 						<span>Frontend:</span>
 						<ReactOriginal size="4rem" aria-label="React" />
+						<NextjsOriginal size="4rem" aria-label="Next.js" />
 					</div>
 					<div className="stack-item">
 						<span>Database & Search:</span>
