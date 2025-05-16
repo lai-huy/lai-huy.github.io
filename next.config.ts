@@ -16,6 +16,12 @@ const nextConfig: NextConfig = {
 				hostname: "raw.githubusercontent.com",
 			},
 			{
+				hostname: "repository-images.githubusercontent.com",
+			},
+			{
+				hostname: "avatars.githubusercontent.com",
+			},
+			{
 				hostname: "app.fide.com",
 			},
 			{

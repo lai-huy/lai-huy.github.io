@@ -34,8 +34,9 @@ div.pdf_document {
 
 div.tech-stack {
 	display: flex;
-	flex-direction: column;
-	gap: 16px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 2rem;
 	font-size: 18pt;
 	font-family: "Ubuntu", sans-serif;
 	align-items: center;
@@ -43,8 +44,9 @@ div.tech-stack {
 
 div.stack-item {
 	display: flex;
+	flex-direction: row;
 	align-items: center;
-	gap: 12px;
+	gap: 0.5rem;
 }
 
 div.youtube {
@@ -92,6 +94,12 @@ p.strassen,
 p.tamu_rm {
 	font-size: 18pt;
 	text-align: center;
+}
+
+svg.light {
+	g {
+		fill: #e4ebe6;
+	}
 }
 
 ul.bvcog,

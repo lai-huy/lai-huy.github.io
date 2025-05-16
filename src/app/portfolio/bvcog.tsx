@@ -207,7 +207,11 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<GithubOriginal size="4rem" aria-label="GitHub" />
+						<GithubOriginal
+							size="4rem"
+							aria-label="GitHub"
+							className="light"
+						/>
 						<GithubactionsOriginal
 							size="4rem"
 							aria-label="GitHub Actions"

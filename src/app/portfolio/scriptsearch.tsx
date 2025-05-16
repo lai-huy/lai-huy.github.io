@@ -30,6 +30,8 @@ export default function ScriptSearch() {
 					alt="ScriptSearch 🔎"
 					width={398}
 					height={396}
+					priority={false}
+					loading="eager"
 				/>
 				<h3 className="h3">Overview</h3>
 				<p className="scriptsearch">
@@ -176,9 +178,11 @@ export default function ScriptSearch() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<img
+								<Image
 									src="https://avatars.githubusercontent.com/u/19822348?v=4"
 									alt="Typesense"
+									width={460}
+									height={460}
 									className="logo"
 								/>
 							</a>
@@ -191,6 +195,8 @@ export default function ScriptSearch() {
 							alt="Google Cloud Functions"
 							width={4}
 							height={4}
+							priority={false}
+							loading="eager"
 							className="logo"
 						/>
 						<Image
@@ -198,6 +204,8 @@ export default function ScriptSearch() {
 							alt="Google Pub/Sub"
 							width={4}
 							height={4}
+							priority={false}
+							loading="eager"
 							className="logo"
 						/>
 						<Image
@@ -205,14 +213,20 @@ export default function ScriptSearch() {
 							alt="Google Cloud Run"
 							width={4}
 							height={4}
+							priority={false}
+							loading="eager"
 							className="logo"
 						/>
 					</div>
 					<div className="stack-item">
 						<span>Scraping Tools:</span>
-						<img
+						<Image
 							src="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0"
 							alt="YT-DLP"
+							width={500}
+							height={500}
+							priority={false}
+							loading="eager"
 							className="logo"
 						/>
 						<PuppeteerOriginal size="4rem" aria-label="Puppeteer" />
@@ -236,12 +250,18 @@ export default function ScriptSearch() {
 							alt="Google Cloud Run"
 							width={4}
 							height={4}
+							priority={false}
+							loading="eager"
 							className="logo"
 						/>
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<GithubOriginal size="4rem" aria-label="GitHub" />
+						<GithubOriginal
+							size="4rem"
+							aria-label="GitHub"
+							className="light"
+						/>
 						<GithubactionsOriginal
 							size="4rem"
 							aria-label="GitHub Actions"
