@@ -149,7 +149,8 @@ export default function ScriptSearch() {
 					<br />
 					Over 80% of users reported a major improvement in
 					information retrieval speed, and several identified
-					previously "lost" moments they were able to quickly recover.
+					previously &quot;lost&quot; moments they were able to
+					quickly recover.
 					<br />
 					The system also laid groundwork for use cases in:
 				</p>
