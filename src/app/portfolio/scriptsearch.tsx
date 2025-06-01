@@ -164,17 +164,30 @@ export default function ScriptSearch() {
 				<div className="tech-stack">
 					<div className="stack-item">
 						<span>Backend:</span>
-						<GoOriginal size="4rem" aria-label="Go" />
-						<PythonOriginal size="4rem" aria-label="Python" />
+						<a href="https://go.dev/">
+							<GoOriginal size="4rem" aria-label="Go" />
+						</a>
+						<a href="https://www.python.org/">
+							<PythonOriginal size="4rem" aria-label="Python" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Frontend:</span>
-						<ReactOriginal size="4rem" aria-label="React" />
-						<NextjsOriginal size="4rem" aria-label="Next.js" />
+						<a href="https://react.dev/">
+							<ReactOriginal size="4rem" aria-label="React" />
+						</a>
+						<a href="https://nextjs.org/">
+							<NextjsOriginal size="4rem" aria-label="Next.js" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Database & Search:</span>
-						<FirebaseOriginal size="4rem" aria-label="Firebase" />
+						<a href="https://firebase.google.com/">
+							<FirebaseOriginal
+								size="4rem"
+								aria-label="Firebase"
+							/>
+						</a>
 						<span>
 							<a
 								href="https://typesense.org/"
@@ -193,50 +206,65 @@ export default function ScriptSearch() {
 					</div>
 					<div className="stack-item">
 						<span>Cloud Infrastructure:</span>
-						<Image
-							src="/assets/images/Cloud Functions Logo.svg"
-							alt="Google Cloud Functions"
-							width={4}
-							height={4}
-							priority={false}
-							loading="eager"
-							className="logo"
-						/>
-						<Image
-							src="/assets/images/PubSub Logo.svg"
-							alt="Google Pub/Sub"
-							width={4}
-							height={4}
-							priority={false}
-							loading="eager"
-							className="logo"
-						/>
-						<Image
-							src="/assets/images/Cloud Run Logo.svg"
-							alt="Google Cloud Run"
-							width={4}
-							height={4}
-							priority={false}
-							loading="eager"
-							className="logo"
-						/>
+						<a href="https://cloud.google.com/functions">
+							<Image
+								src="/assets/images/Cloud Functions Logo.svg"
+								alt="Google Cloud Functions"
+								width={4}
+								height={4}
+								priority={false}
+								loading="eager"
+								className="logo"
+							/>
+						</a>
+						<a href="https://cloud.google.com/pubsub">
+							<Image
+								src="/assets/images/PubSub Logo.svg"
+								alt="Google Pub/Sub"
+								width={4}
+								height={4}
+								priority={false}
+								loading="eager"
+								className="logo"
+							/>
+						</a>
+						<a href="https://cloud.google.com/run">
+							<Image
+								src="/assets/images/Cloud Run Logo.svg"
+								alt="Google Cloud Run"
+								width={4}
+								height={4}
+								priority={false}
+								loading="eager"
+								className="logo"
+							/>
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Scraping Tools:</span>
-						<Image
-							src="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0"
-							alt="YT-DLP"
-							width={500}
-							height={500}
-							priority={false}
-							loading="eager"
-							className="logo"
-						/>
-						<PuppeteerOriginal size="4rem" aria-label="Puppeteer" />
+						<a href="https://github.com/yt-dlp/yt-dlp">
+							<Image
+								src="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0"
+								alt="YT-DLP"
+								width={500}
+								height={500}
+								priority={false}
+								loading="eager"
+								className="logo"
+							/>
+						</a>
+						<a href="https://pptr.dev/">
+							<PuppeteerOriginal
+								size="4rem"
+								aria-label="Puppeteer"
+							/>
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Testing:</span>
-						<PytestOriginal size="4rem" aria-label="Pytest" />
+						<a href="https://docs.pytest.org/">
+							<PytestOriginal size="4rem" aria-label="Pytest" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Accessibility:</span>
@@ -248,27 +276,33 @@ export default function ScriptSearch() {
 					<div className="stack-item">
 						<span>Deployment:</span>
 						<span>GitHub Pages (Frontend)</span>
-						<Image
-							src="/assets/images/Cloud Run Logo.svg"
-							alt="Google Cloud Run"
-							width={4}
-							height={4}
-							priority={false}
-							loading="eager"
-							className="logo"
-						/>
+						<a href="https://cloud.google.com/run">
+							<Image
+								src="/assets/images/Cloud Run Logo.svg"
+								alt="Google Cloud Run"
+								width={4}
+								height={4}
+								priority={false}
+								loading="eager"
+								className="logo"
+							/>
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<GithubOriginal
-							size="4rem"
-							aria-label="GitHub"
-							className="light"
-						/>
-						<GithubactionsOriginal
-							size="4rem"
-							aria-label="GitHub Actions"
-						/>
+						<a href="https://github.com/">
+							<GithubOriginal
+								size="4rem"
+								aria-label="GitHub"
+								className="light"
+							/>
+						</a>
+						<a href="https://github.com/features/actions">
+							<GithubactionsOriginal
+								size="4rem"
+								aria-label="GitHub Actions"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -123,21 +123,33 @@ export default function BVCOG() {
 				<div className="tech-stack">
 					<div className="stack-item">
 						<span>Backend:</span>
-						<RailsOriginalWordmark size="4rem" />
-						<RubyOriginal size="4rem" />
+						<a href="https://rubyonrails.org/">
+							<RailsOriginalWordmark size="4rem" />
+						</a>
+						<a href="https://www.ruby-lang.org/en/">
+							<RubyOriginal size="4rem" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Frontend:</span>
-						<ReactOriginal size="4rem" />
+						<a href="https://react.dev/">
+							<ReactOriginal size="4rem" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Database:</span>
-						<PostgresqlOriginal size="4rem" />
+						<a href="https://www.postgresql.org/">
+							<PostgresqlOriginal size="4rem" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Testing:</span>
-						<RspecOriginal size="4rem" />
-						<CucumberPlain size="4rem" color="#23d96c" />
+						<a href="https://rspec.info/">
+							<RspecOriginal size="4rem" />
+						</a>
+						<a href="https://cucumber.io/">
+							<CucumberPlain size="4rem" color="#23d96c" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Authentication:</span>
@@ -169,12 +181,18 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>Deployment:</span>
-						<HerokuOriginal size="4rem" />
+						<a href="https://www.heroku.com/">
+							<HerokuOriginal size="4rem" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<GithubOriginal size="4rem" />
-						<GithubactionsOriginal size="4rem" />
+						<a href="https://github.com/">
+							<GithubOriginal className="light" size="4rem" />
+						</a>
+						<a href="https://github.com/features/actions">
+							<GithubactionsOriginal size="4rem" />
+						</a>
 					</div>
 					<div className="stack-item">
 						<span>Additional Tools:</span>
