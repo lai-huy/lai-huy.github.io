@@ -124,31 +124,41 @@ export default function BVCOG() {
 					<div className="stack-item">
 						<span>Backend:</span>
 						<a href="https://rubyonrails.org/">
-							<RailsOriginalWordmark size="4rem" />
+							<RailsOriginalWordmark
+								size="4rem"
+								aria-label="Ruby on Rails"
+							/>
 						</a>
 						<a href="https://www.ruby-lang.org/en/">
-							<RubyOriginal size="4rem" />
+							<RubyOriginal size="4rem" aria-label="Ruby" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Frontend:</span>
 						<a href="https://react.dev/">
-							<ReactOriginal size="4rem" />
+							<ReactOriginal size="4rem" aria-label="React" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Database:</span>
 						<a href="https://www.postgresql.org/">
-							<PostgresqlOriginal size="4rem" />
+							<PostgresqlOriginal
+								size="4rem"
+								aria-label="PostgreSQL"
+							/>
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Testing:</span>
 						<a href="https://rspec.info/">
-							<RspecOriginal size="4rem" />
+							<RspecOriginal size="4rem" aria-label="Rspec" />
 						</a>
 						<a href="https://cucumber.io/">
-							<CucumberPlain size="4rem" color="#23d96c" />
+							<CucumberPlain
+								size="4rem"
+								color="#23d96c"
+								aria-label="Cucumber"
+							/>
 						</a>
 					</div>
 					<div className="stack-item">
@@ -182,16 +192,23 @@ export default function BVCOG() {
 					<div className="stack-item">
 						<span>Deployment:</span>
 						<a href="https://www.heroku.com/">
-							<HerokuOriginal size="4rem" />
+							<HerokuOriginal size="4rem" aria-label="Heroku" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
 						<a href="https://github.com/">
-							<GithubOriginal className="light" size="4rem" />
+							<GithubOriginal
+								className="light"
+								size="4rem"
+								aria-label="GitHub"
+							/>
 						</a>
 						<a href="https://github.com/features/actions">
-							<GithubactionsOriginal size="4rem" />
+							<GithubactionsOriginal
+								size="4rem"
+								aria-label="GitHub Actions"
+							/>
 						</a>
 					</div>
 					<div className="stack-item">

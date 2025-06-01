@@ -1,4 +1,8 @@
 import {
+	GithubOriginal,
+	GitOriginal,
+	JupyterOriginal,
+	PythonOriginal,
 	PytorchOriginal,
 	ScikitlearnOriginal,
 	TensorflowOriginal,
@@ -26,79 +30,171 @@ export default function Clip() {
 					priority={false}
 					loading="eager"
 				/>
+
+				<h3 className="h3">Overview</h3>
 				<p className="clip">
-					This project focuses on improving the training of CLIP
-					(Contrastive Language-Image Pretraining) models by
-					optimizing the global contrastive loss for bimodal
-					contrastive self-supervised learning.
+					This project, Improving CLIP Training, focuses on enhancing
+					the foundational CLIP (Contrastive Language-Image
+					Pretraining) architecture.
 					<br />
-					Self-supervised learning (SSL) has gained prominence for its
-					ability to generalize across downstream tasks in areas such
-					as natural language processing and computer vision.
+					CLIP is known for learning visual concepts from natural
+					language supervision, aligning text and image embeddings in
+					a shared latent space.
 					<br />
-					Among SSL frameworks, Contrastive Learning (CL) has proven
-					effective by maximizing the similarity between positive
-					pairs and minimizing it between negative pairs.
-					<br />
-					While CLIP has demonstrated success in aligning image and
-					text representations, challenges persist, such as slow
-					convergence in large-scale bimodal datasets.
-					<br />
-					Participants are tasked with accelerating global contrastive
-					loss optimization and enhancing model performance on
-					provided benchmarks.
-					<br />
-					<br />
-					Trainig of CLIP models used a 100k subset of the Conceptual
-					Captions 3M dataset for training and validate the models on
-					MSCOCO and ImageNet datasets.
-					<br />
-					They must evaluate model performance based on retrieval
-					accuracy and zero-shot classification metrics.
-					<br />
-					Models are restricted to using ResNet-50 and DistilBERT as
-					encoders, with fixed hyperparameters, and must compare at
-					least two optimizers and three loss functions.
-					<br />
-					Deliverables include model code, trained models, and a
-					detailed report covering experimental results, all adhering
-					to specified guidelines.
-					<br />
-					Evaluation criteria include experimental breadth, report
-					quality, presentation, and innovative ideas.
-					<br />
-					<br />
-					The following video presents the results of this project.
-					<br />
-					Additionally a report is provided for more in-depth
-					analysis.
-					<br />
-					You can view the{" "}
-					<a href={clip_github}>
-						source code for Improving CLIP Training on GitHub
-					</a>
-					.
-					<br />
-					<PytorchOriginal size="100" aria-label="PyTorch" />
-					<TensorflowOriginal size="100" aria-label="TensorFlow" />
-					<ScikitlearnOriginal size="100" aria-label="SciKit-Learn" />
+					However, while powerful, its training process still leaves
+					room for optimization in areas like convergence speed,
+					generalization, and representation quality.
 				</p>
-			</div>
-			<div className="youtube">
-				<iframe
-					title="Improving CLIP Training"
-					className="youtube"
-					src="https://www.youtube.com/embed/-O5g3cn_PkM"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-					allowFullScreen
-				/>
-			</div>
-			<div className="pdf_document">
-				<iframe
-					className="pdf_document"
-					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
-					title="Improving CLIP Training"
-				/>
+				<p className="clip">
+					The project introduces a series of experiments aimed at
+					improving CLIP by modifying its training
+					components—specifically, the optimizer and loss function.{" "}
+					<br />
+					By challenging the defaults in the original CLIP design,
+					this work offers insights into how subtle changes in
+					training dynamics can lead to more robust and flexible
+					multimodal models.
+				</p>
+
+				<h3 className="h3">The Problem</h3>
+				<p className="clip">
+					CLIP&apos;s training pipeline has proven to be
+					groundbreaking, but certain limitations hinder its full
+					potential.
+					<br />
+					This project identifies key weaknesses in the standard
+					training procedure, particularly in how the model is
+					optimized and supervised.
+				</p>
+				<ul className="clip">
+					<li>
+						<b>Optimizer Rigidity:</b> The original CLIP
+						implementation relies heavily on default optimizers,
+						which may not be ideal for training such large-scale,
+						multimodal models efficiently.
+					</li>
+					<li>
+						<b>Unbalanced Data Augmentation:</b> While images
+						undergo augmentation, text inputs remain static,
+						limiting the variety of language-image pairs seen during
+						training.
+					</li>
+					<li>
+						<b>Underutilized Loss Function Space:</b> The
+						contrastive loss used in CLIP is effective but not
+						necessarily optimal; other loss functions could
+						potentially provide stronger gradients and better
+						alignment.
+					</li>
+					<li>
+						<b>Lack of Modular Experimentation Tools:</b> Original
+						implementations are not always structured for easily
+						swapping out core training components, which slows down
+						research iteration.
+					</li>
+				</ul>
+
+				<h3>The Solution &amp; Impact</h3>
+				<p className="clip">
+					To tackle the limitations outlined, this project introduces
+					multiple enhancements to the CLIP training regimen. <br />
+					These improvements focus on increasing training flexibility,
+					embedding quality, and overall model performance in
+					zero-shot and retrieval tasks. <br />
+					Key solutions and their impacts include:
+				</p>
+				<ul className="clip">
+					<li>
+						<b>Integration of Alternative Optimizers:</b>{" "}
+						Implemented and tested optimizers like AdamW and LAMB to
+						improve learning stability and performance.
+					</li>
+					<li>
+						<b>Custom Contrastive Loss Functions:</b> Developed
+						variants of the standard contrastive loss to experiment
+						with better semantic alignment of embeddings.
+					</li>
+					<li>
+						<b>Customizable Training Pipeline:</b> Offered modular
+						scripts and a Jupyter notebook for rapid experimentation
+						and prototyping.
+					</li>
+					<li>
+						<b>Improved Generalization:</b> Preliminary experiments
+						suggest the modified training regime enhances the
+						model&apos;s ability to generalize across image-text
+						domains.
+					</li>
+				</ul>
+				<h3 className="h3">Technology Stack</h3>
+				<div className="tech-stack">
+					<div className="stack-item">
+						<span>Programming Language:</span>
+						<a href="https://www.python.org/">
+							<PythonOriginal size="4rem" aria-label="Python" />
+						</a>
+						<a href="https://jupyter.org/">
+							<JupyterOriginal size="4rem" aria-label="Jupyter" />
+						</a>
+					</div>
+					<div className="stack-item">
+						<span>Machine Learning Framework:</span>
+						<a href="https://pytorch.org/">
+							<PytorchOriginal size="4rem" aria-label="PyTorch" />
+						</a>
+						<a href="https://www.tensorflow.org/">
+							<TensorflowOriginal
+								size="4rem"
+								aria-label="TensorFlow"
+							/>
+						</a>
+						<a href="https://scikit-learn.org/stable/">
+							<ScikitlearnOriginal
+								size="4rem"
+								aria-label="SciKit-Learn"
+							/>
+						</a>
+					</div>
+					<div className="stack-item">
+						<span>Version Control:</span>
+						<a href="https://git-scm.com/">
+							<GitOriginal size="4rem" aria-label="Git" />
+						</a>
+					</div>
+					<div className="stack-item">
+						<span>Platform:</span>
+						<a href="https://github.com/">
+							<GithubOriginal
+								className="light"
+								size="4rem"
+								aria-label="GitHub"
+							/>
+						</a>
+					</div>
+				</div>
+
+				<h3 className="h3">Resources</h3>
+				<p className="clip">
+					<a href="https://github.com/lai-huy/Improving-CLIP-Training">
+						GitHub Repository
+					</a>
+				</p>
+				<div className="youtube">
+					<iframe
+						title="Improving CLIP Training"
+						className="youtube"
+						src="https://www.youtube.com/embed/-O5g3cn_PkM"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowFullScreen
+					/>
+				</div>
+				<div className="pdf_document">
+					<iframe
+						className="pdf_document"
+						src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${clip_report}#zoom=page-width&sidebar=0`}
+						title="Improving CLIP Training"
+					/>
+				</div>
 			</div>
 		</div>
 	);
