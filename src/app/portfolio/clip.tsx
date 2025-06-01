@@ -175,9 +175,7 @@ export default function Clip() {
 
 				<h3 className="h3">Resources</h3>
 				<p className="clip">
-					<a href="https://github.com/lai-huy/Improving-CLIP-Training">
-						GitHub Repository
-					</a>
+					<a href={clip_github}>GitHub Repository</a>
 				</p>
 				<div className="youtube">
 					<iframe
