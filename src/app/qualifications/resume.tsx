@@ -10,9 +10,9 @@ export default function Resume() {
 				Skip to Resume
 			</a>
 			<div id="resume">
-				<div className="h2" role="heading" aria-level={2}>
+				<h2 className="h2" role="heading" aria-level={2}>
 					Resume
-				</div>
+				</h2>
 				<p className="resume">
 					<iframe
 						className="resume"

@@ -11,10 +11,32 @@ div#devenv {
 	margin-left: 60px;
 }
 
-header.qualifications {
+h1 {
+	font-size: 48pt;
 	text-align: center;
-	font-weight: bold;
-	font-size: 6rem;
+}
+
+h2 {
+	font-size: 38pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+h4 {
+	font-size: 24pt;
+	font-family: "Ubuntu", sans-serif;
+	text-align: center;
+}
+
+header {
+	font-size: 48pt;
+	text-align: center;
 	font-family: "Ubuntu", sans-serif;
 }
 

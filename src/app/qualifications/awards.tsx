@@ -7,15 +7,15 @@ const AP_scholar: string = String.raw`https://raw.githubusercontent.com/lai-huy/
 export default function Awards() {
 	return (
 		<div id="awards">
-			<div className="h2" role="heading" aria-level={2}>
+			<h2 className="h2" role="heading" aria-level={2}>
 				Awards
-			</div>
+			</h2>
 			<p className="awards">
-                <iframe
-                    className="award"
-                    title="Master of Computer Science"
-                    src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${mcs}#zoom=page-width&sidebar=0`}
-                />
+				<iframe
+					className="award"
+					title="Master of Computer Science"
+					src={`https://mozilla.github.io/pdf.js/web/viewer.html?file=${mcs}#zoom=page-width&sidebar=0`}
+				/>
 				<iframe
 					className="award"
 					title="Bachelor of Science in Computer Science"

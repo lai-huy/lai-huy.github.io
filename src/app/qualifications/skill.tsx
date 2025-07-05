@@ -40,72 +40,72 @@ export default function Skill() {
 				Skip to Skills
 			</a>
 			<div id="skills">
-				<div className="h2" role="heading" aria-level={2}>
+				<h2 className="h2" role="heading" aria-level={2}>
 					Technical Skills
-				</div>
+				</h2>
 				<p className="qualifications">
-					<CplusplusOriginal size="8rem" aria-label="C++" />
-					<GrpcOriginal size="8rem" aria-label="gRPC" />
-					<JavaOriginal size="8rem" aria-label="Java" />
-					<HadoopOriginal size="8rem" aria-label="Hadoop" />
-					<PythonOriginal size="8rem" aria-label="Python" />
-					<MatplotlibOriginal size="8rem" aria-label="Matplotlib" />
-					<ScikitlearnOriginal
+					<span title="C++"><CplusplusOriginal size="8rem" aria-label="C++" /></span>
+					<span title="gRPC"><GrpcOriginal size="8rem" aria-label="gRPC" /></span>
+					<span title="Java"><JavaOriginal size="8rem" aria-label="Java" /></span>
+					<span title="Hadoop"><HadoopOriginal size="8rem" aria-label="Hadoop" /></span>
+					<span title="Python"><PythonOriginal size="8rem" aria-label="Python" /></span>
+					<span title="Matplotlib"><MatplotlibOriginal size="8rem" aria-label="Matplotlib" /></span>
+					<span title="SciKit-Learn"><ScikitlearnOriginal
 						size="8rem"
 						aria-label="SciKit-Learn"
-					/>
-					<TensorflowOriginal size="8rem" aria-label="TensorFlow" />
-					<PytorchOriginal size="8rem" aria-label="PyTorch" />
-					<NumpyOriginal size="8rem" aria-label="NumPy" />
-					<PandasOriginal size="8rem" aria-label="Pandas" />
-					<JupyterOriginalWordmark size="8rem" aria-label="Jupyter" />
-					<GitOriginal size="8rem" aria-label="Git" />
-					<GithubOriginal
+					/></span>
+					<span title="TensorFlow"><TensorflowOriginal size="8rem" aria-label="TensorFlow" /></span>
+					<span title="PyTorch"><PytorchOriginal size="8rem" aria-label="PyTorch" /></span>
+					<span title="NumPy"><NumpyOriginal size="8rem" aria-label="NumPy" /></span>
+					<span title="Pandas"><PandasOriginal size="8rem" aria-label="Pandas" /></span>
+					<span title="Jupyter"><JupyterOriginalWordmark size="8rem" aria-label="Jupyter" /></span>
+					<span title="Git"><GitOriginal size="8rem" aria-label="Git" /></span>
+					<span title="GitHub"><GithubOriginal
 						size="8rem"
 						className="github"
 						aria-label="GitHub"
-					/>
-					<LatexOriginal
+					/></span>
+					<span title="LaTeX"><LatexOriginal
 						size="8rem"
 						className="latex"
 						aria-label="LaTeX"
-					/>
-					<JavascriptOriginal size="8rem" aria-label="JavaScript" />
-					<TypescriptOriginal size="8rem" aria-label="TypeScript" />
-					<Html5Original
+					/></span>
+					<span title="JavaScript"><JavascriptOriginal size="8rem" aria-label="JavaScript" /></span>
+					<span title="TypeScript"><TypescriptOriginal size="8rem" aria-label="TypeScript" /></span>
+					<span title="HTML5"><Html5Original
 						size="8rem"
 						aria-label="HyperText Markup Language 5"
-					/>
-					<Css3Original
+					/></span>
+					<span title="CSS3"><Css3Original
 						size="8rem"
 						aria-label="Cascading Style Sheets"
-					/>
-					<SassOriginal
+					/></span>
+					<span title="Sass"><SassOriginal
 						size="8rem"
 						aria-label="Syntactically Awesome Style Sheets"
-					/>
-					<ReactOriginal size="8rem" aria-label="React" />
-					<NodejsOriginal size="8rem" aria-label="Node.js" />
-					<NpmOriginalWordmark size="8rem" aria-label="npm" />
-					<NextjsOriginal size="8rem" aria-label="Next.js" />
-					<RubyOriginal size="8rem" aria-label="Ruby" />
-					<RspecOriginal size="8rem" aria-label="RSpec" />
-					<RailsOriginalWordmark
+					/></span>
+					<span title="React"><ReactOriginal size="8rem" aria-label="React" /></span>
+					<span title="Node.js"><NodejsOriginal size="8rem" aria-label="Node.js" /></span>
+					<span title="npm"><NpmOriginalWordmark size="8rem" aria-label="npm" /></span>
+					<span title="Next.js"><NextjsOriginal size="8rem" aria-label="Next.js" /></span>
+					<span title="Ruby"><RubyOriginal size="8rem" aria-label="Ruby" /></span>
+					<span title="RSpec"><RspecOriginal size="8rem" aria-label="RSpec" /></span>
+					<span title="Ruby on Rails"><RailsOriginalWordmark
 						size="8rem"
 						aria-label="Ruby on Rails"
-					/>
-					<CucumberPlain
+					/></span>
+					<span title="Cucumber"><CucumberPlain
 						size="8rem"
 						color="#00A818"
 						aria-label="Cucumber"
-					/>
-					<HerokuOriginal size="8rem" aria-label="Heroku" />
-					<GooglecloudOriginal
+					/></span>
+					<span title="Heroku"><HerokuOriginal size="8rem" aria-label="Heroku" /></span>
+					<span title="Google Cloud"><GooglecloudOriginal
 						size="8rem"
 						aria-label="Google Cloud"
-					/>
-					<FirebaseOriginal size="8rem" aria-label="Firebase" />
-					<PostgresqlOriginal size="8rem" aria-label="PostgreSQL" />
+					/></span>
+					<span title="Firebase"><FirebaseOriginal size="8rem" aria-label="Firebase" /></span>
+					<span title="PostgreSQL"><PostgresqlOriginal size="8rem" aria-label="PostgreSQL" /></span>
 					<br />
 					Software Engineering
 					<br />
