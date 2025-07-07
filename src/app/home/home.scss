@@ -21,216 +21,185 @@ button.btn-hover {
 	}
 
 	&.github {
-		background-image: linear-gradient(
-			to right,
-			#214e34,
-			#30734c,
-			#3c905f,
-			#48ad72
-		);
+		background-image: linear-gradient(to right,
+				#214e34,
+				#30734c,
+				#3c905f,
+				#48ad72);
 	}
 
 	&.linkedin {
-		background-image: linear-gradient(
-			to right,
-			#372772,
-			#4a3498,
-			#583eb6,
-			#7058c6
-		);
+		background-image: linear-gradient(to right,
+				#372772,
+				#4a3498,
+				#583eb6,
+				#7058c6);
 	}
 
 	&.email {
-		background-image: linear-gradient(
-			to right,
-			#1a17be,
-			#2825e4,
-			#4c49e9,
-			#706eed
-		);
-	}
-
-	&.phone {
-		background-image: linear-gradient(
-			to right,
-			#ff0035,
-			#ff335c,
-			#ff5c7c,
-			#ff859d
-		);
+		background-image: linear-gradient(to right,
+				#1a17be,
+				#2825e4,
+				#4c49e9,
+				#706eed);
 	}
 }
 
-div {
-	&.background {
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 100%;
+div.content {
+	background-color: var(--background);
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem 0;
+	gap: 2rem;
+	width: 100%;
+	margin: 0 auto;
+
+	div.hero-section {
+		text-align: center;
+		max-height: 50vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		width: 100%;
-	}
+		margin: 0 auto;
 
-	&.about {
-		color: #25283d;
-		text-align: center;
-	}
+		header.hero-header {
+			max-width: 800px;
+			margin: 0 auto;
 
-	&#about {
-		color: #25283d;
-		text-align: center;
-	}
+			h1 {
+				font-size: clamp(2.5rem, 8vw, 4.5rem);
+				margin: 0;
+				color: var(--accent);
+				letter-spacing: -0.5px;
+				font-weight: 700;
+			}
 
-	&#prog {
-		color: #25283d;
-		text-align: center;
-	}
-
-	&#social {
-		color: #25283d;
-		text-align: center;
-	}
-
-	header.name {
-		color: #ffffff;
-		text-align: center;
-		font-weight: bold;
-		font-family: "Ubuntu", sans-serif;
-	}
-
-	span {
-		&.about {
-			background: #a09abcbf;
-		}
-
-		&.name {
-			background: #800000bf;
-			text-align: center;
-			font-weight: bold;
-			font-family: "Ubuntu", sans-serif;
+			p.hero-tagline {
+				font-size: clamp(1rem, 3vw, 1.5rem);
+				color: var(--text-muted);
+				margin: 0.5rem 0 0;
+				font-weight: 500;
+			}
 		}
 	}
 
-	p {
-		&.about {
-			background: #d4bebebf;
-			text-align: center;
-			width: 45%;
-			overflow-wrap: break-word;
-			display: inline-block;
-			margin-block-start: 0px;
-			margin-block-end: 0px;
-			margin-inline-start: 0px;
-			margin-inline-end: 0px;
-			font-size: 24pt;
-		}
+	div.about-section {
+		max-width: 1000px;
+		width: 95%;
+		padding: 1.5rem;
+		background: rgba(255, 255, 255, 0.05);
+		backdrop-filter: blur(10px);
+		border-radius: 1rem;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+		margin: 0 auto;
 
-		&.prog_req {
-			background-color: #a09abcbf;
-			display: inline-block;
-			font-size: 24pt;
-			text-align: center;
-		}
+		div.about-container {
+			display: flex;
+			gap: 2.5rem;
+			align-items: stretch;
 
-		&.links {
-			display: inline-flex;
+			div.about-content {
+				flex: 1;
+				max-width: 700px;
 
-			svg {
-				&.github {
-					g {
-						fill: #ffd700;
+				.about-text {
+					font-size: 1.5rem;
+					color: var(--text);
+					margin: 0rem;
+					margin-bottom: 0.75rem;
+					text-align: justify;
+
+					a {
+						color: var(--accent);
+						text-decoration: none;
+						font-weight: 500;
+						transition: color 0.2s ease;
+
+						&:hover {
+							color: var(--accent-hover);
+							text-decoration: underline;
+						}
 					}
+				}
+			}
+
+			div.face-container {
+				width: 400px;
+				min-height: 100%;
+				border-radius: 1rem;
+				overflow: hidden;
+
+				.face {
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					border-radius: 0.5rem;
 				}
 			}
 		}
 	}
 
-	&.desktop {
+	div.social-section {
+		text-align: center;
+		max-height: 20vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		min-height: 98vh;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 
-		&.background {
-			background-image: url("../../../public/assets/images/RoboMastersSimulation.jpg");
-			background-size: cover;
-			width: calc(100% - 60px);
-			height: 100%;
-		}
+h1 {
+	font-size: clamp(2rem, 5vw, 4rem);
+	margin: 0;
+	text-align: center;
+	font-weight: 700;
+	color: var(--accent);
+}
 
-		div {
-			&.about {
-				font-size: 38pt;
-			}
+h2 {
+	font-size: clamp(1.5rem, 4vw, 3rem);
+	margin: 0;
+	text-align: center;
+	font-weight: 600;
+	color: var(--text);
+	letter-spacing: -0.5px;
+}
 
-			header.name {
-				font-size: 48pt;
-			}
-		}
-
-		p {
-			&.about {
-				font-size: 24pt;
-			}
-
-			&.prog_req {
-				font-size: 24pt;
-			}
-
-			&.links {
-				margin-top: auto;
-			}
-		}
-
-		span {
-			&.name {
-				font-size: 48pt;
-			}
-		}
-
-		button.btn-hover {
-			width: 115px;
-			height: 115px;
-		}
+p {
+	&.about {
+		background: #d4bebebf;
+		text-align: center;
+		width: 45%;
+		overflow-wrap: break-word;
+		display: inline-block;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-size: 24pt;
 	}
 
-	&.mobile {
-		&.background {
-			background-image: url("../../../public/assets/images/face.jpg");
-		}
+	&.prog_req {
+		background-color: #a09abcbf;
+		display: inline-block;
+		font-size: 24pt;
+		text-align: center;
+	}
 
-		div {
-			&.about {
-				font-size: 19pt;
+	&.links {
+		display: inline-flex;
+
+		svg {
+			&.github {
+				g {
+					fill: #ffd700;
+				}
 			}
-		}
-
-		header.name {
-			font-size: 24pt;
-		}
-
-		p {
-			&.about {
-				font-size: 12pt;
-			}
-
-			&.prog_req {
-				font-size: 12pt;
-			}
-
-			&.links {
-				margin-top: 85px;
-			}
-		}
-
-		span {
-			&.name {
-				font-size: 24pt;
-			}
-		}
-
-		button.btn-hover {
-			width: 57px;
-			height: 57px;
 		}
 	}
 }
@@ -247,9 +216,5 @@ svg {
 	&.fa-envelope {
 		color: #db4437;
 		font-size: 6rem;
-	}
-
-	&.fa-phone {
-		color: #0f9d58;
 	}
 }
