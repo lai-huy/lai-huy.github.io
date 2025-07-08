@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode } from 'react';
 
 interface ContentLayoutProps {
@@ -5,11 +7,11 @@ interface ContentLayoutProps {
   isPortfolio?: boolean;
 }
 
-export default function ContentLayout({ children, isPortfolio = false }: ContentLayoutProps) {
+export function Layout({ children, isPortfolio = false }: ContentLayoutProps) {
   return (
-    <div 
+    <div
       className="content"
-      style={{ 
+      style={{
         minHeight: isPortfolio ? '100vh' : 'auto',
         height: isPortfolio ? 'auto' : '90vh',
         overflowY: isPortfolio ? 'auto' : 'hidden'

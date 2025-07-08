@@ -8,7 +8,7 @@ import "./home.scss";
 import Social from "./social";
 import Face from "./face";
 import { motion } from "motion/react";
-import ContentLayout from "../components/layout";
+import { Layout } from "../components/scrolling";
 import "../components/layout.scss";
 
 const fadeInUp = {
@@ -41,7 +41,7 @@ export default function Home() {
 	return (
 		<main className="page">
 			<Navbar />
-			<ContentLayout>
+			<Layout>
 				<div
 					className={`content ${isMobile ? "mobile" : "desktop"}`}
 					role="main"
@@ -79,7 +79,7 @@ export default function Home() {
 						<Social />
 					</motion.div>
 				</div>
-			</ContentLayout>
+			</Layout>
 		</main>
 	);
 }
