@@ -3,18 +3,10 @@ button.btn-hover {
 	border: none;
 	border-radius: 50px;
 	cursor: pointer;
-	-o-transition: all 0.4s ease-in-out;
 	margin: 5px;
 	text-align: center;
-	transition: all 0.4s ease-in-out;
-	-webkit-transition: all 0.4s ease-in-out;
-
-	&:hover {
-		background-position: 100% 0;
-		-o-transition: all 0.4s ease-in-out;
-		transition: all 0.4s ease-in-out;
-		-webkit-transition: all 0.4s ease-in-out;
-	}
+	color: white;
+	padding: 1rem;
 
 	&:focus {
 		outline: none;
@@ -22,26 +14,30 @@ button.btn-hover {
 
 	&.github {
 		background-image: linear-gradient(to right,
-				#214e34,
-				#30734c,
-				#3c905f,
-				#48ad72);
+			#214e34,
+			#30734c,
+			#3c905f,
+			#48ad72);
 	}
 
 	&.linkedin {
 		background-image: linear-gradient(to right,
-				#372772,
-				#4a3498,
-				#583eb6,
-				#7058c6);
+			#372772,
+			#4a3498,
+			#583eb6,
+			#7058c6);
 	}
 
 	&.email {
 		background-image: linear-gradient(to right,
-				#1a17be,
-				#2825e4,
-				#4c49e9,
-				#706eed);
+			#1a17be,
+			#2825e4,
+			#4c49e9,
+			#706eed);
+	}
+
+	&:hover {
+		background-position: 100% 0;
 	}
 }
 
