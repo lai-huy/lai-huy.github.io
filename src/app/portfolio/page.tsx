@@ -10,7 +10,7 @@ import RoboMasters from "./robomasters";
 import ScriptSearch from "./scriptsearch";
 import Skyblock from "./skyblock";
 import Strassen from "./strassen";
-import { ContentLayout } from "../components/layout";
+import ContentLayout from "../components/layout";
 import "../components/layout.scss";
 
 export default function Portfolio() {

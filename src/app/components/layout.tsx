@@ -1,9 +1,14 @@
-"use client";
+import { ReactNode } from 'react';
 
-export function ContentLayout({ children, isPortfolio = false }: { children: React.ReactNode; isPortfolio?: boolean }) {
+interface ContentLayoutProps {
+  children: ReactNode;
+  isPortfolio?: boolean;
+}
+
+export default function ContentLayout({ children, isPortfolio = false }: ContentLayoutProps) {
   return (
     <div 
-      className={`content ${isPortfolio ? 'portfolio-scroll' : 'home-scroll'}`} 
+      className="content"
       style={{ 
         minHeight: isPortfolio ? '100vh' : 'auto',
         height: isPortfolio ? 'auto' : '90vh',

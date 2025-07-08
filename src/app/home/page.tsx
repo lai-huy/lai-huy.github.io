@@ -8,7 +8,7 @@ import "./home.scss";
 import Social from "./social";
 import Face from "./face";
 import { motion } from "motion/react";
-import { ContentLayout } from "../components/layout";
+import ContentLayout from "../components/layout";
 import "../components/layout.scss";
 
 const fadeInUp = {
