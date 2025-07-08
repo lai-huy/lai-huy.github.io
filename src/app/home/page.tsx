@@ -8,6 +8,8 @@ import "./home.scss";
 import Social from "./social";
 import Face from "./face";
 import { motion } from "motion/react";
+import { ContentLayout } from "../components/layout";
+import "../components/layout.scss";
 
 const fadeInUp = {
 	initial: {
@@ -39,44 +41,45 @@ export default function Home() {
 	return (
 		<main className="page">
 			<Navbar />
-			<div
-				className={`content ${isMobile ? "mobile" : "desktop"}`}
-				role="main"
-			>
-				<motion.div
-					variants={fadeInUp}
-					initial="initial"
-					animate="animate"
-					className="hero-section"
+			<ContentLayout>
+				<div
+					className={`content ${isMobile ? "mobile" : "desktop"}`}
+					role="main"
 				>
-					<header className="hero-header">
-						<h1 className="hero-name">Huy Quang Lai</h1>
-						<p className="hero-tagline">Computer Science Student • Software Engineer </p>
-					</header>
-				</motion.div>
-
-				<motion.div
-					variants={fadeIn}
-					initial="initial"
-					animate="animate"
-					transition={{ delay: 0.3 }}
-					className="about-section"
-				>
-					<div className="about-container">
-						<About />
-						<Face />
-					</div>
-				</motion.div>
-				<motion.div
-					variants={fadeIn}
-					initial="initial"
-					animate="animate"
-					transition={{ delay: 0.5 }}
-					className="social-section"
-				>
-					<Social />
-				</motion.div>
-			</div>
+					<motion.div
+						variants={fadeInUp}
+						initial="initial"
+						animate="animate"
+						className="hero-section"
+					>
+						<header className="hero-header">
+							<h1 className="hero-name">Huy Quang Lai</h1>
+							<p className="hero-tagline">Computer Science Student • Software Engineer </p>
+						</header>
+					</motion.div>
+					<motion.div
+						variants={fadeIn}
+						initial="initial"
+						animate="animate"
+						transition={{ delay: 0.3 }}
+						className="about-section"
+					>
+						<div className="about-container">
+							<About />
+							<Face />
+						</div>
+					</motion.div>
+					<motion.div
+						variants={fadeIn}
+						initial="initial"
+						animate="animate"
+						transition={{ delay: 0.5 }}
+						className="social-section"
+					>
+						<Social />
+					</motion.div>
+				</div>
+			</ContentLayout>
 		</main>
 	);
 }

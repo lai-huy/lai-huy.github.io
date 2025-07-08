@@ -24,7 +24,7 @@ export default function POS() {
 				/>
 				<p className="pos">
 					For this project, our team developed a full-stack
-					Point-of-Sale (POS) web application tailored for the
+					Point-of-Sale (POS) web application tailored for the{" "}
 					<a href="https://www.chick-fil-a.com/locations/tx/texas-am-university-memorial-student-center">
 						Chick-fil-A location at Texas A&M University&apos;s
 						Memorial Student Center

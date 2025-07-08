@@ -1,7 +1,6 @@
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GithubOriginal, LinkedinOriginal } from "devicons-react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import Image from "next/image";
 
 const github: string = "https://github.com/lai-huy";
 const linkedin: string = "https://www.linkedin.com/in/huy-lai-93a2b4211/";
@@ -38,62 +37,73 @@ export default function Social() {
 	};
 
 	return (
-		<div id="social">
-			<p className="links">
+		<div id="social" role="region" aria-label="Social links">
+			<nav className="links">
 				<motion.button
-					aria-label="Go to my GitHub profile"
+					aria-label="GitHub profile"
+					title="GitHub profile"
 					className="btn-hover github"
 					onClick={handleGithubClick}
 					variants={buttonVariants}
 					initial="initial"
 					whileHover="whileHover"
 					whileTap="whileTap"
+					tabIndex={0}
 					transition={{
 						duration: 0.5,
 						ease: "easeOut"
 					}}
 				>
-					<GithubOriginal
-						size="5rem"
-						className="devicon github"
-					/>
+					<GithubOriginal size={48} className="github" />
+					<span className="visually-hidden">GitHub profile</span>
 				</motion.button>
 
 				<motion.button
-					aria-label="Go to my LinkedIn profile"
+					aria-label="LinkedIn profile"
+					title="LinkedIn profile"
 					className="btn-hover linkedin"
 					onClick={handleLinkedinClick}
 					variants={buttonVariants}
 					initial="initial"
 					whileHover="whileHover"
 					whileTap="whileTap"
+					tabIndex={0}
 					transition={{
 						duration: 0.5,
 						ease: "easeOut"
 					}}
 				>
-					<LinkedinOriginal size="5rem" className="devicon" />
+					<LinkedinOriginal size={48} />
+					<span className="visually-hidden">LinkedIn profile</span>
 				</motion.button>
 
 				<motion.button
-					aria-label="Send me an email"
+					aria-label="Email"
+					title="Email"
 					className="btn-hover email"
 					onClick={handleEmailClick}
 					variants={buttonVariants}
 					initial="initial"
 					whileHover="whileHover"
 					whileTap="whileTap"
+					tabIndex={0}
 					transition={{
 						duration: 0.5,
 						ease: "easeOut"
 					}}
 				>
-					<FontAwesomeIcon
-						icon={faEnvelope}
-						className="devicon"
+					<Image
+						className="email"
+						alt="Email"
+						src="/assets/images/gmail.svg"
+						width={48}
+						height={48}
+						priority={false}
+						loading="eager"
 					/>
+					<span className="visually-hidden">Email</span>
 				</motion.button>
-			</p>
+			</nav>
 		</div>
 	);
 }

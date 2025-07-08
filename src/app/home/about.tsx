@@ -1,9 +1,3 @@
-// const mcs: string = String.raw`https://catalog.tamu.edu/graduate/colleges-schools-interdisciplinary/engineering/computer-science/mcs/#programrequirementstext`;
-// const bs_cs: string = String.raw`https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/#programrequirementstext`;
-// const cyber_minor: string = String.raw`https://catalog.tamu.edu/undergraduate/engineering/cybersecurity-minor/#programrequirementstext`;
-// const math_minor: string = String.raw`https://catalog.tamu.edu/undergraduate/arts-and-sciences/mathematics/minor/#programrequirementstext`;
-// const tamu: string = String.raw`https://www.tamu.edu/`;
-
 export default function About() {
 	return (
 		<div className="about-section">
@@ -12,16 +6,17 @@ export default function About() {
 			</h2>
 			<div className="about-content">
 				<p className="about-text">
-					Howdy! I&apos;m a Computer Science professional with a Master&apos;s degree from Texas A&M University.
-					I&apos;ve also earned a Bachelor&apos;s in Computer Science and minors in Cybersecurity and Mathematics.
+					Howdy! I am an aspiring Software Engineer with a Master of Computer Science degree from Texas A&M University.
+					I have also earned a Bachelor&apos;s in Computer Science and minors in Cybersecurity and Mathematics.
 				</p>
 				<p className="about-text">
 					With a solid foundation in software development and problem-solving, I specialize in building efficient and scalable applications.
-					My academic journey has equipped me with expertise in algorithms, data structures, and cybersecurity principles.
 				</p>
 				<p className="about-text">
-					I have a particular interest in full-stack development, cloud computing, and security.
-					When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying video games.
+					My portfolio showcases a diverse range of projects that highlight my technical expertise across multiple domains.
+					I have built sophisticated machine learning models, including a mortality prediction system using XGBoost and an advanced CLIP training improvement project.
+					I have also led the development of full-stack applications, from a point-of-sale system for Chick-fil-A to ScriptSearch, a transcript-based video search platform.
+					Additionally, I have contributed to enterprise-level software development with the Brazos Valley Council of Governments Contract Management System, enhancing their legacy code with improved access control and dynamic forms.
 				</p>
 			</div>
 		</div>

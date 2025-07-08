@@ -10,26 +10,30 @@ import RoboMasters from "./robomasters";
 import ScriptSearch from "./scriptsearch";
 import Skyblock from "./skyblock";
 import Strassen from "./strassen";
+import { ContentLayout } from "../components/layout";
+import "../components/layout.scss";
 
 export default function Portfolio() {
 	return (
 		<main className="page">
 			<Navbar />
-			<div className="content">
-				<header className="portfolio">
-					<h1>Technical Portfolio</h1>
-				</header>
+			<ContentLayout isPortfolio>
+				<div className="content">
+					<header className="portfolio">
+						<h1>Technical Portfolio</h1>
+					</header>
 
-				<BVCOG />
-				<ScriptSearch />
-				<Clip />
-				<MPM />
-				<RoboMasters />
-				<Strassen />
-				<POS />
-				<Chess />
-				<Skyblock />
-			</div>
+					<BVCOG />
+					<ScriptSearch />
+					<Clip />
+					<MPM />
+					<RoboMasters />
+					<Strassen />
+					<POS />
+					<Chess />
+					<Skyblock />
+				</div>
+			</ContentLayout>
 		</main>
 	);
 }
