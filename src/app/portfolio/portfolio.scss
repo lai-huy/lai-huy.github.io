@@ -2,13 +2,6 @@
 	overflow: hidden;
 }
 
-.content {
-	width: 100%;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 2rem;
-}
-
 h1 {
 	font-size: 48pt;
 	text-align: center;
@@ -43,6 +36,12 @@ header {
 	margin-bottom: 3rem;
 }
 
+div.chess,
+div.skyblock {
+	width: 100%;
+	overflow: hidden;
+}
+
 div.pdf_document {
 	align-items: center;
 	text-align: center;
@@ -56,6 +55,7 @@ div.tech-stack {
 	font-size: 18pt;
 	font-family: "Ubuntu", sans-serif;
 	align-items: center;
+	margin-left: 60px;
 	margin-bottom: 2rem;
 }
 
@@ -131,12 +131,4 @@ ul.clip {
 	text-align: left;
 	list-style-type: disc;
 	list-style-position: inside;
-}
-
-div.chess,
-div.skyblock {
-	width: 100%;
-	max-width: 1500px;
-	margin: 0 auto;
-	overflow: hidden;
 }

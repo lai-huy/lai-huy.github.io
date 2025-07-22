@@ -1,6 +1,5 @@
 "use client";
 
-import { isMobile } from "react-device-detect";
 import Navbar from "../navigation/nav";
 import "../navigation/nav.scss";
 import About from "./about";
@@ -42,43 +41,38 @@ export default function Home() {
 		<main className="page">
 			<Navbar />
 			<Layout>
-				<div
-					className={`content ${isMobile ? "mobile" : "desktop"}`}
-					role="main"
+				<motion.div
+					variants={fadeInUp}
+					initial="initial"
+					animate="animate"
+					className="hero-section"
 				>
-					<motion.div
-						variants={fadeInUp}
-						initial="initial"
-						animate="animate"
-						className="hero-section"
-					>
-						<header className="hero-header">
-							<h1 className="hero-name">Huy Quang Lai</h1>
-							<p className="hero-tagline">Computer Science Student • Software Engineer </p>
-						</header>
-					</motion.div>
-					<motion.div
-						variants={fadeIn}
-						initial="initial"
-						animate="animate"
-						transition={{ delay: 0.3 }}
-						className="about-section"
-					>
-						<div className="about-container">
-							<About />
-							<Face />
-						</div>
-					</motion.div>
-					<motion.div
-						variants={fadeIn}
-						initial="initial"
-						animate="animate"
-						transition={{ delay: 0.5 }}
-						className="social-section"
-					>
-						<Social />
-					</motion.div>
-				</div>
+					<header className="hero-header">
+						<h1 className="hero-name">Huy Quang Lai</h1>
+						<p className="hero-tagline">Computer Science Student • Software Engineer </p>
+					</header>
+				</motion.div>
+				<motion.div
+					variants={fadeIn}
+					initial="initial"
+					animate="animate"
+					transition={{ delay: 0.3 }}
+					className="about-section"
+				>
+					<div className="about-container">
+						<About />
+						<Face />
+					</div>
+				</motion.div>
+				<motion.div
+					variants={fadeIn}
+					initial="initial"
+					animate="animate"
+					transition={{ delay: 0.5 }}
+					className="social-section"
+				>
+					<Social />
+				</motion.div>
 			</Layout>
 		</main>
 	);

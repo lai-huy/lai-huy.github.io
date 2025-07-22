@@ -1,13 +1,10 @@
 export default function Interest() {
 	return (
 		<div id="interest">
-			<a href="#interest" className="skip-link">
-				Skip to Interests
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Technical Interests
 			</h2>
-			<p className="qualifications">
+			<p className="interest">
 				I am interested in learning more about Cybersecurity.
 				<br />
 				As more of our world becomes digitized, technology and its
@@ -24,7 +21,7 @@ export default function Interest() {
 				It is essentual that these systems cannot be compromised.
 			</p>
 
-			<p className="qualifications">
+			<p className="interest">
 				Additionally, I am intereted in Machine Learning.
 				<br />
 				With the need for increased automation with in our new

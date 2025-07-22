@@ -1,13 +1,3 @@
-div.content {
-	margin-right: 60px;
-}
-
-div#interest,
-div#skills,
-div#devenv {
-	margin-left: 60px;
-}
-
 div#resume {
 	width: 90% !important;
 	margin: 0 auto !important;
@@ -62,9 +52,8 @@ div.tooltip {
 }
 
 div.qualifications {
-	text-align: left;
+	text-align: center;
 	font-size: 18pt;
-	margin: 20px;
 }
 
 iframe.award {
@@ -116,10 +105,9 @@ p {
 		text-align: center;
 	}
 
-	&.qualifications {
+	&.interest {
 		text-align: left;
 		font-size: 18pt;
-		margin: 20px;
 	}
 
 	&.awards {

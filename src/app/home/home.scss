@@ -64,8 +64,8 @@ div.content {
 	align-items: center;
 	padding: 2rem 0;
 	gap: 2rem;
-	width: 100%;
-	margin: 0 auto;
+	width: calc(100% - 60px);
+	margin: 0 0 0 60px;
 	position: relative;
 	overflow: hidden;
 
