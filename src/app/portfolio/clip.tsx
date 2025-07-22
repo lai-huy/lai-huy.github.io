@@ -127,25 +127,25 @@ export default function Clip() {
 				<div className="tech-stack">
 					<div className="stack-item">
 						<span>Programming Language:</span>
-						<a href="https://www.python.org/">
+						<a className="tooltip" href="https://www.python.org/" target="_blank" rel="noopener noreferrer" data-tip="Python">
 							<PythonOriginal size="4rem" aria-label="Python" />
 						</a>
-						<a href="https://jupyter.org/">
+						<a className="tooltip" href="https://jupyter.org/" target="_blank" rel="noopener noreferrer" data-tip="Jupyter">
 							<JupyterOriginal size="4rem" aria-label="Jupyter" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Machine Learning Framework:</span>
-						<a href="https://pytorch.org/">
+						<a className="tooltip" href="https://pytorch.org/" target="_blank" rel="noopener noreferrer" data-tip="PyTorch">
 							<PytorchOriginal size="4rem" aria-label="PyTorch" />
 						</a>
-						<a href="https://www.tensorflow.org/">
+						<a className="tooltip" href="https://www.tensorflow.org/" target="_blank" rel="noopener noreferrer" data-tip="TensorFlow">
 							<TensorflowOriginal
 								size="4rem"
 								aria-label="TensorFlow"
 							/>
 						</a>
-						<a href="https://scikit-learn.org/stable/">
+						<a className="tooltip" href="https://scikit-learn.org/stable/" target="_blank" rel="noopener noreferrer" data-tip="SciKit-Learn">
 							<ScikitlearnOriginal
 								size="4rem"
 								aria-label="SciKit-Learn"
@@ -154,13 +154,13 @@ export default function Clip() {
 					</div>
 					<div className="stack-item">
 						<span>Version Control:</span>
-						<a href="https://git-scm.com/">
+						<a className="tooltip" href="https://git-scm.com/" target="_blank" rel="noopener noreferrer" data-tip="Git">
 							<GitOriginal size="4rem" aria-label="Git" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Platform:</span>
-						<a href="https://github.com/">
+						<a className="tooltip" href="https://github.com/" target="_blank" rel="noopener noreferrer" data-tip="GitHub">
 							<GithubOriginal
 								className="light"
 								size="4rem"
@@ -172,7 +172,7 @@ export default function Clip() {
 
 				<h3 className="h3">Resources</h3>
 				<p className="clip">
-					<a href={clip_github}>GitHub Repository</a>
+					<a href={clip_github} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
 				</p>
 				<div className="youtube">
 					<iframe

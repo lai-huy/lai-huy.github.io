@@ -59,7 +59,7 @@ export default function Strassen() {
 					<br />
 					<br />
 					You can find the{" "}
-					<a href={strassenmp_github}>
+					<a href={strassenmp_github} target="_blank" rel="noopener noreferrer">
 						source code for this project on GitHub
 					</a>
 					.

@@ -108,7 +108,7 @@ export default function ScriptSearch() {
 					</li>
 					<li>
 						<b>Indexing & Search:</b> These transcripts are indexed
-						using <a href="https://typesense.org/">Typesense</a>, an
+						using <a href="https://typesense.org/" target="_blank" rel="noopener noreferrer nofollow">Typesense</a>, an
 						open-source search engine optimized for speed and typo
 						tolerance.
 					</li>
@@ -161,36 +161,32 @@ export default function ScriptSearch() {
 				<div className="tech-stack">
 					<div className="stack-item">
 						<span>Backend:</span>
-						<a href="https://go.dev/">
+						<a className="tooltip" href="https://go.dev/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Go">
 							<GoOriginal size="4rem" aria-label="Go" />
 						</a>
-						<a href="https://www.python.org/">
+						<a className="tooltip" href="https://www.python.org/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Python">
 							<PythonOriginal size="4rem" aria-label="Python" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Frontend:</span>
-						<a href="https://react.dev/">
+						<a className="tooltip" href="https://react.dev/" target="_blank" rel="noopener noreferrer nofollow" data-tip="React">
 							<ReactOriginal size="4rem" aria-label="React" />
 						</a>
-						<a href="https://nextjs.org/">
+						<a className="tooltip" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Next.js">
 							<NextjsOriginal size="4rem" aria-label="Next.js" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Database & Search:</span>
-						<a href="https://firebase.google.com/">
+						<a className="tooltip" href="https://firebase.google.com/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Firebase">
 							<FirebaseOriginal
 								size="4rem"
 								aria-label="Firebase"
 							/>
 						</a>
 						<span>
-							<a
-								href="https://typesense.org/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
+							<a className="tooltip" href="https://typesense.org/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Typesense">
 								<Image
 									src="https://avatars.githubusercontent.com/u/19822348?v=4"
 									alt="Typesense"
@@ -203,7 +199,7 @@ export default function ScriptSearch() {
 					</div>
 					<div className="stack-item">
 						<span>Cloud Infrastructure:</span>
-						<a href="https://cloud.google.com/functions">
+						<a className="tooltip" href="https://cloud.google.com/functions" target="_blank" rel="noopener noreferrer nofollow" data-tip="Google Cloud Functions">
 							<Image
 								src="/assets/images/Cloud Functions Logo.svg"
 								alt="Google Cloud Functions"
@@ -214,7 +210,7 @@ export default function ScriptSearch() {
 								className="logo"
 							/>
 						</a>
-						<a href="https://cloud.google.com/pubsub">
+						<a className="tooltip" href="https://cloud.google.com/pubsub" target="_blank" rel="noopener noreferrer nofollow" data-tip="Google Pub/Sub">
 							<Image
 								src="/assets/images/PubSub Logo.svg"
 								alt="Google Pub/Sub"
@@ -225,7 +221,7 @@ export default function ScriptSearch() {
 								className="logo"
 							/>
 						</a>
-						<a href="https://cloud.google.com/run">
+						<a className="tooltip" href="https://cloud.google.com/run" target="_blank" rel="noopener noreferrer nofollow" data-tip="Google Cloud Run">
 							<Image
 								src="/assets/images/Cloud Run Logo.svg"
 								alt="Google Cloud Run"
@@ -239,7 +235,7 @@ export default function ScriptSearch() {
 					</div>
 					<div className="stack-item">
 						<span>Scraping Tools:</span>
-						<a href="https://github.com/yt-dlp/yt-dlp">
+						<a className="tooltip" href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer nofollow" data-tip="YT-DLP">
 							<Image
 								src="https://repository-images.githubusercontent.com/307260205/b6a8d716-9c7b-40ec-bc44-6422d8b741a0"
 								alt="YT-DLP"
@@ -250,7 +246,7 @@ export default function ScriptSearch() {
 								className="logo"
 							/>
 						</a>
-						<a href="https://pptr.dev/">
+						<a className="tooltip" href="https://pptr.dev/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Puppeteer">
 							<PuppeteerOriginal
 								size="4rem"
 								aria-label="Puppeteer"
@@ -259,7 +255,7 @@ export default function ScriptSearch() {
 					</div>
 					<div className="stack-item">
 						<span>Testing:</span>
-						<a href="https://docs.pytest.org/">
+						<a className="tooltip" href="https://docs.pytest.org/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Pytest">
 							<PytestOriginal size="4rem" aria-label="Pytest" />
 						</a>
 					</div>
@@ -273,7 +269,7 @@ export default function ScriptSearch() {
 					<div className="stack-item">
 						<span>Deployment:</span>
 						<span>GitHub Pages (Frontend)</span>
-						<a href="https://cloud.google.com/run">
+						<a className="tooltip" href="https://cloud.google.com/run" target="_blank" rel="noopener noreferrer nofollow" data-tip="Google Cloud Run">
 							<Image
 								src="/assets/images/Cloud Run Logo.svg"
 								alt="Google Cloud Run"
@@ -287,14 +283,14 @@ export default function ScriptSearch() {
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<a href="https://github.com/">
+						<a className="tooltip" href="https://github.com/" target="_blank" rel="noopener noreferrer nofollow" data-tip="GitHub">
 							<GithubOriginal
 								size="4rem"
 								aria-label="GitHub"
 								className="light"
 							/>
 						</a>
-						<a href="https://github.com/features/actions">
+						<a className="tooltip" href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer nofollow" data-tip="GitHub Actions">
 							<GithubactionsOriginal
 								size="4rem"
 								aria-label="GitHub Actions"
@@ -305,9 +301,9 @@ export default function ScriptSearch() {
 			</div>
 			<h3>Resources</h3>
 			<p className="scriptsearch">
-				<a href={scriptsearch_frontend}>Frontend GitHub Repository</a>
+				<a href={scriptsearch_frontend} target="_blank" rel="noopener noreferrer nofollow">Frontend GitHub Repository</a>
 				<br />
-				<a href={scriptsearch_backend}>Backend GitHub Repository</a>
+				<a href={scriptsearch_backend} target="_blank" rel="noopener noreferrer nofollow">Backend GitHub Repository</a>
 				<br />
 			</p>
 			<div className="youtube">

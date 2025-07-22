@@ -34,7 +34,7 @@ export default function Skyblock() {
 					accordingly.
 					<br />
 					<br />
-					This mod was developed using <a href={fabric}>Fabric</a> as a framework.
+					This mod was developed using <a href={fabric} target="_blank" rel="noopener noreferrer">Fabric</a> as a framework.
 					<br />
 					<br />
 					This project also helped me understand maintaining a
@@ -44,9 +44,9 @@ export default function Skyblock() {
 					generation of loot tables were standardized within the code.
 					<br />
 					<br />
-					<a href={skyblock}>More information about SkyBlock</a>.
+					<a href={skyblock} target="_blank" rel="noopener noreferrer">More information about SkyBlock</a>.
 					<br />
-					<a href={skyblock_gh}>GitHub Repository</a><br />
+					<a href={skyblock_gh} target="_blank" rel="noopener noreferrer">GitHub Repository</a><br />
 					<br />
 					<Image
 						className="logo"

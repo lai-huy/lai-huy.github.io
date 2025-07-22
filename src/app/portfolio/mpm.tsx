@@ -56,7 +56,7 @@ export default function MPM() {
 					<br />
 					<br />
 					You can find the{" "}
-					<a href={mpm_github}>
+					<a href={mpm_github} target="_blank" rel="noopener noreferrer">
 						source code for this project on GitHub
 					</a>
 					.

@@ -52,7 +52,7 @@ export default function Chess() {
 				</p>
 				<p className="chess">
 					The{" "}
-					<a href={chess}>
+					<a href={chess} target="_blank" rel="noopener noreferrer">
 						source code for this project can be found on GitHub
 					</a>
 					.

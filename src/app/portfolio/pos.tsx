@@ -22,14 +22,14 @@ export default function POS() {
 				<p className="pos">
 					For this project, our team developed a full-stack
 					Point-of-Sale (POS) web application tailored for the{" "}
-					<a href="https://www.chick-fil-a.com/locations/tx/texas-am-university-memorial-student-center">
+					<a href="https://www.chick-fil-a.com/locations/tx/texas-am-university-memorial-student-center" target="_blank" rel="noopener noreferrer">
 						Chick-fil-A location at Texas A&M University&apos;s
 						Memorial Student Center
 					</a>
 					.
 					<br />
-					Utilizing <a href="https://react.dev/">React</a> for the
-					frontend and <a href="https://nodejs.org/">Node.js</a> for
+					Utilizing <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a> for the
+					frontend and <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> for
 					the backend, we created an intuitive interface that
 					streamlines order processing for both customers and staff.
 					<br />
@@ -58,7 +58,7 @@ export default function POS() {
 					<br />
 					<br />
 					The source code and further documentation are available on
-					our <a href={pos_github}>GitHub repository</a>.
+					our <a href={pos_github} target="_blank" rel="noopener noreferrer">GitHub repository</a>.
 					<br />
 					<ReactOriginal size="128" aria-label="React" />
 					<NodejsOriginal size="128" aria-label="Node.js" />

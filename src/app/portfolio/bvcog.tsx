@@ -120,25 +120,25 @@ export default function BVCOG() {
 				<div className="tech-stack">
 					<div className="stack-item">
 						<span>Backend:</span>
-						<a href="https://rubyonrails.org/">
+						<a className="tooltip" href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer" data-tip="Ruby on Rails">
 							<RailsOriginalWordmark
 								size="4rem"
 								aria-label="Ruby on Rails"
 							/>
 						</a>
-						<a href="https://www.ruby-lang.org/en/">
+						<a className="tooltip" href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener noreferrer" data-tip="Ruby">
 							<RubyOriginal size="4rem" aria-label="Ruby" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Frontend:</span>
-						<a href="https://react.dev/">
+						<a className="tooltip" href="https://react.dev/" target="_blank" rel="noopener noreferrer" data-tip="React">
 							<ReactOriginal size="4rem" aria-label="React" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Database:</span>
-						<a href="https://www.postgresql.org/">
+						<a className="tooltip" href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer" data-tip="PostgreSQL">
 							<PostgresqlOriginal
 								size="4rem"
 								aria-label="PostgreSQL"
@@ -147,10 +147,10 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>Testing:</span>
-						<a href="https://rspec.info/">
+						<a className="tooltip" href="https://rspec.info/" target="_blank" rel="noopener noreferrer" data-tip="RSpec">
 							<RspecOriginal size="4rem" aria-label="Rspec" />
 						</a>
-						<a href="https://cucumber.io/">
+						<a className="tooltip" href="https://cucumber.io/" target="_blank" rel="noopener noreferrer" data-tip="Cucumber">
 							<CucumberPlain
 								size="4rem"
 								color="#23d96c"
@@ -160,7 +160,7 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>Authentication:</span>
-						<a href="https://github.com/heartcombo/devise">
+						<a className="tooltip" href="https://github.com/heartcombo/devise" target="_blank" rel="noopener noreferrer" data-tip="Devise">
 							<Image
 								src="https://raw.githubusercontent.com/heartcombo/devise/main/devise.png"
 								alt="Devise"
@@ -174,7 +174,7 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>PDF Generation:</span>
-						<a href="https://github.com/prawnpdf/prawn">
+						<a className="tooltip" href="https://github.com/prawnpdf/prawn" target="_blank" rel="noopener noreferrer" data-tip="Prawn">
 							<Image
 								src="https://prawnpdf.org/images/prawn.png"
 								alt="Prawn"
@@ -188,20 +188,20 @@ export default function BVCOG() {
 					</div>
 					<div className="stack-item">
 						<span>Deployment:</span>
-						<a href="https://www.heroku.com/">
+						<a className="tooltip" href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer" data-tip="Heroku">
 							<HerokuOriginal size="4rem" aria-label="Heroku" />
 						</a>
 					</div>
 					<div className="stack-item">
 						<span>Version Control & CI:</span>
-						<a href="https://github.com/">
+						<a className="tooltip" href="https://github.com/" target="_blank" rel="noopener noreferrer" data-tip="GitHub">
 							<GithubOriginal
 								className="light"
 								size="4rem"
 								aria-label="GitHub"
 							/>
 						</a>
-						<a href="https://github.com/features/actions">
+						<a className="tooltip" href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer" data-tip="GitHub Actions">
 							<GithubactionsOriginal
 								size="4rem"
 								aria-label="GitHub Actions"
@@ -211,13 +211,13 @@ export default function BVCOG() {
 					<div className="stack-item">
 						<span>Additional Tools:</span>
 						<span>
-							<a href="https://github.com/scambra/devise_invitable">
+							<a className="tooltip" href="https://github.com/scambra/devise_invitable" target="_blank" rel="noopener noreferrer nofollow" data-tip="Devise Inviteable">
 								Devise Inviteable
 							</a>
 						</span>
 						,
 						<span>
-							<a href="https://github.com/kaminari/kaminari">
+							<a className="tooltip" href="https://github.com/kaminari/kaminari" target="_blank" rel="noopener noreferrer nofollow" data-tip="Kaminari">
 								<Image
 									src="https://avatars.githubusercontent.com/u/5637951?s=200&v=4"
 									alt="Kaminari"
@@ -231,13 +231,13 @@ export default function BVCOG() {
 						</span>
 						,
 						<span>
-							<a href="https://github.com/joshuajansen/bulma-rails">
+							<a className="tooltip" href="https://github.com/joshuajansen/bulma-rails" target="_blank" rel="noopener noreferrer nofollow" data-tip="Bulma Rails">
 								<BulmaPlain size="4rem" aria-label="Bulma" />
 							</a>
 						</span>
 						,
 						<span>
-							<a href="https://www.osohq.com/">
+							<a className="tooltip" href="https://www.osohq.com/" target="_blank" rel="noopener noreferrer nofollow" data-tip="Oso">
 								<Image
 									src="https://raw.githubusercontent.com/osohq/oso/refs/heads/main/vscode/oso/oso_logo.png"
 									alt="Oso"
@@ -251,7 +251,7 @@ export default function BVCOG() {
 						</span>
 						,
 						<span>
-							<a href="https://jquery.com/">
+							<a className="tooltip" href="https://jquery.com/" target="_blank" rel="noopener noreferrer nofollow" data-tip="jQuery">
 								<JqueryOriginal
 									size="4rem"
 									aria-label="JQuery"
@@ -263,7 +263,7 @@ export default function BVCOG() {
 
 				<h3>Resources</h3>
 				<p className="bvcog">
-					<a href={bvcog}>GitHub repository</a>
+					<a href={bvcog} target="_blank" rel="noopener noreferrer">GitHub repository</a>
 				</p>
 				<div className="youtube">
 					<iframe

@@ -27,7 +27,7 @@ export default function RoboMasters() {
 					was, intern, part of TAMU RoboMasters.
 					<br />
 					Some of the work I did on this project can be found on the
-					team&apos;s <a href={rm_github}>GitHub page</a>.
+					team&apos;s <a href={rm_github} target="_blank" rel="noopener noreferrer">GitHub page</a>.
 					<br />
 					<br />
 					The purpose of the simulation was to be able to emulate the
@@ -52,7 +52,7 @@ export default function RoboMasters() {
 					more optimal armor plate detector.
 					<br />
 					Learn more about them by visiting{" "}
-					<a href={tamu_rm}>RoboMaster&apos;s homepage</a>.
+					<a href={tamu_rm} target="_blank" rel="noopener noreferrer">RoboMaster&apos;s homepage</a>.
 				</p>
 			</div>
 			<div className="youtube">
