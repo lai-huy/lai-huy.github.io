@@ -12,9 +12,6 @@ const mpm_report: string = String.raw`https://raw.githubusercontent.com/lai-huy/
 export default function MPM() {
 	return (
 		<div>
-			<a href="#mpm" className="skip-link">
-				Skip to Mortality Prediction Model
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Mortality Prediction Model
 			</h2>

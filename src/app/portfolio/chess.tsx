@@ -5,9 +5,6 @@ const chess: string = String.raw`https://github.com/lai-huy-075/Chess`;
 export default function Chess() {
 	return (
 		<div>
-			<a href="#chess" className="skip-link">
-				Skip to chess
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Chess
 			</h2>
@@ -29,8 +26,8 @@ export default function Chess() {
 					<br />
 					External libraries such as JavaFX were not used for this
 					project.
-					<br />
-					<br />
+				</p>
+				<p className="chess">
 					Additionally, this projeect helped me learn about the
 					software design process.
 					<br />
@@ -39,8 +36,8 @@ export default function Chess() {
 					<br />
 					This also assisted me alot in learning about bug testing and
 					determining the origin of bugs.
-					<br />
-					<br />
+				</p>
+				<p className="chess">
 					Future plans for this software include:
 					<br />
 					Connecting the program to the internet to allow users to
@@ -52,8 +49,8 @@ export default function Chess() {
 					<br />
 					Implementing other variants of Chess such as Chess960, Fog
 					of War, or Duck Chess.
-					<br />
-					<br />
+				</p>
+				<p className="chess">
 					The{" "}
 					<a href={chess}>
 						source code for this project can be found on GitHub

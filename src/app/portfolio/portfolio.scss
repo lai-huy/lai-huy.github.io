@@ -109,8 +109,13 @@ p.sb,
 p.scriptsearch,
 p.strassen,
 p.tamu_rm {
-	font-size: 18pt;
-	text-align: center;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-size: 18pt !important;
+	text-align: center !important;
 }
 
 svg.light {
@@ -126,4 +131,12 @@ ul.clip {
 	text-align: left;
 	list-style-type: disc;
 	list-style-position: inside;
+}
+
+div.chess,
+div.skyblock {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: hidden;
 }

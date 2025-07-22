@@ -13,14 +13,14 @@ export default function DevEnv() {
 			<h2 className="h2" role="heading" aria-level={2}>
 				Development Environments
 			</h2>
-			<p className="qualifications">
-				<span title="Eclipse"><EclipseOriginal size="8rem" aria-label="Eclipse" /></span>
-				<span title="Intellij"><IntellijOriginal size="8rem" aria-label="Intellij" /></span>
-				<span title="Visual Studio Code"><VscodeOriginal size="8rem" aria-label="Visual Studio Code" /></span>
-				<span title="Nano"><NanoOriginal size="8rem" aria-label="Nano" /></span>
-				<span title="Neovim"><NeovimOriginal size="8rem" aria-label="Neovim" /></span>
-				<span title="Vim"><VimOriginal size="8rem" aria-label="Vim" /></span>
-			</p>
+			<div className="qualifications">
+				<div className="tooltip" data-tip="Eclipse"><EclipseOriginal size="8rem" aria-label="Eclipse" /></div>
+				<div className="tooltip" data-tip="Intellij"><IntellijOriginal size="8rem" aria-label="Intellij" /></div>
+				<div className="tooltip" data-tip="Visual Studio Code"><VscodeOriginal size="8rem" aria-label="Visual Studio Code" /></div>
+				<div className="tooltip" data-tip="Nano"><NanoOriginal size="8rem" aria-label="Nano" /></div>
+				<div className="tooltip" data-tip="Neovim"><NeovimOriginal size="8rem" aria-label="Neovim" /></div>
+				<div className="tooltip" data-tip="Vim"><VimOriginal size="8rem" aria-label="Vim" /></div>
+			</div>
 		</div>
 	);
 }

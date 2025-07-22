@@ -33,6 +33,9 @@ const nextConfig: NextConfig = {
 			{
 				hostname: "prawnpdf.org",
 			},
+			{
+				hostname: "fabricmc.net",
+			},
 		],
 	},
 };

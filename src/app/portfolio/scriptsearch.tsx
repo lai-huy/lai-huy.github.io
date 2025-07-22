@@ -18,9 +18,6 @@ const scriptsearch_report: string = String.raw`https://raw.githubusercontent.com
 export default function ScriptSearch() {
 	return (
 		<div>
-			<a href="#scriptsearch" className="skip-link">
-				Skip to Script Search
-			</a>
 			<h2 role="heading" aria-level={2}>
 				Script Search 🔎
 			</h2>

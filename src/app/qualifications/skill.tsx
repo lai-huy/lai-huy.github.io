@@ -43,69 +43,69 @@ export default function Skill() {
 				<h2 className="h2" role="heading" aria-level={2}>
 					Technical Skills
 				</h2>
-				<p className="qualifications">
-					<span title="C++"><CplusplusOriginal size="8rem" aria-label="C++" /></span>
-					<span title="gRPC"><GrpcOriginal size="8rem" aria-label="gRPC" /></span>
-					<span title="Java"><JavaOriginal size="8rem" aria-label="Java" /></span>
-					<span title="Hadoop"><HadoopOriginal size="8rem" aria-label="Hadoop" /></span>
-					<span title="Python"><PythonOriginal size="8rem" aria-label="Python" /></span>
-					<span title="Matplotlib"><MatplotlibOriginal size="8rem" aria-label="Matplotlib" /></span>
-					<span title="SciKit-Learn"><ScikitlearnOriginal
+				<div className="qualifications">
+					<div className="tooltip" data-tip="C++"><CplusplusOriginal size="8rem" aria-label="C++" /></div>
+					<div className="tooltip" data-tip="gRPC"><GrpcOriginal size="8rem" aria-label="gRPC" /></div>
+					<div className="tooltip" data-tip="Java"><JavaOriginal size="8rem" aria-label="Java" /></div>
+					<div className="tooltip" data-tip="Hadoop"><HadoopOriginal size="8rem" aria-label="Hadoop" /></div>
+					<div className="tooltip" data-tip="Python"><PythonOriginal size="8rem" aria-label="Python" /></div>
+					<div className="tooltip" data-tip="Matplotlib"><MatplotlibOriginal size="8rem" aria-label="Matplotlib" /></div>
+					<div className="tooltip" data-tip="SciKit-Learn"><ScikitlearnOriginal
 						size="8rem"
 						aria-label="SciKit-Learn"
-					/></span>
-					<span title="TensorFlow"><TensorflowOriginal size="8rem" aria-label="TensorFlow" /></span>
-					<span title="PyTorch"><PytorchOriginal size="8rem" aria-label="PyTorch" /></span>
-					<span title="NumPy"><NumpyOriginal size="8rem" aria-label="NumPy" /></span>
-					<span title="Pandas"><PandasOriginal size="8rem" aria-label="Pandas" /></span>
-					<span title="Jupyter"><JupyterOriginalWordmark size="8rem" aria-label="Jupyter" /></span>
-					<span title="Git"><GitOriginal size="8rem" aria-label="Git" /></span>
-					<span title="GitHub"><GithubOriginal
+					/></div>
+					<div className="tooltip" data-tip="TensorFlow"><TensorflowOriginal size="8rem" aria-label="TensorFlow" /></div>
+					<div className="tooltip" data-tip="PyTorch"><PytorchOriginal size="8rem" aria-label="PyTorch" /></div>
+					<div className="tooltip" data-tip="NumPy"><NumpyOriginal size="8rem" aria-label="NumPy" /></div>
+					<div className="tooltip" data-tip="Pandas"><PandasOriginal size="8rem" aria-label="Pandas" /></div>
+					<div className="tooltip" data-tip="Jupyter"><JupyterOriginalWordmark size="8rem" aria-label="Jupyter" /></div>
+					<div className="tooltip" data-tip="Git"><GitOriginal size="8rem" aria-label="Git" /></div>
+					<div className="tooltip" data-tip="GitHub"><GithubOriginal
 						size="8rem"
 						className="github"
 						aria-label="GitHub"
-					/></span>
-					<span title="LaTeX"><LatexOriginal
+					/></div>
+					<div className="tooltip" data-tip="LaTeX"><LatexOriginal
 						size="8rem"
 						className="latex"
 						aria-label="LaTeX"
-					/></span>
-					<span title="JavaScript"><JavascriptOriginal size="8rem" aria-label="JavaScript" /></span>
-					<span title="TypeScript"><TypescriptOriginal size="8rem" aria-label="TypeScript" /></span>
-					<span title="HTML5"><Html5Original
+					/></div>
+					<div className="tooltip" data-tip="JavaScript"><JavascriptOriginal size="8rem" aria-label="JavaScript" /></div>
+					<div className="tooltip" data-tip="TypeScript"><TypescriptOriginal size="8rem" aria-label="TypeScript" /></div>
+					<div className="tooltip" data-tip="HTML5"><Html5Original
 						size="8rem"
 						aria-label="HyperText Markup Language 5"
-					/></span>
-					<span title="CSS3"><Css3Original
+					/></div>
+					<div className="tooltip" data-tip="CSS3"><Css3Original
 						size="8rem"
 						aria-label="Cascading Style Sheets"
-					/></span>
-					<span title="Sass"><SassOriginal
+					/></div>
+					<div className="tooltip" data-tip="Sass"><SassOriginal
 						size="8rem"
 						aria-label="Syntactically Awesome Style Sheets"
-					/></span>
-					<span title="React"><ReactOriginal size="8rem" aria-label="React" /></span>
-					<span title="Node.js"><NodejsOriginal size="8rem" aria-label="Node.js" /></span>
-					<span title="npm"><NpmOriginalWordmark size="8rem" aria-label="npm" /></span>
-					<span title="Next.js"><NextjsOriginal size="8rem" aria-label="Next.js" /></span>
-					<span title="Ruby"><RubyOriginal size="8rem" aria-label="Ruby" /></span>
-					<span title="RSpec"><RspecOriginal size="8rem" aria-label="RSpec" /></span>
-					<span title="Ruby on Rails"><RailsOriginalWordmark
+					/></div>
+					<div className="tooltip" data-tip="React"><ReactOriginal size="8rem" aria-label="React" /></div>
+					<div className="tooltip" data-tip="Node.js"><NodejsOriginal size="8rem" aria-label="Node.js" /></div>
+					<div className="tooltip" data-tip="npm"><NpmOriginalWordmark size="8rem" aria-label="npm" /></div>
+					<div className="tooltip" data-tip="Next.js"><NextjsOriginal size="8rem" aria-label="Next.js" /></div>
+					<div className="tooltip" data-tip="Ruby"><RubyOriginal size="8rem" aria-label="Ruby" /></div>
+					<div className="tooltip" data-tip="RSpec"><RspecOriginal size="8rem" aria-label="RSpec" /></div>
+					<div className="tooltip" data-tip="Ruby on Rails"><RailsOriginalWordmark
 						size="8rem"
 						aria-label="Ruby on Rails"
-					/></span>
-					<span title="Cucumber"><CucumberPlain
+					/></div>
+					<div className="tooltip" data-tip="Cucumber"><CucumberPlain
 						size="8rem"
 						color="#00A818"
 						aria-label="Cucumber"
-					/></span>
-					<span title="Heroku"><HerokuOriginal size="8rem" aria-label="Heroku" /></span>
-					<span title="Google Cloud"><GooglecloudOriginal
+					/></div>
+					<div className="tooltip" data-tip="Heroku"><HerokuOriginal size="8rem" aria-label="Heroku" /></div>
+					<div className="tooltip" data-tip="Google Cloud"><GooglecloudOriginal
 						size="8rem"
 						aria-label="Google Cloud"
-					/></span>
-					<span title="Firebase"><FirebaseOriginal size="8rem" aria-label="Firebase" /></span>
-					<span title="PostgreSQL"><PostgresqlOriginal size="8rem" aria-label="PostgreSQL" /></span>
+					/></div>
+					<div className="tooltip" data-tip="Firebase"><FirebaseOriginal size="8rem" aria-label="Firebase" /></div>
+					<div className="tooltip" data-tip="PostgreSQL"><PostgresqlOriginal size="8rem" aria-label="PostgreSQL" /></div>
 					<br />
 					Software Engineering
 					<br />
@@ -117,7 +117,7 @@ export default function Skill() {
 					<br />
 					Customer Service
 					<br />
-				</p>
+				</div>
 			</div>
 		</div>
 	);

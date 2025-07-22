@@ -32,9 +32,44 @@ div#resume {
 	}
 }
 
+div.tooltip {
+	position: relative;
+	display: inline-block;
+
+	&::after {
+		content: attr(data-tip);
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(10px);
+		background-color: #333333;
+		color: #ffffff;
+		padding: 5px 10px;
+		border-radius: 4px;
+		font-size: 14px;
+		white-space: nowrap;
+		z-index: 1000;
+		margin-bottom: 5px;
+		opacity: 0;
+		transition: opacity 0.3s ease, transform 0.3s ease;
+		pointer-events: none;
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
+}
+
+div.qualifications {
+	text-align: left;
+	font-size: 18pt;
+	margin: 20px;
+}
+
 iframe.award {
 	width: 45% !important;
-	height: 655px !important;
+	height: 600px !important;
 	border: none !important;
 	margin: 0rem !important;
 	padding: 0.5rem !important;

@@ -6,9 +6,6 @@ const tamu_rm: string = "https://tamurobomasters.com/";
 export default function RoboMasters() {
 	return (
 		<div>
-			<a href="#robomasters" className="skip-link">
-				Skip to TAMU RoboMasters
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				TAMU RoboMasters
 			</h2>

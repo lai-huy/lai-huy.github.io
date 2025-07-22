@@ -19,9 +19,6 @@ const bvcog_report: string = String.raw`https://raw.githubusercontent.com/BVCOG-
 export default function BVCOG() {
 	return (
 		<div>
-			<a href="#bvcog" className="skip-link">
-				Skip to BVCOG CMS
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Brazos Valley Council of Governments Contract Management System
 			</h2>

@@ -1,15 +1,12 @@
 import Image from "next/image";
 
-const forge: string = String.raw`https://files.minecraftforge.net/net/minecraftforge/forge/`;
+const fabric: string = String.raw`https://fabricmc.net/`;
 const skyblock: string = String.raw`https://wiki.hypixel.net/Introduction`;
-const skyblock_gh: string = String.raw`https://github.com/MrPineapple070/SkyBlock-1.19.2`;
+const skyblock_gh: string = String.raw`https://github.com/lai-huy/SkyBlock-1.21.6`;
 
 export default function Skyblock() {
 	return (
 		<div>
-			<a href="#skyblock" className="skip-link">
-				Skip to Hypixel SkyBlock
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				SkyBlock Minecraft Mod
 			</h2>
@@ -37,9 +34,7 @@ export default function Skyblock() {
 					accordingly.
 					<br />
 					<br />
-					This mod was developed using Forge as a framework.
-					<br />
-					Learn more about <a href={forge}>Minecraft Forge </a>.
+					This mod was developed using <a href={fabric}>Fabric</a> as a framework.
 					<br />
 					<br />
 					This project also helped me understand maintaining a
@@ -49,15 +44,14 @@ export default function Skyblock() {
 					generation of loot tables were standardized within the code.
 					<br />
 					<br />
-					<a href={skyblock}>More information about SkyBlock.</a>
+					<a href={skyblock}>More information about SkyBlock</a>.
 					<br />
-					The <a href={skyblock_gh}>source code</a> for this can be
-					found .<br />
+					<a href={skyblock_gh}>GitHub Repository</a><br />
 					<br />
 					<Image
 						className="logo"
-						src="/assets/images/Forge_Logo.png"
-						alt="Minecraft Forge"
+						src="https://fabricmc.net/assets/logo.png"
+						alt="Fabric"
 						width={200}
 						height={200}
 					/>

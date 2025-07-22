@@ -6,9 +6,6 @@ const pos_github: string = String.raw`https://github.com/CSCE315-Spring23/Team_4
 export default function POS() {
 	return (
 		<div>
-			<a href="#pos" className="skip-link">
-				Skip to point of sale system
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Point of Sale System
 			</h2>

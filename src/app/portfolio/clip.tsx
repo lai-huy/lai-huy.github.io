@@ -14,9 +14,6 @@ const clip_report: string = String.raw`https://raw.githubusercontent.com/lai-huy
 export default function Clip() {
 	return (
 		<div>
-			<a href="#clip" className="skip-link">
-				Skip to Improving CLIP
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				Improving CLIP Training
 			</h2>

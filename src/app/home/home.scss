@@ -37,6 +37,22 @@ button.btn-hover {
 
 	&:hover {
 		background-position: 100% 0;
+
+		&::after {
+			content: attr(data-tip);
+			position: absolute;
+			bottom: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #333;
+			color: white;
+			padding: 5px 10px;
+			border-radius: 4px;
+			font-size: 14px;
+			white-space: nowrap;
+			z-index: 1000;
+			margin-bottom: 5px;
+		}
 	}
 }
 
@@ -84,7 +100,7 @@ div.content {
 	}
 
 	div.about-section {
-		max-width: 1500px;
+		max-width: 1300px;
 		width: 95%;
 		padding: 2rem;
 		background: rgba(255, 255, 255, 0.05);

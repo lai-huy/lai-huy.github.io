@@ -6,9 +6,6 @@ const strassenmp_github: string = String.raw`https://github.com/lai-huy/Strassen
 export default function Strassen() {
 	return (
 		<MathJaxContext>
-			<a href="#strassen" className="skip-link">
-				Skip to Strassen&apos;s Algorithm
-			</a>
 			<h2 className="h2" role="heading" aria-level={2}>
 				StrassenMP
 			</h2>

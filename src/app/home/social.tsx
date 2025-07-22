@@ -41,7 +41,7 @@ export default function Social() {
 			<nav className="links">
 				<motion.button
 					aria-label="GitHub profile"
-					title="GitHub profile"
+					data-tip="GitHub profile"
 					className="btn-hover github"
 					onClick={handleGithubClick}
 					variants={buttonVariants}
@@ -60,7 +60,7 @@ export default function Social() {
 
 				<motion.button
 					aria-label="LinkedIn profile"
-					title="LinkedIn profile"
+					data-tip="LinkedIn profile"
 					className="btn-hover linkedin"
 					onClick={handleLinkedinClick}
 					variants={buttonVariants}
@@ -79,7 +79,7 @@ export default function Social() {
 
 				<motion.button
 					aria-label="Email"
-					title="Email"
+					data-tip="Email"
 					className="btn-hover email"
 					onClick={handleEmailClick}
 					variants={buttonVariants}
